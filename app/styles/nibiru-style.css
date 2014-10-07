@@ -109,7 +109,7 @@ a:hover {
     line-height: 1.4; } }
 .container, .row, .po-column {
   line-height: 1.8; }
-  
+
 .container
 {
 	margin-top:-1px;
@@ -125,7 +125,7 @@ input[type="email"],
 input[type="search"],
 textarea {
   -webkit-appearance: none; }
-  
+
 #crumbs {
   font-size: 12px;
   margin-top: 14px; }
@@ -214,7 +214,7 @@ textarea {
   padding: 0;
   margin: 0;
   width: 100%; }
-  
+
 .po-section-fixed {
   background-attachment: fixed; }
 
@@ -449,7 +449,7 @@ textarea {
   border-radius: 100px;
   display: none;
   opacity: 1;
-  background: url(images/to-top.png) no-repeat center 7px;
+  background: url(../images/to-top.png) no-repeat center 7px;
   background-size: 11px 6px;
   cursor: pointer; }
 
@@ -491,7 +491,7 @@ textarea {
 .holding-text a:hover {
   text-align: center;
   color: white; }
-  
+
 
 /* #blog
 --------------------------------------------------*/
@@ -1181,7 +1181,7 @@ div.wp-caption.alignright .wp-caption-text {
 
 .bypostauthor > article .fn:before {
   position: relative; }
-  
+
 
 /* #navbar
 --------------------------------------------------*/
@@ -1441,7 +1441,7 @@ div.wp-caption.alignright .wp-caption-text {
 
   .po-navbar li.active a:hover {
     color: white; }
-	
+
   .po-navbar-slide
   {
 	  margin:0px;
@@ -1543,7 +1543,7 @@ div.wp-caption.alignright .wp-caption-text {
     display: block; }
 
   .dropdown-submenu > a:after {
-    content: url(images/nav-arrow-sub.png);
+    content: url(../images/nav-arrow-sub.png);
     color: #20c596;
     font-family: FontAwesome;
     display: inline-block;
@@ -1663,7 +1663,7 @@ div.wp-caption.alignright .wp-caption-text {
   .section-background-custom-white .header-line,
   .section-background-custom-white .header-line-left {
     width: 90px;
-    padding:0; 
+    padding:0;
 	margin:40px auto 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.3); } }
 @media (min-width: 768px) {
@@ -1757,7 +1757,7 @@ div.wp-caption.alignright .wp-caption-text {
 
 .header-line {
   margin: 0 auto; }
-  
+
 
 /* #buttons
 --------------------------------------------------*/
@@ -1771,7 +1771,7 @@ div.wp-caption.alignright .wp-caption-text {
 
 .project-button
 {
-	width:200px; margin:0 auto;	
+	width:200px; margin:0 auto;
 }
 
 .outline-button {
@@ -2006,7 +2006,7 @@ div.wp-caption.alignright .wp-caption-text {
     border-left: none;
     left: -30px;
     padding-left: 30px;
-    background: url(images/slide-arrow-left.png) no-repeat 40px 8px;
+    background: url(../images/slide-arrow-left.png) no-repeat 40px 8px;
     -webkit-border-top-right-radius: 2px;
     -webkit-border-bottom-right-radius: 2px;
     -moz-border-radius-topright: 2px;
@@ -2017,7 +2017,7 @@ div.wp-caption.alignright .wp-caption-text {
     border-right: none;
     right: -30px;
     padding-right: 30px;
-    background: url(images/slide-arrow-right.png) no-repeat 13px 8px;
+    background: url(../images/slide-arrow-right.png) no-repeat 13px 8px;
     -webkit-border-top-left-radius: 2px;
     -webkit-border-bottom-left-radius: 2px;
     -moz-border-radius-topleft: 2px;
@@ -2026,11 +2026,11 @@ div.wp-caption.alignright .wp-caption-text {
     border-bottom-left-radius: 2px; }
   .po-slider .bx-wrapper .bx-prev:hover {
     padding-left: 60px;
-    background: url(images/slide-arrow-left-dark.png) no-repeat 60px 8px white;
+    background: url(../images/slide-arrow-left-dark.png) no-repeat 60px 8px white;
     opacity: 1; }
   .po-slider .bx-wrapper .bx-next:hover {
     padding-right: 60px;
-    background: url(images/slide-arrow-right-dark.png) no-repeat 23px 8px white;
+    background: url(../images/slide-arrow-right-dark.png) no-repeat 23px 8px white;
     opacity: 1; }
   @media (max-width: 767px) {
     .po-slider .bx-wrapper .bx-controls-direction a {
@@ -2065,7 +2065,7 @@ div.wp-caption.alignright .wp-caption-text {
     width: 10px;
     height: 11px;
     outline: 0;
-    background: url(images/controls.png) -86px -11px no-repeat;
+    background: url(../images/controls.png) -86px -11px no-repeat;
     margin: 0 3px; }
   .po-slider .bx-wrapper .bx-controls-auto .bx-start:hover,
   .po-slider .bx-wrapper .bx-controls-auto .bx-start.active {
@@ -2076,7 +2076,7 @@ div.wp-caption.alignright .wp-caption-text {
     width: 9px;
     height: 11px;
     outline: 0;
-    background: url(images/controls.png) -86px -44px no-repeat;
+    background: url(../images/controls.png) -86px -44px no-repeat;
     margin: 0 3px; }
   .po-slider .bx-wrapper .bx-controls-auto .bx-stop:hover,
   .po-slider .bx-wrapper .bx-controls-auto .bx-stop.active {
@@ -2344,7 +2344,7 @@ div.wp-caption.alignright .wp-caption-text {
     border-left: none;
     float: left;
     padding-left: 0px;
-    background: url(images/slide-arrow-left.png) no-repeat 10px 8px rgba(0, 0, 0, 0.05);
+    background: url(../images/slide-arrow-left.png) no-repeat 10px 8px rgba(0, 0, 0, 0.05);
     -webkit-border-top-right-radius: 2px;
     -webkit-border-bottom-right-radius: 2px;
     -moz-border-radius-topright: 2px;
@@ -2356,7 +2356,7 @@ div.wp-caption.alignright .wp-caption-text {
     border-right: none;
     float: right;
     padding-right: 0px;
-    background: url(images/slide-arrow-right.png) no-repeat 13px 8px rgba(0, 0, 0, 0.05);
+    background: url(../images/slide-arrow-right.png) no-repeat 13px 8px rgba(0, 0, 0, 0.05);
     -webkit-border-top-left-radius: 2px;
     -webkit-border-bottom-left-radius: 2px;
     -moz-border-radius-topleft: 2px;
@@ -2366,12 +2366,12 @@ div.wp-caption.alignright .wp-caption-text {
     position: relative; }
   .po-carouseleds .bx-wrapper .bx-prev:hover {
     padding-left: 0px;
-    background: url(images/slide-arrow-left.png) no-repeat 10px 8px;
+    background: url(../images/slide-arrow-left.png) no-repeat 10px 8px;
     border-left: none;
     opacity: 1; }
   .po-carouseleds .bx-wrapper .bx-next:hover {
     padding-right: 0px;
-    background: url(images/slide-arrow-right.png) no-repeat 13px 8px;
+    background: url(../images/slide-arrow-right.png) no-repeat 13px 8px;
     border-right: none;
     opacity: 1; }
   .po-carouseleds .bx-wrapper .bx-controls-direction a {
@@ -2404,7 +2404,7 @@ div.wp-caption.alignright .wp-caption-text {
   padding: 20px;
   color: #fff;
   z-index: 2;
-  cursor: url(images/view-open.png) 35 35, default; }
+  cursor: url(../images/view-open.png) 35 35, default; }
 
 .grid figcaption h3 {
   margin: 0;
@@ -2447,7 +2447,7 @@ div.wp-caption.alignright .wp-caption-text {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 13px; }
-  
+
 .cs-style-1 figcaption .carousel-title {
   display: block;
   margin-top: 135px;
@@ -2520,7 +2520,7 @@ div.wp-caption.alignright .wp-caption-text {
   -moz-transition: all 0.2s ease-in-out;
   width: 22px;
   height: 22px;
-  background: url(images/view-close.png) no-repeat;
+  background: url(../images/view-close.png) no-repeat;
   background-size: 22px 22px;
   right: 20px;
   top: 15px; }
@@ -2893,7 +2893,7 @@ div.wp-caption.alignright .wp-caption-text {
       width: 70%; } } }
 /* COLUMN ANIMATIONS
 -----------------------------------------------------------------------------------*/
-/* Fade In 
+/* Fade In
 -----------------------------------------------------------------------------------*/
 .fade-in {
   -webkit-animation: fadeIn 0.65s ease forwards;
@@ -2909,7 +2909,7 @@ div.wp-caption.alignright .wp-caption-text {
 @keyframes fadeIn {
   to {
     opacity: 1; } }
-/* Move Up 
+/* Move Up
 -----------------------------------------------------------------------------------*/
 .move-up {
   -webkit-transform: translateY(50px);
@@ -3303,7 +3303,7 @@ pullUp
 .icon-float .icon-char {
   font-size: 35px;
   font-weight: 600; }
- 
+
 .no-vertical-padding
 {
 	padding-top:0; padding-bottom:0;
@@ -3651,7 +3651,7 @@ pullUp
     width: 100%;
     height: 560px; } }
 .liquid-container-page a {
-  cursor: url(images/close-b.png) 38 38, default; }
+  cursor: url(../images/close-b.png) 38 38, default; }
 
 @media (max-width: 767px) {
   .liquid-container-footer {
@@ -3692,12 +3692,12 @@ pullUp
   display: block;
   padding-bottom: 80px;
   position: relative;
-  cursor: url(images/cross.png) 38 38, default; }
+  cursor: url(../images/cross.png) 38 38, default; }
 
 .portfolio-item-footer a {
   display: block;
   position: relative;
-  cursor: url(images/cross-footer.png) 38 38, default; }
+  cursor: url(../images/cross-footer.png) 38 38, default; }
 
 .item-title {
   text-transform: uppercase;
@@ -3715,7 +3715,7 @@ pullUp
   margin-right: 4px;
   width: 9px;
   height: 9px;
-  background: url(images/cat-sep.png) no-repeat; }
+  background: url(../images/cat-sep.png) no-repeat; }
 
 .item-title {
   margin-bottom: 0px; }
@@ -3748,7 +3748,7 @@ pullUp
 
 @media (min-width: 768px) {
   .portfolio-item a:hover .subtitle span {
-    background: url(images/cat-sep-w.png) no-repeat; } }
+    background: url(../images/cat-sep-w.png) no-repeat; } }
 .portfolio-nav li {
   float: left;
   margin-left: -2px;
@@ -3919,21 +3919,21 @@ pullUp
   height: 580px;
   display: block;
   position: relative;
-  cursor: url(images/cross.png) 38 38, default; }
+  cursor: url(../images/cross.png) 38 38, default; }
 
 .index-s a {
   width: 100%;
   height: 580px;
   display: block;
   position: relative;
-  cursor: url(images/cross.png) 38 38, default; }
+  cursor: url(../images/cross.png) 38 38, default; }
 
 .next-s a {
   width: 100%;
   height: 580px;
   display: block;
   position: relative;
-  cursor: url(images/cross.png) 38 38, default; }
+  cursor: url(../images/cross.png) 38 38, default; }
 
 .next-s .arrow:hover .banner {
   background-color: #f00; }
@@ -3945,7 +3945,7 @@ pullUp
   width: 60px;
   height: 100%;
   z-index: 50;
-  cursor: url(images/prev.png) 38 38, default; }
+  cursor: url(../images/prev.png) 38 38, default; }
 
 .arrow-next {
   position: fixed;
@@ -3953,7 +3953,7 @@ pullUp
   width: 60px;
   height: 100%;
   z-index: 50;
-  cursor: url(images/next.png) 38 38, default; }
+  cursor: url(../images/next.png) 38 38, default; }
 
 .banner {
   position: fixed;
@@ -4011,7 +4011,7 @@ pullUp
   top: 50%;
   margin-top: 0px;
   left: -22px;
-  background: url(images/next-b.png) no-repeat; }
+  background: url(../images/next-b.png) no-repeat; }
 
 .prev-b {
   position: fixed;
@@ -4020,7 +4020,7 @@ pullUp
   top: 50%;
   margin-top: 0px;
   right: -22px;
-  background: url(images/prev-b.png) no-repeat; }
+  background: url(../images/prev-b.png) no-repeat; }
 
 .entry-content .portfolio-link ul,
 .entry-content .portfolio-cat ul {
@@ -4217,7 +4217,7 @@ pullUp
   width: 150px;
   height: 150px;
   display: block; }
-  
+
 .circular-cont-inner {
 	position:absolute; }
 
@@ -4276,7 +4276,7 @@ pullUp
     width: 70%; } }
 .dial {
   opacity: 0; }
-  
+
 
 
 /* #contact
@@ -4383,13 +4383,13 @@ form.invalid input.wpcf7-not-valid {
 
 .footer-bottom-padding
 {
-	padding:25px 0 15px;	
+	padding:25px 0 15px;
 }
 
 
 .footer-nav-padding
 {
-	padding:25px 0 0px;	
+	padding:25px 0 0px;
 }
 
 .footer-container-bottom {
@@ -4448,9 +4448,9 @@ form.invalid input.wpcf7-not-valid {
 
 .footer-inner-container {
   padding: 40px 0 40px; }
-  
-  
-  
+
+
+
 /* #clients
 --------------------------------------------------*/
 
@@ -4503,8 +4503,8 @@ form.invalid input.wpcf7-not-valid {
   margin-right: 4px;
   width: 9px;
   height: 9px;
-  background: url(images/cat-sep.png) no-repeat; }
-  
+  background: url(../images/cat-sep.png) no-repeat; }
+
 
 
 /* #testimonials
@@ -4595,7 +4595,7 @@ form.invalid input.wpcf7-not-valid {
     border: 1px solid rgba(255, 255, 255, 0.8);
     float: left;
     padding-left: 0px;
-    background: url(images/slide-arrow-left.png) no-repeat 10px 8px rgba(0, 0, 0, 0.2);
+    background: url(../images/slide-arrow-left.png) no-repeat 10px 8px rgba(0, 0, 0, 0.2);
     -webkit-border-top-right-radius: 2px;
     -webkit-border-bottom-right-radius: 2px;
     -moz-border-radius-topright: 2px;
@@ -4614,7 +4614,7 @@ form.invalid input.wpcf7-not-valid {
     border: 1px solid rgba(255, 255, 255, 0.8);
     float: right;
     padding-right: 0px;
-    background: url(images/slide-arrow-right.png) no-repeat 13px 8px rgba(0, 0, 0, 0.2);
+    background: url(../images/slide-arrow-right.png) no-repeat 13px 8px rgba(0, 0, 0, 0.2);
     -webkit-border-top-left-radius: 2px;
     -webkit-border-bottom-left-radius: 2px;
     -moz-border-radius-topleft: 2px;
@@ -4626,10 +4626,10 @@ form.invalid input.wpcf7-not-valid {
   @media (min-width: 992px) {
     .po-testimonials .bx-wrapper .bx-prev:hover {
       padding-left: 30px;
-      background: url(images/slide-arrow-left.png) no-repeat 30px 8px; }
+      background: url(../images/slide-arrow-left.png) no-repeat 30px 8px; }
     .po-testimonials .bx-wrapper .bx-next:hover {
       padding-right: 30px;
-      background: url(images/slide-arrow-right.png) no-repeat 23px 8px; } }
+      background: url(../images/slide-arrow-right.png) no-repeat 23px 8px; } }
   .po-testimonials .bx-wrapper .bx-prev:hover {
     border: 1px solid rgba(255, 255, 255, 0.8);
     border-left: none;
@@ -4769,7 +4769,7 @@ ul.footer-links {
 .footer-links .index.green:hover,
 .social-links .index.green:hover {
   z-index: 2; }
-  
+
 
 
 
@@ -4988,7 +4988,7 @@ ul.footer-links {
 
 .coffee:hover i {
   color: #20C596; }
-  
+
 
 
 /* #widgets
@@ -5113,7 +5113,7 @@ ul.footer-links {
 
 .tagcloud a:hover {
   color: #fff; }
-  
+
 
 /* #modal
 --------------------------------------------------*/
@@ -5172,11 +5172,11 @@ ul.footer-links {
 
 .textblock-left5
 {
-	text-align:left; 
-	padding-top:0px; 
-	padding-right:10px; 
-	]padding-bottom:0px; 
-	font-size: 16px; 
+	text-align:left;
+	padding-top:0px;
+	padding-right:10px;
+	padding-bottom:0px;
+	font-size: 16px;
 	font-weight: 500;
 }
 
@@ -5228,25 +5228,25 @@ ul.footer-links {
 
 .filter-button
 {
-	margin-left: -1px;	
+	margin-left: -1px;
 }
 
 .section-padding
 {
-	padding-top:50px; 
+	padding-top:50px;
 	padding-bottom:50px;
 }
 
 .section-padding2
 {
-	padding-top:50px; 
+	padding-top:50px;
 	padding-bottom:80px;
 }
 
 .section-padding-color
 {
-	padding-top:50px; 
-	padding-bottom:50px; 
+	padding-top:50px;
+	padding-bottom:50px;
 	background-color:#231F20;
 }
 
@@ -5258,22 +5258,22 @@ ul.footer-links {
 .section-padding-color2
 {
 	color:#fff;
-	padding-top:50px; 
-	padding-bottom:50px; 
+	padding-top:50px;
+	padding-bottom:50px;
 	background-color:#6DB689;
 }
 
 .section-padding-color3
 {
-	padding-top:50px; 
-	padding-bottom:50px; 
+	padding-top:50px;
+	padding-bottom:50px;
 	background-color:#15191B;
 }
 
 
 .section-padding-nb
 {
-	padding-top:50px; 
+	padding-top:50px;
 	padding-bottom:0px;
 }
 
@@ -5284,19 +5284,19 @@ ul.footer-links {
 
 .section-padding-nt
 {
-	padding-top:0px; 
+	padding-top:0px;
 	padding-bottom:50px;
 }
 
 .section-padding-nt2
 {
-	padding-top:0px; 
+	padding-top:0px;
 	padding-bottom:20px;
 }
 
 .section-padding-nt3
 {
-	padding-top:0px; 
+	padding-top:0px;
 	padding-bottom:80px;
 }
 
@@ -5313,14 +5313,14 @@ ul.footer-links {
 
 .sepline-portfolio
 {
-	width:8%; 
-	margin:30px auto 30px; 
-	border-top:1px solid #e1e1e1;	
+	width:8%;
+	margin:30px auto 30px;
+	border-top:1px solid #e1e1e1;
 }
 
 .quote-padding
 {
-	padding-top:0px; 
+	padding-top:0px;
 	padding-bottom:0px;
 }
 
@@ -5336,156 +5336,156 @@ ul.footer-links {
 
 .button-summary
 {
-	width:250px; 
+	width:250px;
 	margin:30px auto 0;
 }
 
 .section-image-bg
 {
-	padding-top:70px; 
-	padding-bottom:100px; 
-	background:url(http://placehold.it/1280x800/999999&text=%20); 
-	-webkit-box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5); 
-	-moz-box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5); 
+	padding-top:70px;
+	padding-bottom:100px;
+	background:url(http://placehold.it/1280x800/999999&text=%20);
+	-webkit-box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5);
+	-moz-box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5);
 	box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5);
 }
 
 .section-image-bg2
 {
-	padding-top:100px; 
-	padding-bottom:100px; 
-	background:url(http://placehold.it/1280x800/999999&text=%20); 
-	-webkit-box-shadow: inset 0px 0px 1000px 500px rgba(0,0,0,0.4); 
-	-moz-box-shadow: inset 0px 0px 1000px 500px rgba(0,0,0,0.4); 
+	padding-top:100px;
+	padding-bottom:100px;
+	background:url(http://placehold.it/1280x800/999999&text=%20);
+	-webkit-box-shadow: inset 0px 0px 1000px 500px rgba(0,0,0,0.4);
+	-moz-box-shadow: inset 0px 0px 1000px 500px rgba(0,0,0,0.4);
 	box-shadow: inset 0px 0px 1000px 500px rgba(0,0,0,0.4);
 }
 
 .section-image-bg3
 {
-	padding-top:100px; 
-	padding-bottom:100px; 
-	background:url(http://placehold.it/1280x800/999999&text=%20); 
-	-webkit-box-shadow: inset 0px 0px 1000px 500px rgba(0,0,0,0.4); 
-	-moz-box-shadow: inset 0px 0px 1000px 500px rgba(0,0,0,0.4); 
+	padding-top:100px;
+	padding-bottom:100px;
+	background:url(http://placehold.it/1280x800/999999&text=%20);
+	-webkit-box-shadow: inset 0px 0px 1000px 500px rgba(0,0,0,0.4);
+	-moz-box-shadow: inset 0px 0px 1000px 500px rgba(0,0,0,0.4);
 	box-shadow: inset 0px 0px 1000px 500px rgba(0,0,0,0.4);
 }
 
 .section-image-bg4
 {
-	padding-top:100px; 
-	padding-bottom:100px; 
-	background:url(http://placehold.it/1280x800/999999&text=%20); 
-	-webkit-box-shadow: inset 0px 0px 1000px 500px rgba(0,0,0,0.4); 
-	-moz-box-shadow: inset 0px 0px 1000px 500px rgba(0,0,0,0.4); 
+	padding-top:100px;
+	padding-bottom:100px;
+	background:url(http://placehold.it/1280x800/999999&text=%20);
+	-webkit-box-shadow: inset 0px 0px 1000px 500px rgba(0,0,0,0.4);
+	-moz-box-shadow: inset 0px 0px 1000px 500px rgba(0,0,0,0.4);
 	box-shadow: inset 0px 0px 1000px 500px rgba(0,0,0,0.4);
 }
 
 .section-image-bg5
 {
-	padding-top:100px; 
-	padding-bottom:100px; 
-	background:url(http://placehold.it/1280x800/999999&text=%20); 
-	-webkit-box-shadow: inset 0px 0px 1000px 500px rgba(0,0,0,0.4); 
-	-moz-box-shadow: inset 0px 0px 1000px 500px rgba(0,0,0,0.4); 
+	padding-top:100px;
+	padding-bottom:100px;
+	background:url(http://placehold.it/1280x800/999999&text=%20);
+	-webkit-box-shadow: inset 0px 0px 1000px 500px rgba(0,0,0,0.4);
+	-moz-box-shadow: inset 0px 0px 1000px 500px rgba(0,0,0,0.4);
 	box-shadow: inset 0px 0px 1000px 500px rgba(0,0,0,0.4);
 }
 
 .section-image-bg6
 {
-	padding-top:100px; 
-	padding-bottom:100px; 
-	background:url(http://placehold.it/1280x800/999999&text=%20); 
-	-webkit-box-shadow: inset 0px 0px 1000px 500px rgba(0,0,0,0.4); 
-	-moz-box-shadow: inset 0px 0px 1000px 500px rgba(0,0,0,0.4); 
+	padding-top:100px;
+	padding-bottom:100px;
+	background:url(http://placehold.it/1280x800/999999&text=%20);
+	-webkit-box-shadow: inset 0px 0px 1000px 500px rgba(0,0,0,0.4);
+	-moz-box-shadow: inset 0px 0px 1000px 500px rgba(0,0,0,0.4);
 	box-shadow: inset 0px 0px 1000px 500px rgba(0,0,0,0.4);
 }
 
 .section-image-bg7
 {
-	padding-top:80px; 
-	padding-bottom:100px; background:url(http://placehold.it/1280x800/999999&text=%20); 
-	-webkit-box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5); 
-	-moz-box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5); 
+	padding-top:80px;
+	padding-bottom:100px; background:url(http://placehold.it/1280x800/999999&text=%20);
+	-webkit-box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5);
+	-moz-box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5);
 	box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5);
 }
 
 .section-image-bg8
 {
-	padding-top:70px; 
-	padding-bottom:100px; 
-	background:url(http://placehold.it/1280x800/999999&text=%20); 
-	-webkit-box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5); 
-	-moz-box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5); 
+	padding-top:70px;
+	padding-bottom:100px;
+	background:url(http://placehold.it/1280x800/999999&text=%20);
+	-webkit-box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5);
+	-moz-box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5);
 	box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5);
 }
 
 .section-image-bg9
 {
-	padding-top:50px; 
-	padding-bottom:50px; 
-	background:url(http://placehold.it/1280x800/999999&text=%20); 
-	-webkit-box-shadow: inset 0px 0px 1000px 500px rgba(6, 7, 8, 0.8); 
-	-moz-box-shadow: inset 0px 0px 1000px 500px rgba(6, 7, 8, 0.8); box-shadow: 
+	padding-top:50px;
+	padding-bottom:50px;
+	background:url(http://placehold.it/1280x800/999999&text=%20);
+	-webkit-box-shadow: inset 0px 0px 1000px 500px rgba(6, 7, 8, 0.8);
+	-moz-box-shadow: inset 0px 0px 1000px 500px rgba(6, 7, 8, 0.8); box-shadow:
 	inset 0px 0px 1000px 500px rgba(6, 7, 8, 0.8);
 }
 
 .section-image-bg10
 {
-	padding-top:100px; 
-	padding-bottom:100px; 
-	background:url(http://placehold.it/1280x800/999999&text=%20); 
-	-webkit-box-shadow: inset 0px 0px 1000px 500px rgba(27,33,36,0.7); 
-	-moz-box-shadow: inset 0px 0px 1000px 500px rgba(27,33,36,0.7); 
+	padding-top:100px;
+	padding-bottom:100px;
+	background:url(http://placehold.it/1280x800/999999&text=%20);
+	-webkit-box-shadow: inset 0px 0px 1000px 500px rgba(27,33,36,0.7);
+	-moz-box-shadow: inset 0px 0px 1000px 500px rgba(27,33,36,0.7);
 	box-shadow: inset 0px 0px 1000px 500px rgba(27,33,36,0.7);
 }
 
 
 .blog-quote-bg
 {
-	background:url(http://placehold.it/1280x800/999999&text=%20) #aaa; 
+	background:url(http://placehold.it/1280x800/999999&text=%20) #aaa;
 	background-size:cover;
 }
 
 .small-header-style
 {
-	margin-top:px; 
-	margin-bottom:14px; 
-	font-size:16px; 
+	margin-top:px;
+	margin-bottom:14px;
+	font-size:16px;
 	font-weight:bold;
 }
 
 .padding-features
 {
-	padding-top:5px; 
+	padding-top:5px;
 	padding-bottom:0px;
 }
 
 .padding-features2
 {
-	padding-top:5px; 
+	padding-top:5px;
 	padding-bottom:40px;
 }
 
 .testimonials-background
 {
-	padding-top:35px; 
-	padding-bottom:50px; 
-	background-color:#189773; 
+	padding-top:35px;
+	padding-bottom:50px;
+	background-color:#189773;
 	color:#fff;
 }
 
 img.logo
 {
-	max-width:158px;	
+	max-width:158px;
 }
 
 
 .holding-logo
 {
-	position:absolute; 
-	width:100%; 
+	position:absolute;
+	width:100%;
 	padding-top:50px;
-	
+
 }
 
 .comment-author-image
@@ -5495,7 +5495,7 @@ img.logo
 
 .comment-author-details
 {
-	float:left; 
+	float:left;
 	margin-left:20px;
 }
 
@@ -5507,21 +5507,21 @@ img.logo
 
 .googleMap
 {
-	 width:100%; 
+	 width:100%;
 	 height:400px;
 }
 
 
 .portfolio-banner
 {
-	 width:100%; 
-	 position:absolute; 
-	 z-index:99; 
+	 width:100%;
+	 position:absolute;
+	 z-index:99;
 	 margin-top:50px;
 }
 
 .header-line-small {
-	 padding-bottom:35px; 
+	 padding-bottom:35px;
 }
 
 .progress-bar
@@ -5531,18 +5531,18 @@ img.logo
 
 .media-container-image
 {
-	height:200px;	
+	height:200px;
 }
 
 .header-small-padding2
 {
   padding: 0 0 0;
-  padding-top:25px; 
+  padding-top:25px;
 }
 
 .related-bottom
 {
-	margin-bottom:25px;	
+	margin-bottom:25px;
 }
 
 
@@ -5550,5 +5550,3 @@ img.logo
 {
 	font-size: 13px;
 }
-
-
