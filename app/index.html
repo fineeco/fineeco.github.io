@@ -1,99 +1,1699 @@
 <!doctype html>
 <html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <title>yo glup webapp</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <!-- build:css styles/vendor.css -->
-        <!-- bower:css -->
-        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-        <!-- endbower -->
-        <!-- endbuild -->
+<head>
+  <meta charset="utf-8">
+  <title>FineEco</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <!-- build:css styles/main.css -->
-        <link rel="stylesheet" href="styles/main.css">
-        <!-- endbuild -->
+  <!--[if lt IE 9]>
+  <!-- build:js scripts/vendor/html5shiv.js -->
+  <script src="bower_components/html5shiv/html5shiv.js"></script>
+  <!-- endbuild -->
+  <![endif]-->
 
-        <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="bower_components/modernizr/modernizr.js"></script>
-        <!-- endbuild -->
-    </head>
-    <body>
-        <!--[if lt IE 10]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/">
+  <!-- endbower -->
+  <!-- endbuild -->
 
-        <div class="container">
-            <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <h3 class="text-muted">yo glup webapp</h3>
-            </div>
+  <!--[if lt IE 9]>
+  <!-- build:css styles/ie.css -->
+  <link rel="stylesheet" href="styles/ie.css">
+  <!-- endbuild -->
+  <![endif]-->
 
-            <div class="jumbotron">
-                <h1>'Allo, 'Allo!</h1>
-                <p class="lead">Always a pleasure scaffolding your apps.</p>
-                <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-            </div>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C600%2C700&#038;ver=3.9.1">
 
-            <div class="row marketing">
-                <div class="col-lg-6">
-                    <h4>HTML5 Boilerplate</h4>
-                    <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/nibiru-style.css">
+  <link rel="stylesheet" href="styles/nibiru-custom-style.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
 
-                    <h4>Bootstrap</h4>
-                    <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-                    <h4>Modernizr</h4>
-                    <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
 
-                </div>
-            </div>
+<body>
+  <!--[if lt IE 10]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
 
-            <div class="footer">
-                <p>♥ from the Yeoman team</p>
-            </div>
-        </div>
+	<form role="search" method="get" class="search-form-noslide">
+		<i class="fa fa-search search-icon-form-noslide"></i>
+		<input type="search" class="search-field" value="" name="s" autofocus>
+	</form>
+	<div class="search-icon"></div>
+	<a href="search.html">
+		<div class="search-icon-mobile visible-xs visible-sm"></div>
+	</a>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+	<div class="po-slider-logo" data-logo-animation="po-fade-in" data-logo-delay="1500">
+		<a href="http://fineeco.co.kr">
+			<img alt="logo" class="logo center-block po-" src="images/logo-fineeco.png">
+		</a>
+	</div>
 
-        <!-- build:js scripts/vendor.js -->
-        <!-- bower:js -->
-        <script src="bower_components/jquery/dist/jquery.js"></script>
-        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-        <!-- endbower -->
-        <!-- endbuild -->
+	<div class="po-slider-details" data-details-animation="po-fade-in" data-details-delay="1500">
+		<div class="container po-slider-buttons">
+			<div class="row">
+				<div class="col-md-12 col-sm-offset-">
+					<button class="slider-btn po-slider-anchor btn outline-button white btn-lg btn-block btn-icon-ani center-block" id="learn-more-button" type="button">Learn more
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
-        <!-- build:js scripts/plugins.js -->
-        <script src="bower_components/bootstrap/js/affix.js"></script>
-        <script src="bower_components/bootstrap/js/alert.js"></script>
-        <script src="bower_components/bootstrap/js/dropdown.js"></script>
-        <script src="bower_components/bootstrap/js/tooltip.js"></script>
-        <script src="bower_components/bootstrap/js/modal.js"></script>
-        <script src="bower_components/bootstrap/js/transition.js"></script>
-        <script src="bower_components/bootstrap/js/button.js"></script>
-        <script src="bower_components/bootstrap/js/popover.js"></script>
-        <script src="bower_components/bootstrap/js/carousel.js"></script>
-        <script src="bower_components/bootstrap/js/scrollspy.js"></script>
-        <script src="bower_components/bootstrap/js/collapse.js"></script>
-        <script src="bower_components/bootstrap/js/tab.js"></script>
-        <!-- endbuild -->
+	<div class="po-slider-text-container" data-text-delay="2500">
+		<div class="po-slider-text center-block" data-text-animation="po-fade-in">
+			<h1 class="po-slider-header text-center">
+				<span class="po-slider-header-sub">다음세대를 위한 푸른 에너지 기업,</span>
+				<br>FINEECO 입니다.
+			</h1>
 
-        <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+			<h1 class="po-slider-header text-center">
+				<span class="po-slider-header-sub">친환경 태양 에너지 산업의 시작점,</span>
+				<br>Poly Chip Expert Company 입니다.
+			</h1>
+
+			<h1 class="po-slider-header text-center">
+				<span class="po-slider-header-sub">태양광 산업 핵심 가치를 잇고 연결하는,</span>
+				<br>Value Chain Enabler 입니다.
+			</h1>
+		</div>
+	</div>
+
+	<div class="po-slider">
+		<div class="po-slider-load" id="po-slider-load"></div>
+
+		<div class="load-block"></div>
+
+		<div class="background-greyscale white"></div>
+
+		<ul class="po-slider-loop">
+			<li>
+				<img alt="" class="attachment-full wp-post-image" height="960" src="images/slide-background-01.jpg" width="1280">
+			</li>
+
+			<li>
+				<img alt="" class="attachment-full wp-post-image" height="960" src="images/slide-background-02.jpg" width="1280">
+			</li>
+
+			<li>
+				<img alt="" class="attachment-full wp-post-image" height="960" src="images/slide-background-03.jpg" width="1280">
+			</li>
+		</ul>
+	</div>
+
+	<div class="to-top"></div>
+
+	<div class="po-slider-display po-nav po-nav-slide">
+		<nav class="navbar po-navbar po-navbar-slide">
+			<!-- Mobile display -->
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<!-- Collect the nav links for toggling -->
+
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav" id="menu-header">
+					<li class="menu-item dropdown active">
+						<a class="dropdown-toggle" data-target="#" data-toggle="dropdown" href="#">Home</a>
+
+						<ul class="dropdown-menu">
+							<li class="active"><a href="home-landing.html">Home:
+                        Landing</a>
+							</li>
+
+							<li><a href="home-parallax.html">Home:
+                        Parallax</a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="portfolio"><a href="portfolio.html">Portfolio</a>
+					</li>
+
+					<li class="team"><a href="team.html">Team</a>
+					</li>
+
+					<li class="menu-item dropdown">
+						<a class="dropdown-toggle" data-target="#" data-toggle="dropdown" href="#">Pages</a>
+
+						<ul class="dropdown-menu">
+							<li><a href="about.html">About</a>
+							</li>
+
+							<li><a href="contact.html">Contact</a>
+							</li>
+
+							<li><a href="holding.html">Holding</a>
+							</li>
+
+							<li><a href="sidebar-page.html">Sidebar
+                        Page</a>
+							</li>
+
+							<li><a href="full-width.html">Full
+                        width</a>
+							</li>
+
+							<li><a href="archives.html">Archives</a>
+							</li>
+						</ul>
+					</li>
+
+					<li><a href="blog.html">Blog</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="po-page">
+			<article class="post-654 page type-page status-publish hentry" id="post-654">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="entry-content"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="entry-content">
+					<div class="section-background-white section-padding">
+						<div class="container">
+							<div class="row">
+								<div class="po-column col-sm-4 col-sm-offset-0" data-animation="bounce-in">
+									<div class="po-icon-box icon-green hover-ani">
+										<div class="icon-box icon-green">
+											<i class="fa fa-tree fa-2x"></i>
+										</div>
+
+										<div class="column-content">
+											<h4 class="text-center">Fine Eco</h4>
+
+											<div class="row">
+												<div class="col-sm-6 col-sm-offset-3">
+													<div class="icon-box-line">
+													</div>
+												</div>
+											</div>
+
+											<p class="text-center box-text">
+												다음 세대를 위한 푸른 에너지 기업 파인에코는 안전하고 깨끗한 태양광 에너지 대중화의 핵심 기업 입니다.
+												파인에코는 태양광 에너지 산업 생산성과 효율을 높여 우리 세대의 더 많은 사람에게 친환경 에너지를 제공하여
+												다음세대의 푸른 환경, Fine Ecology의 초석이 되고자 합니다.
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="po-column col-sm-4 col-sm-offset-0" data-animation="bounce-in" data-delay="400">
+									<div class="po-icon-box icon-green hover-ani">
+										<div class="icon-box icon-green">
+											<i class="fa fa-users fa-2x"></i>
+										</div>
+
+										<div class="column-content">
+											<h4 class="text-center">Chip Poly Expert Company</h4>
+
+											<div class="row">
+												<div class="col-sm-6 col-sm-offset-3">
+													<div class="icon-box-line">
+													</div>
+												</div>
+											</div>
+
+											<p class="text-center box-text">
+												태양광 에너지의 시작점인 Chip Poly의 연구, 개발, 생산, 판매의 전문역량을 보유한 Chip Poly Expert Company 입니다.
+												태양광 패널의 원재료 폴리 실리콘을 작은 조각인 Chip Poly로 만들어 패널 생산의 효율성과 생산성을 극대화하는 핵심 기술과 생산 역량을 갖추고 있습니다.
+												Chip Poly는 태양광 패널 생산에 빠질 수 없는 핵심 원자재로 각광 받고 있으며, FineEco의 핵심 사업 분야 입니다.
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="po-column col-sm-4 col-sm-offset-0" data-animation="bounce-in" data-delay="800">
+									<div class="po-icon-box icon-green hover-ani">
+										<div class="icon-box icon-green">
+											<i class="fa fa-line-chart fa-2x"></i>
+										</div>
+
+										<div class="column-content">
+											<h4 class="text-center">Value Chain Enabler</h4>
+
+											<div class="row">
+												<div class="col-sm-6 col-sm-offset-3">
+													<div class="icon-box-line">
+													</div>
+												</div>
+											</div>
+
+											<p class="text-center box-text">
+												태양광 패널을 생산하기 위해서는 다양한 공정을 거치며 원재료부터 완성품까지의 역할별 가치사슬을 형성하고 있습니다.
+												FineEco는 각 공정별 단계에서 부수적으로 나오는 폴리 실리콘을 재활용하여 다시금 활용가능한 상태로 만드는
+												"Pot Scrap Etching", "Carbon-End Recycling"등의 Urban Mining 역량으로
+												각 사슬간 효율과 생산성을 극대화하여 태양광 산업의 성장과 함께 합니다.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container po-container-section">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="entry-content"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="entry-content">
+					<div class="section-background-white section-padding-nt">
+						<div class="row po-full-width">
+							<div class="po-column po-header-top col-sm-12 related-bottom" data-animation="fade-in" data-delay="0">
+								<h3 class="text-center">Recent projects</h3>
+
+								<div class="header-line header-line-bottom"></div>
+							</div>
+
+							<div class="clearfix"></div>
+
+							<div class="portfolio-item col-sm-4 column-4">
+								<a href="portfolio-item-1.html">
+
+									<div class="liquid-container">
+										<img alt="Alaskan Bunker" class="img-responsive" src="http://placehold.it/1280x800/999999&text=%20">
+									</div>
+
+									<div class="portfolio-details">
+										<div class="item-description">
+											<div class="description-cell">
+												<h5 class="item-title">Alaskan
+                                            Bunker</h5>
+
+												<div class="subtitle">
+													Photography
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</a>
+
+							</div>
+
+							<div class="portfolio-item col-sm-4 column-4">
+								<a href="portfolio-item-2.html">
+
+									<div class="liquid-container">
+										<img alt="Love Triangle" class="img-responsive" src="http://placehold.it/1280x800/999999&text=%20">
+									</div>
+
+									<div class="portfolio-details">
+										<div class="item-description">
+											<div class="description-cell">
+												<h5 class="item-title">Love
+                                            Triangle</h5>
+
+												<div class="subtitle">
+													Identity <span class="cat-sep"></span> Illustration
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</a>
+
+							</div>
+
+							<div class="portfolio-item col-sm-4 column-4">
+								<a href="portfolio-item-3.html">
+
+									<div class="liquid-container">
+										<img alt="Malaysian Mountains" class="img-responsive" src="http://placehold.it/1280x800/999999&text=%20">
+									</div>
+
+									<div class="portfolio-details">
+										<div class="item-description">
+											<div class="description-cell">
+												<h5 class="item-title">Malaysian
+                                            Mountains</h5>
+
+												<div class="subtitle">
+													Photography <span class="cat-sep"></span> Strategy <span class="cat-sep"></span> Technology
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</a>
+
+							</div>
+
+							<div class="portfolio-item col-sm-4 column-4">
+								<a href="portfolio-item-4.html">
+
+									<div class="liquid-container">
+										<img alt="Bird" class="img-responsive" src="http://placehold.it/1280x800/999999&text=%20">
+									</div>
+
+									<div class="portfolio-details">
+										<div class="item-description">
+											<div class="description-cell">
+												<h5 class="item-title">Bird</h5>
+
+												<div class="subtitle">
+													Identity <span class="cat-sep"></span> Technology
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</a>
+
+							</div>
+
+							<div class="portfolio-item col-sm-4 column-4">
+								<a href="portfolio-item-5.html">
+
+									<div class="liquid-container">
+										<img alt="Panther" class="img-responsive" src="http://placehold.it/1280x800/999999&text=%20">
+									</div>
+
+									<div class="portfolio-details">
+										<div class="item-description">
+											<div class="description-cell">
+												<h5 class="item-title">Panther</h5>
+
+												<div class="subtitle">
+													Identity <span class="cat-sep"></span> Illustration
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</a>
+
+							</div>
+
+							<div class="portfolio-item col-sm-4 column-4">
+								<a href="portfolio-item-6.html">
+
+									<div class="liquid-container">
+										<img alt="F" class="img-responsive" src="http://placehold.it/1280x800/999999&text=%20">
+									</div>
+
+									<div class="portfolio-details">
+										<div class="item-description">
+											<div class="description-cell">
+												<h5 class="item-title">F</h5>
+
+												<div class="subtitle">
+													Identity <span class="cat-sep"></span> Illustration
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</a>
+
+							</div>
+
+							<div class="clear-float"></div>
+
+							<div class="sepline-portfolio">
+							</div>
+
+							<div class="no-padding">
+								<div class="row po-full-width">
+									<div class="po-column col-sm-12 no-padding" data-animation="fade-in" data-delay="0">
+										<a class="btn outline-button light btn-lg btn-block btn-icon-ani project-button" href="http://nibiru.pixelobject.com/portfolio/">
+
+											<div class="btn-icon"><i class="fa fa-folder-open-o"></i>
+											</div><span>View All
+                                    Projects</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container po-container-section">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="entry-content"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="entry-content">
+					<div class="section-background-light section-lineshadow-top section-padding">
+						<div class="container">
+							<div class="row">
+								<div class="po-column col-sm-3 col-sm-offset-0" data-animation="fade-in" data-delay="0">
+									<div class="po-column-mobile-ani" data-animation="fade-in" data-delay="0">
+										<div class="hover-ani">
+											<div class="circular-cont center-block">
+												<div class="circular-cont-inner">
+													<div class="icon-circular">
+														<i class="fa fa-eye fa-2x po-column-mobile-ani" data-delay="0" data-animation="fade-in"></i>
+													</div>
+												</div>
+												<input class="dial po-column-mobile-ani" data-animation="fade-in" data-bgcolor="#ddd" data-delay="0" data-displayinput="false" data-fgcolor="#20C596" data-linecap="round" data-readonly="true" data-thickness=".01" data-value="94" data-width="150"
+												type="text" value="0">
+											</div>
+
+											<div class="po-column po-header-line col-sm-6 col-sm-offset-3" data-animation="fade-in" data-delay="0">
+												<div class="circular-line"></div>
+											</div>
+
+											<div class="po-column po-column-mobile-ani po-header-small col-sm-12" data-animation="pull-up" data-delay="900">
+												<h4 class="circular-text text-center">Design
+                                            and Aesthetics.</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="po-column col-sm-3 col-sm-offset-0" data-animation="fade-in" data-delay="0">
+									<div class="po-column-mobile-ani" data-animation="fade-in" data-delay="0">
+										<div class="hover-ani">
+											<div class="circular-cont center-block">
+												<div class="circular-cont-inner">
+													<div class="icon-circular">
+														<i class="fa fa-lightbulb-o fa-2x po-column-mobile-ani" data-delay="0" data-animation="fade-in"></i>
+													</div>
+												</div>
+												<input class="dial po-column-mobile-ani" data-animation="fade-in" data-bgcolor="#ddd" data-delay="0" data-displayinput="false" data-fgcolor="#20C596" data-linecap="round" data-readonly="true" data-thickness=".01" data-value="90" data-width="150"
+												type="text" value="0">
+											</div>
+
+											<div class="po-column po-header-line col-sm-6 col-sm-offset-3" data-animation="fade-in" data-delay="0">
+												<div class="circular-line"></div>
+											</div>
+
+											<div class="po-column po-column-mobile-ani po-header-small col-sm-12" data-animation="pull-up" data-delay="900">
+												<h4 class="circular-text text-center">
+                                            Creativity.</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="po-column col-sm-3 col-sm-offset-0" data-animation="fade-in" data-delay="0">
+									<div class="po-column-mobile-ani" data-animation="fade-in" data-delay="0">
+										<div class="hover-ani">
+											<div class="circular-cont center-block">
+												<div class="circular-cont-inner">
+													<div class="icon-circular">
+														<i class="fa fa-sitemap fa-2x po-column-mobile-ani" data-delay="0" data-animation="fade-in"></i>
+													</div>
+												</div>
+												<input class="dial po-column-mobile-ani" data-animation="fade-in" data-bgcolor="#ddd" data-delay="0" data-displayinput="false" data-fgcolor="#20C596" data-linecap="round" data-readonly="true" data-thickness=".01" data-value="60" data-width="150"
+												type="text" value="0">
+											</div>
+
+											<div class="po-column po-header-line col-sm-6 col-sm-offset-3" data-animation="fade-in" data-delay="0">
+												<div class="circular-line"></div>
+											</div>
+
+											<div class="po-column po-column-mobile-ani po-header-small col-sm-12" data-animation="pull-up" data-delay="900">
+												<h4 class="circular-text text-center">
+                                            Multi-purpose flexibility.</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="po-column col-sm-3 col-sm-offset-0" data-animation="fade-in" data-delay="0">
+									<div class="po-column-mobile-ani" data-animation="fade-in" data-delay="0">
+										<div class="hover-ani">
+											<div class="circular-cont center-block">
+												<div class="circular-cont-inner">
+													<div class="icon-circular">
+														<i class="fa fa-smile-o fa-2x po-column-mobile-ani" data-delay="0" data-animation="fade-in"></i>
+													</div>
+												</div>
+												<input class="dial po-column-mobile-ani" data-animation="fade-in" data-bgcolor="#ddd" data-delay="0" data-displayinput="false" data-fgcolor="#20C596" data-linecap="round" data-readonly="true" data-thickness=".01" data-value="85" data-width="150"
+												type="text" value="0">
+											</div>
+
+											<div class="po-column po-header-line col-sm-6 col-sm-offset-3" data-animation="fade-in" data-delay="0">
+												<div class="circular-line"></div>
+											</div>
+
+											<div class="po-column po-column-mobile-ani po-header-small col-sm-12" data-animation="pull-up" data-delay="900">
+												<h4 class="circular-text text-center">Support
+                                            and documentation.</h4>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container po-container-section">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="entry-content"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="entry-content">
+					<div class="po-section section-image section-background-image-fixed section-image-bg7">
+						<div class="container">
+							<div class="row">
+								<div class="po-column col-sm-8 col-sm-offset-2 quote-padding" data-animation="fade-in">
+									<div class="po-column po-header-top col-sm-12 no-padding" data-animation="fade-in" data-delay="0">
+										<h2 class="header-large text-center">Built
+                                    with beauty, simplicity, speed and ease of
+                                    use in mind.</h2>
+
+										<div class="header-line header-line-bottom">
+										</div>
+									</div>
+
+									<div class="clearfix"></div>
+								</div>
+
+								<div class="no-padding">
+									<div class="row po-full-width">
+										<div class="po-column col-sm-12 no-padding" data-animation="fade-in" data-delay="0">
+											<a class="btn outline-button white btn-lg btn-block btn-icon-ani button-summary" href="#">View
+                                        feature summary&nbsp;</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container po-container-section">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="entry-content"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="entry-content">
+					<div class="section-background-white section-padding-nb">
+						<div class="container">
+							<div class="row">
+								<div class="po-column po-header-top col-sm-12 no-padding" data-animation="fade-in" data-delay="0">
+									<h3 class="text-center">Nibiru core
+                                features</h3>
+
+									<div class="header-line"></div>
+								</div>
+
+								<div class="clearfix"></div>
+
+								<div class="po-column col-md-6 col-md-offset-0 padding-nb" data-animation="move-right">
+									<img alt="mobile_mini" height="1137" src="http://placehold.it/1280x800/999999&text=%20" width="1100">
+								</div>
+
+								<div class="po-column col-md-6 col-md-offset-0 padding-nb" data-animation="fade-in">
+									<div class="po-column col-md-6 col-md-offset-0 padding-nb" data-animation="move-left" data-delay="200">
+										<div class="po-icon-left icon-green hover-ani">
+											<table>
+												<tbody>
+													<tr>
+														<td class="icon-td">
+															<div class="po-icon icon-boxless-green">
+																<i class="fa fa-eye fa-2x"></i>
+															</div>
+														</td>
+
+														<td>
+															<h4 class="small-header-style">
+                                                        Intuitive design
+                                                        elements.</h4>
+
+															<p class="box-text">
+																Nibiru naturally interacts with your audience, blending clean minimalist design with slick animations and transitions.
+																<br>
+															</p>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="po-column col-md-6 col-md-offset-0 padding-nb" data-animation="move-left" data-delay="400">
+										<div class="po-icon-left icon-green hover-ani">
+											<table>
+												<tbody>
+													<tr>
+														<td class="icon-td">
+															<div class="po-icon icon-boxless-green">
+																<i class="fa fa-caret-square-o-right fa-2x"></i>
+															</div>
+														</td>
+
+														<td>
+															<h4 class="small-header-style">
+                                                        Full multimedia
+                                                        support.</h4>
+
+															<p class="box-text">
+																Bring your site to life with Nibiru’s multi-format content – from images to embedded and self-hosted videos.
+																<br>
+															</p>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="clearfix hidden-xs"></div>
+									<br>
+
+									<div class="po-column col-md-6 col-md-offset-0 padding-features" data-animation="move-left" data-delay="600">
+										<div class="po-icon-left icon-green hover-ani">
+											<table>
+												<tbody>
+													<tr>
+														<td class="icon-td">
+															<div class="po-icon icon-boxless-green">
+																<i class="fa fa-tablet fa-2x"></i>
+															</div>
+														</td>
+
+														<td>
+															<h4 class="small-header-style">
+                                                        Fully responsive
+                                                        design.</h4>
+
+															<p class="box-text">
+																Nibiru scales beautifully on all devices. From desktop to mobile, your pixels will remain close to perfect.
+																<br>
+															</p>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="po-column col-md-6 col-md-offset-0 padding-features" data-animation="move-left" data-delay="800">
+										<div class="po-icon-left icon-green hover-ani">
+											<table>
+												<tbody>
+													<tr>
+														<td class="icon-td">
+															<div class="po-icon icon-boxless-green">
+																<i class="fa fa-smile-o fa-2x"></i>
+															</div>
+														</td>
+
+														<td>
+															<h4 class="small-header-style">
+                                                        Help and support.</h4>
+
+															<p class="box-text">
+																Nibiru is shipped with extensive &nbsp;support that’ll get your site up and running quickly and seamlessly.
+																<br>
+															</p>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="clearfix hidden-xs"></div>
+									<br>
+
+									<div class="po-column col-md-6 col-md-offset-0 padding-features2" data-animation="move-left" data-delay="1000">
+										<div class="po-icon-left icon-green hover-ani">
+											<table>
+												<tbody>
+													<tr>
+														<td class="icon-td">
+															<div class="po-icon icon-boxless-green">
+																<i class="fa fa-folder-open-o fa-2x"></i>
+															</div>
+														</td>
+
+														<td>
+															<h4 class="small-header-style">
+                                                        Fully filterable
+                                                        portfolio.</h4>
+
+															<p class="box-text">
+																Showcase your skills using Nibiru’s Portfolio function and allow visitors to filter your work by discipline.
+																<br>
+															</p>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="po-column col-md-6 col-md-offset-0 padding-features2" data-animation="move-left" data-delay="1200">
+										<div class="po-icon-left icon-green hover-ani">
+											<table>
+												<tbody>
+													<tr>
+														<td class="icon-td">
+															<div class="po-icon icon-boxless-green">
+																<i class="fa fa-flag-o fa-2x"></i>
+															</div>
+														</td>
+
+														<td>
+															<h4 class="small-header-style">
+                                                        Font Awesome
+                                                        webfonts.</h4>
+
+															<p class="box-text">
+																Font Awesome is integrated into Nibiru to give you a large selection of beautifully designed vector icons.
+																<br>
+															</p>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container po-container-section">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="entry-content"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="entry-content">
+					<div class="po-section section-image section-background-image-fixed section-image-bg8">
+						<div class="container">
+							<div class="row">
+								<div class="po-column po-header-top col-sm-12 related-bottom" data-animation="fade-in" data-delay="0">
+									<h3 class="text-center">We’ve worked with some
+                                heavyweights</h3>
+
+									<div class="header-line header-line-bottom"></div>
+								</div>
+
+								<div class="clearfix"></div>
+
+								<div class="col-sm-10 col-sm-offset-1">
+									<div class="po-column client-image col-sm-3 column-3" data-animation="fade-in" data-delay="0">
+										<div class="client-container" data-placement="top" data-toggle="tooltip" title="jQuery">
+											<div class="client-details">
+												<div class="item-description">
+												</div>
+											</div>
+
+											<div class="liquid-container-clients">
+												<img alt="client-8_mini" class="attachment-full wp-post-image" height="447" src="http://placehold.it/1280x800/999999&text=%20" width="700">
+											</div>
+										</div>
+									</div>
+
+									<div class="po-column client-image col-sm-3 column-3" data-animation="fade-in" data-delay="0">
+										<div class="client-container" data-placement="top" data-toggle="tooltip" title="Wordpress">
+											<div class="client-details">
+												<div class="item-description">
+												</div>
+											</div>
+
+											<div class="liquid-container-clients">
+												<img alt="client-7_mini" class="attachment-full wp-post-image" height="447" src="http://placehold.it/1280x800/999999&text=%20" width="700">
+											</div>
+										</div>
+									</div>
+
+									<div class="po-column client-image col-sm-3 column-3" data-animation="fade-in" data-delay="0">
+										<div class="client-container" data-placement="top" data-toggle="tooltip" title="ThemeForest">
+											<div class="client-details">
+												<div class="item-description">
+												</div>
+											</div>
+
+											<div class="liquid-container-clients">
+												<img alt="client-6_mini" class="attachment-full wp-post-image" height="447" src="http://placehold.it/1280x800/999999&text=%20" width="700">
+											</div>
+										</div>
+									</div>
+
+									<div class="po-column client-image col-sm-3 column-3" data-animation="fade-in" data-delay="0">
+										<div class="client-container" data-placement="top" data-toggle="tooltip" title="Envato">
+											<div class="client-details">
+												<div class="item-description">
+												</div>
+											</div>
+
+											<div class="liquid-container-clients">
+												<img alt="client-5_mini" class="attachment-full wp-post-image" height="447" src="http://placehold.it/1280x800/999999&text=%20" width="700">
+											</div>
+										</div>
+									</div>
+
+									<div class="po-column client-image col-sm-3 column-3" data-animation="fade-in" data-delay="0">
+										<div class="client-container" data-placement="top" data-toggle="tooltip" title="jQuery">
+											<div class="client-details">
+												<div class="item-description">
+												</div>
+											</div>
+
+											<div class="liquid-container-clients">
+												<img alt="client-4_mini" class="attachment-full wp-post-image" height="447" src="http://placehold.it/1280x800/999999&text=%20" width="700">
+											</div>
+										</div>
+									</div>
+
+									<div class="po-column client-image col-sm-3 column-3" data-animation="fade-in" data-delay="0">
+										<div class="client-container" data-placement="top" data-toggle="tooltip" title="CSS3">
+											<div class="client-details">
+												<div class="item-description">
+												</div>
+											</div>
+
+											<div class="liquid-container-clients">
+												<img alt="client-3_mini" class="attachment-full wp-post-image" height="447" src="http://placehold.it/1280x800/999999&text=%20" width="700">
+											</div>
+										</div>
+									</div>
+
+									<div class="po-column client-image col-sm-3 column-3" data-animation="fade-in" data-delay="0">
+										<div class="client-container" data-placement="top" data-toggle="tooltip" title="HTML5">
+											<div class="client-details">
+												<div class="item-description">
+												</div>
+											</div>
+
+											<div class="liquid-container-clients">
+												<img alt="client-2_mini" class="attachment-full wp-post-image" height="447" src="http://placehold.it/1280x800/999999&text=%20" width="700">
+											</div>
+										</div>
+									</div>
+
+									<div class="po-column client-image col-sm-3 column-3" data-animation="fade-in" data-delay="0">
+										<div class="client-container" data-placement="top" data-toggle="tooltip" title="Wordpress">
+											<div class="client-details">
+												<div class="item-description">
+												</div>
+											</div>
+
+											<div class="liquid-container-clients">
+												<img alt="client-1_mini" class="attachment-full wp-post-image" height="447" src="http://placehold.it/1280x800/999999&text=%20" width="700">
+											</div>
+										</div>
+									</div>
+
+									<div class="clear-float"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container po-container-section">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="entry-content"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="entry-content">
+					<div class="test-container testimonials-background">
+						<div class="row po-full-width">
+							<div class="col-sm-12 no-padding">
+								<div class="po-testimonials">
+									<ul class="po-test-slide no-padding">
+										<li>
+											<div class="test-text text-center">
+												<p>Nibiru is pretty, slick and easy to use. The best theme I’ve bought so far.</p>
+											</div>
+
+											<div class="test-person text-center">
+												Timothy McGowen via Twitter
+											</div>
+										</li>
+
+										<li>
+											<div class="test-text text-center">
+												<p>I like how easy it is for designers to showcase their creativity without struggling with code.
+												</p>
+											</div>
+
+											<div class="test-person text-center">
+												William Han
+											</div>
+										</li>
+
+										<li>
+											<div class="test-text text-center">
+												<p>Nibiru is slick and pretty! It makes my work look much better.</p>
+											</div>
+
+											<div class="test-person text-center">
+												Claire Wilkens
+											</div>
+										</li>
+
+										<li>
+											<div class="test-text text-center">
+												<p>Love it! A really simple way to showcase my Portfolio without wasting time messing around with code or hiring a web developer.</p>
+											</div>
+
+											<div class="test-person text-center">
+												Peter Quillen via Twitter
+											</div>
+										</li>
+
+										<li>
+											<div class="test-text text-center">
+												<p>I love Nibiru. It’s really simple and easy to use, whilst still looking amazing! I’m really pleased with it so far.</p>
+											</div>
+
+											<div class="test-person text-center">
+												Oscar Hopkins via Twitter
+											</div>
+										</li>
+									</ul>
+								</div>
+
+								<div class="clear-float"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container po-container-section">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="entry-content"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="entry-content">
+					<div class="section-background-white section-padding-nb">
+						<div class="container">
+							<div class="row">
+								<div class="po-column po-header-top col-sm-12 no-padding" data-animation="fade-in" data-delay="0">
+									<h3 class="text-center">Meet the team</h3>
+
+									<div class="header-line header-line-bottom"></div>
+								</div>
+
+								<div class="clearfix"></div>
+
+								<div class="po-column portfolio-item col-sm-2 column-2" data-animation="fade-in" data-delay="0">
+									<a href="team-member.html">
+
+										<div class="liquid-container">
+											<img alt="download-image-l" class="attachment-full wp-post-image" height="767" src="http://placehold.it/1280x800/999999&text=%20">
+										</div>
+
+										<div class="portfolio-details">
+											<div class="item-description">
+												<div class="description-cell">
+													<h5 class="item-title">Chris</h5>
+
+													<div class="subtitle">
+														Founder
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+
+									</a>
+								</div>
+
+								<div class="po-column portfolio-item col-sm-2 column-2" data-animation="fade-in" data-delay="0">
+									<a href="team-member.html">
+
+										<div class="liquid-container">
+											<img alt="download-image" class="attachment-full wp-post-image" height="767" src="http://placehold.it/1280x800/999999&text=%20" width="1000">
+										</div>
+
+										<div class="portfolio-details">
+											<div class="item-description">
+												<div class="description-cell">
+													<h5 class="item-title">Emily</h5>
+
+													<div class="subtitle">
+														Photographer
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+
+									</a>
+								</div>
+
+								<div class="po-column portfolio-item col-sm-2 column-2" data-animation="fade-in" data-delay="0">
+									<a href="team-member.html">
+
+										<div class="liquid-container">
+											<img alt="download-image-l" class="attachment-full wp-post-image" height="767" src="http://placehold.it/1280x800/999999&text=%20" width="1000">
+										</div>
+
+										<div class="portfolio-details">
+											<div class="item-description">
+												<div class="description-cell">
+													<h5 class="item-title">Jason</h5>
+
+													<div class="subtitle">
+														Programmer
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+									</a>
+								</div>
+
+								<div class="po-column portfolio-item col-sm-2 column-2" data-animation="fade-in" data-delay="0">
+									<a href="team-member.html">
+
+										<div class="liquid-container">
+											<img alt="download-image" class="attachment-full wp-post-image" height="766" src="http://placehold.it/1280x800/999999&text=%20" width="900">
+										</div>
+
+										<div class="portfolio-details">
+											<div class="item-description">
+												<div class="description-cell">
+													<h5 class="item-title">Natalie</h5>
+
+													<div class="subtitle">
+														Editor
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+									</a>
+								</div>
+
+								<div class="po-column portfolio-item col-sm-2 column-2" data-animation="fade-in" data-delay="0">
+									<a href="team-member.html">
+
+										<div class="liquid-container">
+											<img alt="download-image-l" class="attachment-full wp-post-image" height="888" src="http://placehold.it/1280x800/999999&text=%20" width="1000">
+										</div>
+
+										<div class="portfolio-details">
+											<div class="item-description">
+												<div class="description-cell">
+													<h5 class="item-title">Tony</h5>
+
+													<div class="subtitle">
+														Designer
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+
+									</a>
+								</div>
+
+								<div class="po-column portfolio-item col-sm-2 column-2" data-animation="fade-in" data-delay="0">
+									<a href="team-member.html">
+
+										<div class="liquid-container">
+											<img alt="download-image" class="attachment-full wp-post-image" height="670" src="http://placehold.it/1280x800/999999&text=%20" width="800">
+										</div>
+
+										<div class="portfolio-details">
+											<div class="item-description">
+												<div class="description-cell">
+													<h5 class="item-title">Claire</h5>
+
+													<div class="subtitle">
+														Support
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+									</a>
+								</div>
+
+								<div class="clear-float"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container po-container-section">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="entry-content"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="entry-content">
+					<div class="section-background-light section-padding">
+						<div class="container">
+							<div class="row">
+								<div class="po-column col-sm-3 col-sm-offset-0" data-animation="fade-in" data-delay="0">
+									<div class="po-count hover-ani">
+										<div class="po-column count-icon col-sm-12" data-animation="pull-up" data-delay="0">
+											<div class="icon-boxless icon-boxless-green">
+												<i class="fa fa-code-fork fa-2x"></i>
+											</div>
+										</div>
+
+										<div class="po-number text-center" data-from="0" data-refresh-interval="10" data-speed="1000" data-to="402003"></div>
+
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<div class="count-line"></div>
+											</div>
+										</div>
+
+										<div class="po-column po-column-mobile po-header-small col-sm-12" data-animation="move-up-short" data-delay="1000">
+											<h6 class="count-text text-center">
+                                        Pixels curated.<br></h6>
+										</div>
+									</div>
+								</div>
+
+								<div class="po-column col-sm-3 col-sm-offset-0" data-animation="fade-in" data-delay="0">
+									<div class="po-count hover-ani">
+										<div class="po-column count-icon col-sm-12" data-animation="pull-up" data-delay="400">
+											<div class="icon-boxless icon-boxless-green">
+												<i class="fa fa-coffee fa-2x"></i>
+											</div>
+										</div>
+
+										<div class="po-number text-center" data-from="0" data-refresh-interval="10" data-speed="1400" data-to="2003"></div>
+
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<div class="count-line"></div>
+											</div>
+										</div>
+
+										<div class="po-column po-column-mobile po-header-small col-sm-12" data-animation="move-up-short" data-delay="1400">
+											<h6 class="count-text text-center">Cups
+                                        of green tea consumed.<br></h6>
+										</div>
+									</div>
+								</div>
+
+								<div class="po-column col-sm-3 col-sm-offset-0" data-animation="fade-in" data-delay="0">
+									<div class="po-count hover-ani">
+										<div class="po-column count-icon col-sm-12" data-animation="pull-up" data-delay="800">
+											<div class="icon-boxless icon-boxless-green">
+												<i class="fa fa-pencil fa-2x"></i>
+											</div>
+										</div>
+
+										<div class="po-number text-center" data-from="0" data-refresh-interval="10" data-speed="1800" data-to="92003"></div>
+
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<div class="count-line"></div>
+											</div>
+										</div>
+
+										<div class="po-column po-column-mobile po-header-small col-sm-12" data-animation="move-up-short" data-delay="1800">
+											<h6 class="count-text text-center">
+                                        Lines of code written.<br></h6>
+										</div>
+									</div>
+								</div>
+
+								<div class="po-column col-sm-3 col-sm-offset-0" data-animation="fade-in" data-delay="0">
+									<div class="po-count hover-ani">
+										<div class="po-column count-icon col-sm-12" data-animation="pull-up" data-delay="1200">
+											<div class="icon-boxless icon-boxless-green">
+												<i class="fa fa-map-marker fa-2x"></i>
+											</div>
+										</div>
+
+										<div class="po-number text-center" data-from="0" data-refresh-interval="10" data-speed="2200" data-to="643"></div>
+
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<div class="count-line"></div>
+											</div>
+										</div>
+
+										<div class="po-column po-column-mobile po-header-small col-sm-12" data-animation="move-up-short" data-delay="2200">
+											<h6 class="count-text text-center">
+                                        locations covered.<br></h6>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container po-container-section">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="entry-content"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="entry-content">
+					<div class="po-section section-image section-background-image-fixed section-image-bg9">
+						<div class="container">
+							<div class="row">
+								<div class="po-column po-header-top col-sm-12 no-padding" data-animation="fade-in" data-delay="0">
+									<h3 class="text-center">Get in touch</h3>
+
+									<div class="header-line header-line-bottom"></div>
+								</div>
+
+								<div class="clearfix"></div>
+
+								<div class="po-column col-sm-8 col-sm-offset-0" data-animation="fade-in">
+									<div class="po-column po-header-top col-sm-12 no-padding" data-animation="fade-in" data-delay="0">
+										<div class="header-small-padding section-padding-nt2">
+											<h6 class="header-small">Leave a
+                                        message.</h6>
+										</div>
+									</div>
+
+									<div class="clearfix"></div>
+
+									<div class="wpcf7" id="wpcf7-f11-p654-o1">
+										<div class="screen-reader-response"></div>
+
+										<form action="/#wpcf7-f11-p654-o1" class="wpcf7-form" method="post">
+
+											<p><span class="wpcf7-form-control-wrap your-name"><input class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                        name="your-name" placeholder=
+                                        "Your name" size="40" type="text"
+                                        value=""></span>
+											</p>
+
+											<p><span class="wpcf7-form-control-wrap your-email"><input class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                                        name="your-email" placeholder=
+                                        "Your email" size="40" type="email"
+                                        value=""></span>
+											</p>
+
+											<p><span class="wpcf7-form-control-wrap your-subject"><input class="wpcf7-form-control wpcf7-text"
+                                        name="your-subject" placeholder=
+                                        "Subject" size="40" type="text" value=
+                                        ""></span>
+											</p>
+
+											<p><span class="wpcf7-form-control-wrap your-message">
+                                        <textarea class=
+                                        "wpcf7-form-control wpcf7-textarea"
+                                        cols="40" name="your-message"
+                                        placeholder="Enter your message" rows=
+                                        "10">
+</textarea></span>
+											</p>
+
+											<p>
+												<input class="wpcf7-form-control wpcf7-submit" type="submit" value="Send">
+											</p>
+
+										</form>
+									</div>
+									<br>
+								</div>
+
+								<div class="po-column col-sm-4 col-sm-offset-0" data-animation="fade-in">
+									<div class="po-column col-md-12 col-md-offset-0" data-animation="fade-in no-padding">
+										<div class="po-column po-header-top col-sm-12 no-padding" data-animation="fade-in" data-delay="0">
+											<div class="header-small-padding no-padding">
+												<h6 class="header-small">Our
+                                        office.</h6>
+											</div>
+										</div>
+
+										<div class="clearfix"></div>
+
+										<p class="textblock textblock-left">
+										</p>
+
+										<p>Ebor Street, Shoreditch
+											<br>London E1 6AW
+											<br>United Kingdom</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container po-container-section">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="entry-content">
+								<div class="clearfix"></div>
+							</div>
+							<!-- .entry-content -->
+
+							<div class="page-comments"></div>
+						</div>
+					</div>
+				</div>
+			</article>
+			<!-- #post-## -->
+		</div>
+
+		<div class="no-padding">
+			<div class="row po-full-width">
+				<div class="po-column col-sm-12 no-padding" data-animation="fade-in" data-delay="0">
+					<a class="banner-button dark btn-lg btn-block btn-icon-ani" href="http://themeforest.net/item/nibiru-multipurpose-responsive-wordpress-theme/7509478">
+
+						<div class="btn-icon">
+							<i class="fa fa-credit-card fa-lg"></i>
+						</div><span>Get Nibiru for WordPress</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-container">
+			<div class="footer-inner-container">
+				<div class="container">
+					<div class="row">
+						<div class="po-column col-md-3" data-animation="fade-in" data-delay="0">
+							<h6 class="header-small">Stay
+                        connected.</h6>
+
+							<ul class="social-links">
+								<li><a href="mailto:name@yourdomain.com"><span class="index green"><i class="fa fa-envelope-o"></i></span></a>
+								</li>
+
+								<li><a href="http://www.twitter.com/pixelobjecthq"><span class="index twit"><i class="fa fa-twitter"></i></span></a>
+								</li>
+
+								<li><a href="https://www.facebook.com/pixelobject"><span class="index fb"><i class="fa fa-facebook"></i></span></a>
+								</li>
+
+								<li><a href="#"><span class="index goog"><i class="fa fa-google-plus"></i></span></a>
+								</li>
+
+								<li><a href="http://www.pinterest.com/#"><span class="index pint"><i class="fa fa-pinterest"></i></span></a>
+								</li>
+
+								<li><a href="http://www.youtube.com"><span class="index yt"><i class="fa fa-youtube"></i></span></a>
+								</li>
+
+								<li><a href="http://www.vimeo.com/http://vimeo.com"><span class="index vimeo"><i class="fa fa-vimeo-square"></i></span></a>
+								</li>
+
+								<li><a href="https://www.linkedin.com"><span class="index linked"><i class="fa fa-linkedin"></i></span></a>
+								</li>
+
+								<li><a href="https://github.com"><span class="index git"><i class="fa fa-github"></i></span></a>
+								</li>
+
+								<li><a href="http://foursquare.com"><span class="index fours"><i class="fa fa-foursquare"></i></span></a>
+								</li>
+
+								<li><a href="http://instagram.com/"><span class="index insta"><i class="fa fa-instagram"></i></span></a>
+								</li>
+
+								<li><a href="https://www.flickr.com"><span class="index flickr"><i class="fa fa-flickr"></i></span></a>
+								</li>
+							</ul>
+
+							<div class="clear-float"></div>
+						</div>
+
+						<div class="po-column col-md-3" data-animation="fade-in" data-delay="0">
+							<h6 class="header-small">Recent
+                        tweets.</h6>
+
+							<div class="recent-tweets">
+								<ul>
+									<li>The latest version of Nibiru (v1.3) is now ready to download: <a href="http://t.co/vYtYIyQOyB" target="_blank">http://t.co/vYtYIyQOyB</a>
+									</li>
+
+									<li>Introducing our brand new theme, Nibiru:
+										<a href="http://t.co/VNvzr4XAAf" target="_blank">http://t.co/VNvzr4XAAf</a>
+									</li>
+								</ul><a href="http://twitter.com/pixelobjecthq">pixelobjecthq</a>
+							</div>
+						</div>
+
+						<div class="po-column col-md-3" data-animation="fade-in" data-delay="0">
+							<h6 class="header-small">Recent
+                        posts.</h6>
+
+							<div class="recent-posts">
+								<ul>
+									<li><a href="a-standard-post.html" title="Look A Standard post">A Standard
+                                post</a>
+									</li>
+
+									<li><a href="a-standard-post.html" title="Look Another Standard Post">Another
+                                Standard Post</a>
+									</li>
+
+									<li><a href="a-standard-post.html" title="Look An Aside post">An Aside
+                                post</a>
+									</li>
+
+									<li><a href="a-standard-post.html" title="Look An Image post">An Image
+                                post</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="po-column col-md-3" data-animation="fade-in" data-delay="0">
+							<h6 class="header-small">Recent
+                        projects.</h6>
+
+							<div class="portfolio-item-footer col-sm-4 column-4">
+								<a class="ssss" data-placement="top" data-toggle="tooltip" href="portfolio-item-1.html" title="Alaskan Bunker">
+
+									<div class="liquid-container-footer">
+										<img alt="Alaskan Bunker" class="img-responsive" src="http://placehold.it/1280x800/999999&text=%20">
+									</div>
+
+									<div class="portfolio-details">
+										<div class="item-description"></div>
+									</div>
+
+								</a>
+							</div>
+
+							<div class="portfolio-item-footer col-sm-4 column-4">
+								<a class="ssss" data-placement="top" data-toggle="tooltip" href="portfolio-item-2.html" title="Love Triangle">
+
+									<div class="liquid-container-footer">
+										<img alt="Love Triangle" class="img-responsive" src="http://placehold.it/1280x800/999999&text=%20">
+									</div>
+
+									<div class="portfolio-details">
+										<div class="item-description"></div>
+									</div>
+
+
+								</a>
+							</div>
+
+							<div class="portfolio-item-footer col-sm-4 column-4">
+								<a class="ssss" data-placement="top" data-toggle="tooltip" href="portfolio-item-3.html" title="Malaysian Mountains">
+
+									<div class="liquid-container-footer">
+										<img alt="Malaysian Mountains" class="img-responsive" src="http://placehold.it/1280x800/999999&text=%20">
+									</div>
+
+									<div class="portfolio-details">
+										<div class="item-description"></div>
+									</div>
+
+
+								</a>
+							</div>
+
+							<div class="portfolio-item-footer col-sm-4 column-4">
+								<a class="ssss" data-placement="top" data-toggle="tooltip" href="portfolio-item-4.html" title="Bird">
+
+									<div class="liquid-container-footer">
+										<img alt="Bird" class="img-responsive" src="http://placehold.it/1280x800/999999&text=%20">
+									</div>
+
+									<div class="portfolio-details">
+										<div class="item-description"></div>
+									</div>
+
+
+								</a>
+							</div>
+
+							<div class="portfolio-item-footer col-sm-4 column-4">
+								<a class="ssss" data-placement="top" data-toggle="tooltip" href="portfolio-item-5.html" title="Panther">
+
+									<div class="liquid-container-footer">
+										<img alt="Panther" class="img-responsive" src="http://placehold.it/1280x800/999999&text=%20">
+									</div>
+
+									<div class="portfolio-details">
+										<div class="item-description"></div>
+									</div>
+
+
+								</a>
+							</div>
+
+							<div class="portfolio-item-footer col-sm-4 column-4">
+								<a class="ssss" data-placement="top" data-toggle="tooltip" href="portfolio-item-6.html" title="F">
+
+									<div class="liquid-container-footer">
+										<img alt="F" class="img-responsive" src="http://placehold.it/1280x800/999999&text=%20">
+									</div>
+
+									<div class="portfolio-details">
+										<div class="item-description"></div>
+									</div>
+
+
+								</a>
+							</div>
+
+							<div class="clear-float"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-container-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="po-column col-sm-12 no-vertical-padding" data-animation="fade-in" data-delay="0">
+						<div class="col-sm-4 footer-bottom-padding">
+							<p><span>© 2014 <a href=
+                        "http://pixelobject.com/themes/nibiru/">Nibiru</a> by
+                        <a href="http://pixelobject.com">Pixel
+                        Object</a>.</span>
+							</p>
+						</div>
+
+						<div class="col-sm-8 visible-lg footer-nav-padding">
+							<nav class="navbar po-navbar-footer">
+								<!-- Mobile display -->
+
+								<div class="navbar-header">
+									<button class="navbar-toggle" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle
+                                navigation</span>
+									</button>
+								</div>
+								<!-- Collect the nav links for toggling -->
+
+								<div class="collapse navbar-collapse navbar-ex1-collapse">
+									<ul class="nav navbar-nav" id="menu-footer">
+										<li><a href="about.html">
+                                    About</a>
+										</li>
+
+										<li><a href="contact.html">
+                                    Contact</a>
+										</li>
+
+										<li><a href="blog.html">Blog</a>
+										</li>
+									</ul>
+								</div>
+							</nav>
+
+							<div class="clear-float"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function(b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l;
+      b[l] || (b[l] =
+        function() {
+          (b[l].q = b[l].q || []).push(arguments)
+        });
+      b[l].l = +new Date;
+      e = o.createElement(i);
+      r = o.getElementsByTagName(i)[0];
+      e.src = '//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+  </script>
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/plugins.js -->
+  <script src="bower_components/bootstrap/js/affix.js"></script>
+  <script src="bower_components/bootstrap/js/alert.js"></script>
+  <script src="bower_components/bootstrap/js/dropdown.js"></script>
+  <script src="bower_components/bootstrap/js/tooltip.js"></script>
+  <script src="bower_components/bootstrap/js/modal.js"></script>
+  <script src="bower_components/bootstrap/js/transition.js"></script>
+  <script src="bower_components/bootstrap/js/button.js"></script>
+  <script src="bower_components/bootstrap/js/popover.js"></script>
+  <script src="bower_components/bootstrap/js/carousel.js"></script>
+  <script src="bower_components/bootstrap/js/scrollspy.js"></script>
+  <script src="bower_components/bootstrap/js/collapse.js"></script>
+  <script src="bower_components/bootstrap/js/tab.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
 </body>
+
 </html>
