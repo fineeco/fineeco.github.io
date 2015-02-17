@@ -1,143 +1,137 @@
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css) (min-width: 768px);
 
 /* 나눔 고딕 폰트 임포트. @import는 항상 최상단에 있어야 함으로 주석을 뒤에 붙였음 */
-/* custom-style.css에서 정의된 폰트 패밀리에 나눔고딕 추가
+/* nibiru-custom.css에서 정의된 폰트 패밀리에 나눔고딕 추가
 -----------------------------------------------------*/
 @media (min-width: 768px) {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: 'Source Sans Pro', nanumgothic, sans-serif;
-    }
-    body,
-    p,
-    button,
-    input {
-        font-family: 'Source Sans Pro', nanumgothic, sans-serif;
-    }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Source Sans Pro', nanumgothic, sans-serif;
+  }
+  body,
+  p,
+  button,
+  input {
+    font-family: 'Source Sans Pro', nanumgothic, sans-serif;
+  }
 }
 
 /* 모바일 일때 나눔고딕을 로딩 하지 않음 */
 @media (max-width: 767px) {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: 'Source Sans Pro', sans-serif;
-    }
-    body,
-    p,
-    button,
-    input {
-        font-family: 'Source Sans Pro', sans-serif;
-    }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  body,
+  p,
+  button,
+  input {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
 }
 
 /* 상단 슬라이드
 -----------------------------------------------------*/
 .po-slider-text h1 {
-    color: white;
+  color: white;
 }
 
 .background-greyscale.white {
-    background-color: rgba(60, 110, 169, 1);
+  background-color: rgba(60, 110, 169, 1);
+}
+
+.bx-wrapper {
+  border: 0;
 }
 
 /* Our Business
 -----------------------------------------------------*/
 .section-image-bg-ourbiz {
-    padding-top: 80px;
-    padding-bottom: 100px;
-    background: url("../images/our-business.jpg");
-    -webkit-box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.5);
-    -moz-box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.5);
-    box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.5);
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background: url("../images/our-business.jpg");
+  box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.5);
 }
 
 /* Our Products
 -----------------------------------------------------*/
 .section-image-bg-ourproducts {
-    padding-top: 80px;
-    padding-bottom: 100px;
-    background: url("../images/our-products.jpg");
-    -webkit-box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.5);
-    -moz-box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.5);
-    box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.5);
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background: url("../images/our-products.jpg");
+  box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.5);
 }
 
 /* Our Partner
 -----------------------------------------------------*/
 .section-image-bg-ourpartner {
-    padding-top: 70px;
-    padding-bottom: 100px;
-    background: url("../images/our-partners.jpg");
-    -webkit-box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.5);
-    -moz-box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.5);
-    box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.5);
+  padding-top: 70px;
+  padding-bottom: 100px;
+  background: url("../images/our-partners.jpg");
+  box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.5);
 }
 
 .entry-content iframe.googlemap {
-    margin: 0;
+  margin: 0;
 }
 
 /* Overview
 -----------------------------------------------------*/
 .section-image-bg-about {
-    padding-top: 70px;
-    padding-bottom: 100px;
-    background: url("../images/about.jpg");
-    height: 800px;
-    -webkit-box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.4);
-    -moz-box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.4);
-    box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.4);
+  padding-top: 70px;
+  padding-bottom: 100px;
+  background: url("../images/about.jpg");
+  height: 800px;
+  box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.4);
 }
 
 .videobg {
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    background: url("images/about.jpg") no-repeat;
-    background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background: url("images/about.jpg") no-repeat;
+  background-size: cover;
 }
 
 /* Contact
 -----------------------------------------------------*/
 .section-image-contact {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background: url("../images/contact.jpg");
-    -webkit-box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.4);
-    -moz-box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.4);
-    box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.4);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: url("../images/contact.jpg");
+  box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.4);
 }
 
 @media (max-width: 767px) {
-    .section-background-image-fixed,
-    .section-background-image-parallax {
-        background-attachment: relative !important;
-        background-size: cover !important;
-    }
+  .section-background-image-fixed,
+  .section-background-image-parallax {
+    background-attachment: relative !important;
+    background-size: cover !important;
+  }
 }
 
 @media (min-width: 768px) {
-    .section-background-image-fixed,
-    .section-background-image-parallax {
-        background-attachment: relative !important;
-        background-size: cover !important;
-    }
+  .section-background-image-fixed,
+  .section-background-image-parallax {
+    background-attachment: relative !important;
+    background-size: cover !important;
+  }
 }
 
 @media (min-width: 992px) {
-    .section-background-image-fixed,
-    .section-background-image-parallax {
-        background-attachment: fixed !important;
-        background-size: cover !important;
-    }
+  .section-background-image-fixed,
+  .section-background-image-parallax {
+    background-attachment: fixed !important;
+    background-size: cover !important;
+  }
 }
