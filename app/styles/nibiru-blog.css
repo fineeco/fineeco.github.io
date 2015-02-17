@@ -322,6 +322,10 @@
   border: 1px solid #ddd;
   padding: 7px 10px;
   margin: 10px 0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
   border-radius: 2px;
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -335,6 +339,10 @@ input[type="submit"]#blog-form {
   cursor: pointer;
   text-transform: uppercase;
   background-color: transparent;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
   border-radius: 2px;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -631,6 +639,8 @@ img.aligncenter,
   color: #767676;
 }
 .wp-caption-text {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 12px;
   font-style: italic;

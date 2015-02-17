@@ -130,60 +130,80 @@
   padding-top: 70px;
   padding-bottom: 100px;
   background: url(http://placehold.it/1280x800/999999&text=%20);
+  -webkit-box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5);
+  -moz-box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5);
   box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5);
 }
 .section-image-bg2 {
   padding-top: 100px;
   padding-bottom: 100px;
   background: url(http://placehold.it/1280x800/999999&text=%20);
+  -webkit-box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
   box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
 }
 .section-image-bg3 {
   padding-top: 100px;
   padding-bottom: 100px;
   background: url(http://placehold.it/1280x800/999999&text=%20);
+  -webkit-box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
   box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
 }
 .section-image-bg4 {
   padding-top: 100px;
   padding-bottom: 100px;
   background: url(http://placehold.it/1280x800/999999&text=%20);
+  -webkit-box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
   box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
 }
 .section-image-bg5 {
   padding-top: 100px;
   padding-bottom: 100px;
   background: url(http://placehold.it/1280x800/999999&text=%20);
+  -webkit-box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
   box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
 }
 .section-image-bg6 {
   padding-top: 100px;
   padding-bottom: 100px;
   background: url(http://placehold.it/1280x800/999999&text=%20);
+  -webkit-box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
   box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
 }
 .section-image-bg7 {
   padding-top: 80px;
   padding-bottom: 100px;
   background: url(http://placehold.it/1280x800/999999&text=%20);
+  -webkit-box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5);
+  -moz-box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5);
   box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5);
 }
 .section-image-bg8 {
   padding-top: 70px;
   padding-bottom: 100px;
   background: url(http://placehold.it/1280x800/999999&text=%20);
+  -webkit-box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5);
+  -moz-box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5);
   box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5);
 }
 .section-image-bg9 {
   padding-top: 50px;
   padding-bottom: 50px;
   background: url(http://placehold.it/1280x800/999999&text=%20);
+  -webkit-box-shadow: inset 0px 0px 1000px 500px rgba(6, 7, 8, 0.8);
+  -moz-box-shadow: inset 0px 0px 1000px 500px rgba(6, 7, 8, 0.8);
   box-shadow: inset 0px 0px 1000px 500px rgba(6, 7, 8, 0.8);
 }
 .section-image-bg10 {
   padding-top: 100px;
   padding-bottom: 100px;
   background: url(http://placehold.it/1280x800/999999&text=%20);
+  -webkit-box-shadow: inset 0px 0px 1000px 500px rgba(27, 33, 36, 0.7);
+  -moz-box-shadow: inset 0px 0px 1000px 500px rgba(27, 33, 36, 0.7);
   box-shadow: inset 0px 0px 1000px 500px rgba(27, 33, 36, 0.7);
 }
 .blog-quote-bg {
