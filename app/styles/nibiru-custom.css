@@ -1,3 +1,283 @@
+/* #custom
+--------------------------------------------------*/
+
+.textblock-left {
+  text-align: left;
+  padding: 0 10px 0 0;
+}
+.textblock-left2 {
+  text-align: left;
+  padding: 15px 10px 30px 0;
+}
+.textblock-left3 {
+  text-align: left;
+  padding: 30px 10px 0 0;
+}
+.textblock-left4 {
+  text-align: left;
+  padding: 20px 10px 0 0;
+}
+.textblock-left5 {
+  text-align: left;
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.textblock-large {
+  font-size: 22px;
+}
+.textblock-medium {
+  font-size: 15px;
+}
+.textblock-color {
+  color: #444;
+}
+.parent-top {
+  padding-top: 20px;
+}
+.parent-top2 {
+  padding-top: 10px;
+}
+.parent-top3 {
+  padding-top: 40px;
+}
+.parent-top4 {
+  padding-top: 50px;
+}
+.parent-top5 {
+  padding-top: 30px;
+}
+.filter-text-style {
+  text-align: center;
+}
+.filter-button {
+  margin-left: -1px;
+}
+.section-padding {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.section-padding2 {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+.section-padding-color {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #231F20;
+}
+.section-padding-color p {
+  color: #fff;
+}
+.section-padding-color2 {
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #6DB689;
+}
+.section-padding-color3 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #15191B;
+}
+.section-padding-nb {
+  padding-top: 50px;
+  padding-bottom: 0px;
+}
+.section-padding-nb2 {
+  padding: 50px 0px 0px;
+}
+.section-padding-nt {
+  padding-top: 0px;
+  padding-bottom: 50px;
+}
+.section-padding-nt2 {
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+.section-padding-nt3 {
+  padding-top: 0px;
+  padding-bottom: 80px;
+}
+.padding-nt {
+  padding-top: 0px;
+}
+.padding-nb {
+  padding-bottom: 0px;
+}
+.sepline-portfolio {
+  width: 8%;
+  margin: 30px auto 30px;
+  border-top: 1px solid #e1e1e1;
+}
+.quote-padding {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.no-padding {
+  padding: 0;
+}
+.button-200 {
+  width: 200px;
+}
+.button-summary {
+  width: 250px;
+  margin: 30px auto 0;
+}
+.section-image-bg {
+  padding-top: 70px;
+  padding-bottom: 100px;
+  background: url(http://placehold.it/1280x800/999999&text=%20);
+  -webkit-box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5);
+  -moz-box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5);
+  box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5);
+}
+.section-image-bg2 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: url(http://placehold.it/1280x800/999999&text=%20);
+  -webkit-box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
+}
+.section-image-bg3 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: url(http://placehold.it/1280x800/999999&text=%20);
+  -webkit-box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
+}
+.section-image-bg4 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: url(http://placehold.it/1280x800/999999&text=%20);
+  -webkit-box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
+}
+.section-image-bg5 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: url(http://placehold.it/1280x800/999999&text=%20);
+  -webkit-box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
+}
+.section-image-bg6 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: url(http://placehold.it/1280x800/999999&text=%20);
+  -webkit-box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0px 0px 1000px 500px rgba(0, 0, 0, 0.4);
+}
+.section-image-bg7 {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background: url(http://placehold.it/1280x800/999999&text=%20);
+  -webkit-box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5);
+  -moz-box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5);
+  box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5);
+}
+.section-image-bg8 {
+  padding-top: 70px;
+  padding-bottom: 100px;
+  background: url(http://placehold.it/1280x800/999999&text=%20);
+  -webkit-box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5);
+  -moz-box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5);
+  box-shadow: inset 0px 0px 1000px 500px rgba(32, 197, 150, 0.5);
+}
+.section-image-bg9 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: url(http://placehold.it/1280x800/999999&text=%20);
+  -webkit-box-shadow: inset 0px 0px 1000px 500px rgba(6, 7, 8, 0.8);
+  -moz-box-shadow: inset 0px 0px 1000px 500px rgba(6, 7, 8, 0.8);
+  box-shadow: inset 0px 0px 1000px 500px rgba(6, 7, 8, 0.8);
+}
+.section-image-bg10 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: url(http://placehold.it/1280x800/999999&text=%20);
+  -webkit-box-shadow: inset 0px 0px 1000px 500px rgba(27, 33, 36, 0.7);
+  -moz-box-shadow: inset 0px 0px 1000px 500px rgba(27, 33, 36, 0.7);
+  box-shadow: inset 0px 0px 1000px 500px rgba(27, 33, 36, 0.7);
+}
+.blog-quote-bg {
+  background: url(http://placehold.it/1280x800/999999&text=%20) #aaa;
+  background-size: cover;
+}
+.small-header-style {
+  margin-top: px;
+  margin-bottom: 14px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.padding-features {
+  padding-top: 5px;
+  padding-bottom: 0px;
+}
+.padding-features2 {
+  padding-top: 5px;
+  padding-bottom: 40px;
+}
+.testimonials-background {
+  padding-top: 35px;
+  padding-bottom: 50px;
+  background-color: #189773;
+  color: #fff;
+}
+img.logo {
+  max-width: 158px;
+}
+.holding-logo {
+  position: absolute;
+  width: 100%;
+  padding-top: 50px;
+}
+.comment-author-image {
+  float: left;
+}
+.comment-author-details {
+  float: left;
+  margin-left: 20px;
+}
+.crumb-text {
+  margin-top: 26px;
+}
+.googleMap {
+  width: 100%;
+  height: 400px;
+}
+.portfolio-banner {
+  width: 100%;
+  position: absolute;
+  z-index: 99;
+  margin-top: 50px;
+}
+.header-line-small {
+  padding-bottom: 35px;
+}
+.progress-bar {
+  background-color: #20C596;
+}
+.media-container-image {
+  height: 200px;
+}
+.header-small-padding2 {
+  padding: 0 0 0;
+  padding-top: 25px;
+}
+.related-bottom {
+  margin-bottom: 25px;
+}
+.tagcloud a {
+  font-size: 13px;
+}
+
 /* BACKGROUND
 -----------------------------------------------------*/
 

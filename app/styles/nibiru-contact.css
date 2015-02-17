@@ -1,0 +1,94 @@
+/* #contact
+--------------------------------------------------*/
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea {
+  font-size: 15px;
+  background-color: transparent;
+  color: #fff;
+  width: 100%;
+  line-height: 1.1;
+  padding: 5px 9px;
+  margin: 0 0 5px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+}
+.wpcf7 input[type="submit"] {
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: transparent;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  padding: 10px 15px;
+}
+.wpcf7-not-valid-tip {
+  display: none !important;
+}
+form.invalid input.wpcf7-not-valid {
+  border: 1px solid #dd3333;
+}
+.section-background-dark .wpcf7 input[type="text"],
+.section-background-dark .wpcf7 input[type="email"],
+.section-background-dark .wpcf7 textarea,
+.section-background-image .wpcf7 input[type="text"],
+.section-background-image .wpcf7 input[type="email"],
+.section-background-image .wpcf7 textarea,
+.section-background-image-fixed .wpcf7 input[type="text"],
+.section-background-image-fixed .wpcf7 input[type="email"],
+.section-background-image-fixed .wpcf7 textarea,
+.section-background-image-parallax .wpcf7 input[type="text"],
+.section-background-image-parallax .wpcf7 input[type="email"],
+.section-background-image-parallax .wpcf7 textarea,
+.section-background-image-video .wpcf7 input[type="text"],
+.section-background-image-video .wpcf7 input[type="email"],
+.section-background-image-video .wpcf7 textarea,
+.section-background-dark po-header .wpcf7 input[type="text"],
+.section-background-dark po-header .wpcf7 input[type="email"],
+.section-background-dark po-header .wpcf7 textarea,
+.section-background-custom-white .wpcf7 input[type="text"],
+.section-background-custom-white .wpcf7 input[type="email"],
+.section-background-custom-white .wpcf7 textarea,
+.section-background-custom-dark .wpcf7 input[type="text"],
+.section-background-custom-dark .wpcf7 input[type="email"],
+.section-background-custom-dark .wpcf7 textarea {
+  color: #fff;
+}
+.section-background-dark .wpcf7-response-output,
+.section-background-image .wpcf7-response-output,
+.section-background-image-fixed .wpcf7-response-output,
+.section-background-image-parallax .wpcf7-response-output,
+.section-background-image-video .wpcf7-response-output,
+.section-background-dark po-header .wpcf7-response-output,
+.section-background-custom-white .wpcf7-response-output,
+.section-background-custom-dark .wpcf7-response-output {
+  color: #fff;
+}
+.section-background-white .wpcf7 input[type="text"],
+.section-background-white .wpcf7 input[type="email"],
+.section-background-white .wpcf7 textarea,
+.section-background-light .wpcf7 input[type="text"],
+.section-background-light .wpcf7 input[type="email"],
+.section-background-light .wpcf7 textarea {
+  color: #333;
+}
+.section-background-white .wpcf7-response-output,
+.section-background-light .wpcf7-response-output {
+  color: #333;
+}
