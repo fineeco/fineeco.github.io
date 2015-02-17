@@ -106,10 +106,6 @@
   height: 10px;
   margin: 0 5px;
   outline: 0;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
   border-radius: 5px;
 }
 .po-slider .bx-wrapper .bx-pager.bx-default-pager a:hover,
@@ -137,8 +133,6 @@
     transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
     box-sizing: content-box;
   }
 }
@@ -537,8 +531,6 @@
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
 @media (max-width: 767px) {
@@ -651,20 +643,13 @@
   width: 100%;
   opacity: 0;
   text-align: center;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s;
 }
 .no-touch .cs-style-1 figure:hover figcaption,
 .cs-style-1 figure.cs-hover figcaption {
   opacity: 1;
   z-index: 2;
-  -webkit-transform: translate(0px, 0px);
-  -moz-transform: translate(20px, 0px);
-  -ms-transform: translate(20px, 0px);
   transform: translate(20px, 0px);
 }
 .cs-style-1 figcaption h6 {
@@ -695,20 +680,13 @@
   width: 100%;
   opacity: 0;
   text-align: center;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s;
 }
 .no-touch .cs-style-2 figure:hover figcaption,
 .cs-style-2 figure.cs-hover figcaption {
   opacity: 1;
   z-index: 2;
-  -webkit-transform: translate(5px, 5px);
-  -moz-transform: translate(20px, 0px);
-  -ms-transform: translate(20px, 0px);
   transform: translate(20px, 0px);
 }
 .cs-style-2 figcaption h6 {

@@ -17,10 +17,6 @@
   line-height: 1.1;
   padding: 9px 8px 9px 36px;
   margin: 0 0 5px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
   border-radius: 2px;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -41,10 +37,6 @@
 .widget-area table {
   border: 1px solid #e1e1e1;
   padding: 5px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
   border-radius: 3px;
   border-collapse: separate;
   border-spacing: 5px;
@@ -112,10 +104,6 @@
   border: 1px solid #ccc;
   background-color: #f7f7f7;
   vertical-align: top;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
   border-radius: 3px;
 }
 .tagcloud a:hover {

@@ -11,10 +11,6 @@
   line-height: 1.1;
   padding: 5px 9px;
   margin: 0 0 5px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
   border-radius: 2px;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -28,10 +24,6 @@
   cursor: pointer;
   text-transform: uppercase;
   background-color: transparent;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
   border-radius: 2px;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;

@@ -5,7 +5,6 @@
 .btn.active,
 .btn:hover,
 .btn {
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 .project-button {
@@ -20,10 +19,6 @@
   cursor: pointer;
   text-transform: uppercase;
   background-color: transparent;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
   border-radius: 2px;
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -38,10 +33,6 @@
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  -ms-border-radius: 0px;
-  -o-border-radius: 0px;
   border-radius: 0px;
 }
 .outline-button:focus {
@@ -62,8 +53,6 @@
   position: absolute;
   left: 0px;
   opacity: 0;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 .button-icon-left:hover span {
@@ -78,8 +67,6 @@
   position: absolute;
   left: 0px;
   opacity: 0;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
 .button-icon-left-manual:hover span {
@@ -88,8 +75,6 @@
 }
 .btn-icon-ani {
   overflow: hidden;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 .btn-icon-ani span {
@@ -102,9 +87,6 @@
   backface-visibility: hidden;
 }
 .btn-icon-ani:hover span {
-  -webkit-transform: translateY(300%);
-  -moz-transform: translateY(300%);
-  -ms-transform: translateY(300%);
   transform: translateY(300%);
 }
 .btn-icon {
@@ -114,8 +96,6 @@
   margin-left: -2.5%;
   line-height: 0;
   font-size: 19px;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 0;
 }
