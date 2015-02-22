@@ -257,30 +257,6 @@ $(document).ready(function() {
   })();
 
   (function() {
-    var divs = $('.search-icon, .search-icon-form');
-
-    if ($(window).width() > 992) {
-      $(window).scroll(function() {
-        if ($(window).scrollTop() < 700) {
-          divs.fadeOut(500);
-        } else {
-          divs.fadeIn(500);
-        }
-      });
-    }
-  })();
-
-  (function() {
-    var searchForm = $('.search-form');
-    $(window).scroll(function() {
-      if ($(window).scrollTop() < 700) {
-        searchForm.fadeOut(500);
-      }
-    });
-
-  })();
-
-  (function() {
     $('.to-top').on('click', function() {
       $('html,body').animate({
         scrollTop: 0
