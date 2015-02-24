@@ -37,6 +37,22 @@
 
 /* 상단 슬라이드
 -----------------------------------------------------*/
+@media (max-width: 767px) {
+  header {
+    height: 350px;
+  }
+}
+@media (min-width: 768px) {
+  header {
+    height: 500px;
+  }
+}
+@media (min-width: 992px) {
+  header {
+    height: 700px;
+  }
+}
+
 .po-slider-text h1 {
   color: white;
 }
