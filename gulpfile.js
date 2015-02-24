@@ -99,7 +99,7 @@ gulp.task('wiredep', function () {
     .pipe(gulp.dest('app/styles'));
 
   gulp.src('app/*.html')
-    .pipe(wiredep({exclude: ['bootstrap-sass-official']}))
+    .pipe(wiredep({exclude: ['bootstrap-sass-official', 'bower_components/bxslider-4/jquery.bxslider.css']}))
     .pipe(gulp.dest('app'));
 });
 
