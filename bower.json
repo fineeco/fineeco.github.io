@@ -3,7 +3,6 @@
   "private": true,
   "dependencies": {
     "bootstrap-sass-official": "~3.3.1",
-    "seiyria-bootstrap-slider": "~4.5.1",
     "modernizr": "~2.8.1",
     "appear": "~0.3.3",
     "bxslider-4": "~4.1.2",
