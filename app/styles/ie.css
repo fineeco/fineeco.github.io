@@ -2,6 +2,18 @@
 Styles for older IE versions (previous to IE9).
 */
 
+.container {
+  display: table;
+  width: 100%;
+}
+.row {
+  height: 100%;
+  display: table-row;
+}
+.col-sm-4 {
+  display: table-cell;
+}
+
 .po-navbar li a {
   color: #999;
 }
