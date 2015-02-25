@@ -1,5 +1,4 @@
 /* global Spinner */
-/* exported spinner */
 
 $(document).ready(function() {
   'use strict';
@@ -327,7 +326,8 @@ $(document).ready(function() {
       left: 'auto' // Left position relative to parent in px
     };
     var target = document.getElementById('po-slider-load');
-    var spinner = new Spinner(opts).spin(target);
+    var spinner;
+    spinner = new Spinner(opts).spin(target);
   })();
 
   (function() {
