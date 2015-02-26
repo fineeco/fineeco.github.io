@@ -338,14 +338,14 @@ $(document).ready(function() {
     });
   })();
 
-  (function() {
-    $('.po-count').each(function() {
-      var that = $(this);
-      $(that).appear(function() {
-        $('.po-number').countTo();
-      });
-    });
-  })();
+  // (function() {
+  //   $('.po-count').each(function() {
+  //     var that = $(this);
+  //     $(that).appear(function() {
+  //       $('.po-number').countTo();
+  //     });
+  //   });
+  // })();
 
   (function() {
     $('.liquid-container, .liquid-container-footer, .liquid-container-clients, .liquid-container-page, .liquid-container-format, .non-immediate-parent-container-b, .po-carousel li, .media-container').imgLiquid();
