@@ -194,14 +194,14 @@ $(document).ready(function() {
     }
   })();
 
-  (function() {
-    var logoAnimation = $('.po-slider-logo').data('logo-animation');
-    var detailsAnimation = $('.po-slider-details').data('details-animation');
-    var textAnimation = $('.po-slider-text').data('text-animation');
-    $('.po-slider-logo').addClass(logoAnimation);
-    $('.po-slider-details').addClass(detailsAnimation);
-    $('.po-slider-text').addClass(textAnimation);
-  })();
+  // (function() {
+  //   var logoAnimation = $('.po-slider-logo').data('logo-animation');
+  //   var detailsAnimation = $('.po-slider-details').data('details-animation');
+  //   var textAnimation = $('.po-slider-text').data('text-animation');
+  //   $('.po-slider-logo').addClass(logoAnimation);
+  //   $('.po-slider-details').addClass(detailsAnimation);
+  //   $('.po-slider-text').addClass(textAnimation);
+  // })();
 
   (function() {
     var detailsDelay = $('.po-slider-details').data('details-delay');
@@ -263,48 +263,48 @@ $(document).ready(function() {
     });
   })();
 
-  (function() {
-    if ($(window).width() > 768) {
-      $('.po-column, .portfolio-item, .po-column-mobile').each(function() {
-        var animatedElement = $(this),
-          animation = animatedElement.data('animation'),
-          delay = animatedElement.data('delay');
+  // (function() {
+  //   if ($(window).width() > 768) {
+  //     $('.po-column, .portfolio-item, .po-column-mobile').each(function() {
+  //       var animatedElement = $(this),
+  //         animation = animatedElement.data('animation'),
+  //         delay = animatedElement.data('delay');
+  //
+  //       animatedElement.appear(function() {
+  //         setTimeout(function() {
+  //           animatedElement.addClass(animation);
+  //         }, delay);
+  //       });
+  //     });
+  //   }
+  // })();
 
-        animatedElement.appear(function() {
-          setTimeout(function() {
-            animatedElement.addClass(animation);
-          }, delay);
-        });
-      });
-    }
-  })();
+  // (function() {
+  //   $('.po-column-mobile-ani').each(function() {
+  //     var animatedElement = $(this),
+  //       animation = animatedElement.data('animation'),
+  //       delay = animatedElement.data('delay');
+  //
+  //     animatedElement.appear(function() {
+  //       setTimeout(function() {
+  //         animatedElement.addClass(animation);
+  //       }, delay);
+  //     });
+  //   });
+  // })();
 
-  (function() {
-    $('.po-column-mobile-ani').each(function() {
-      var animatedElement = $(this),
-        animation = animatedElement.data('animation'),
-        delay = animatedElement.data('delay');
-
-      animatedElement.appear(function() {
-        setTimeout(function() {
-          animatedElement.addClass(animation);
-        }, delay);
-      });
-    });
-  })();
-
-  (function() {
-    if ($(window).width() < 991) {
-      $('.po-column-mobile').each(function() {
-        var animatedElement = $(this),
-          animation = animatedElement.data('animation'),
-          delay = animatedElement.data('delay');
-        setTimeout(function() {
-          animatedElement.addClass(animation);
-        }, delay);
-      });
-    }
-  })();
+  // (function() {
+  //   if ($(window).width() < 991) {
+  //     $('.po-column-mobile').each(function() {
+  //       var animatedElement = $(this),
+  //         animation = animatedElement.data('animation'),
+  //         delay = animatedElement.data('delay');
+  //       setTimeout(function() {
+  //         animatedElement.addClass(animation);
+  //       }, delay);
+  //     });
+  //   }
+  // })();
 
   (function() {
     var opts = {
@@ -371,48 +371,48 @@ $(document).ready(function() {
     );
   })();
 
-  (function() {
-    $('.progress').each(function() {
-      var that = $(this);
-      that.appear(function() {
-        var progressBar = $(this).find('.progress-bar').data('progress');
-        var progress = $(this);
-        progress.find('.progress-bar').animate({
-          width: progressBar + '%'
-        }, 900, function() {
-          progress.parent().find('.progress-value').fadeIn(600);
-        });
-      });
-    });
-  })();
+  // (function() {
+  //   $('.progress').each(function() {
+  //     var that = $(this);
+  //     that.appear(function() {
+  //       var progressBar = $(this).find('.progress-bar').data('progress');
+  //       var progress = $(this);
+  //       progress.find('.progress-bar').animate({
+  //         width: progressBar + '%'
+  //       }, 900, function() {
+  //         progress.parent().find('.progress-value').fadeIn(600);
+  //       });
+  //     });
+  //   });
+  // })();
 
-  (function() {
-    $('.dial').each(function() {
-
-      var $this = $(this);
-      var myVal = $(this).data('value');
-
-      $this.appear(function() {
-        // alert(myVal);
-        $this.knob({
-
-        });
-
-        $({
-          value: 0
-        }).animate({
-
-          value: myVal
-        }, {
-          duration: 1200,
-          easing: 'swing',
-          step: function() {
-            $this.val(Math.ceil(this.value)).trigger('change');
-          }
-        });
-      });
-    });
-  })();
+  // (function() {
+  //   $('.dial').each(function() {
+  //
+  //     var $this = $(this);
+  //     var myVal = $(this).data('value');
+  //
+  //     $this.appear(function() {
+  //       // alert(myVal);
+  //       $this.knob({
+  //
+  //       });
+  //
+  //       $({
+  //         value: 0
+  //       }).animate({
+  //
+  //         value: myVal
+  //       }, {
+  //         duration: 1200,
+  //         easing: 'swing',
+  //         step: function() {
+  //           $this.val(Math.ceil(this.value)).trigger('change');
+  //         }
+  //       });
+  //     });
+  //   });
+  // })();
 
   // (function() {
   //   // init Isotope

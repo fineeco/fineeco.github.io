@@ -1,3 +1,5 @@
+/* global WOW */
+
 $(document).ready(function() {
 	'use strict';
 
@@ -6,5 +8,7 @@ $(document).ready(function() {
 	        top: $('header').height()-$('#nav').height()
 	      }
 	});
+
+	(function () { new WOW().init(); })();
 
 });
