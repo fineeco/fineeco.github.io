@@ -214,15 +214,15 @@ $(document).ready(function() {
     });
   })();
 
-  (function() {
-    var logoDelay = $('.po-slider-logo').data('logo-delay');
-
-    $(window).scroll(function() {
-      if ($(window).scrollTop() >= 300) {} else {
-        $('.po-slider-logo').delay(logoDelay).fadeIn(0);
-      }
-    });
-  })();
+  // (function() {
+  //   var logoDelay = $('.po-slider-logo').data('logo-delay');
+  //
+  //   $(window).scroll(function() {
+  //     if ($(window).scrollTop() >= 300) {} else {
+  //       $('.po-slider-logo').delay(logoDelay).fadeIn(0);
+  //     }
+  //   });
+  // })();
 
   (function() {
     $('#learn-more-button').click(function() {
