@@ -14,12 +14,12 @@ $(document).ready(function() {
     });
   })();
 
-  (function() {
-    $(document).ready(function() {
-      // Target your .container, .wrapper, .post, etc.
-      $('.entry-content, .video-container').fitVids();
-    });
-  })();
+  // (function() {
+  //   $(document).ready(function() {
+  //     // Target your .container, .wrapper, .post, etc.
+  //     $('.entry-content, .video-container').fitVids();
+  //   });
+  // })();
 
   (function() {
     $('.po-slider-loop-no-control').bxSlider({
