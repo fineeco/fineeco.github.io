@@ -9,7 +9,6 @@
     "html5shiv": "^3.7.2",
     "imgLiquid": "^0.9.944",
     "bas2k-jquery-appear": "git://github.com/bas2k/jquery.appear.git",
-    "jquery-knob": "^1.2.11",
     "jquery-ui": "^1.11.1",
     "respond": "^1.4.2",
     "spin.js": "^2.0.1",
