@@ -32,7 +32,7 @@ gulp.task('jshint', function () {
 });
 
 gulp.task('html', ['styles'], function () {
-  var assets = $.useref.assets({searchPath: '{.tmp,app}'});
+  var assets = $.useref.assets({searchPath: ['.tmp', 'app', '.']});
 
   return gulp.src('app/*.html')
     .pipe(assets)
@@ -112,7 +112,7 @@ gulp.task('wiredep', function () {
 
   gulp.src('app/*.html')
     .pipe(wiredep({
-      exclude: ['bootstrap-sass-official', 'bower_components/bxslider-4/jquery.bxslider.css', 'bower_components/respond/dest/respond.src.js'],
+      exclude: ['bootstrap-sass-official', 'bower_components/bxslider-4/dist/jquery.bxslider.css', 'bower_components/bxslider-4/dist/jquery.bxslider.min.js'],
       ignorePath: /^(\.\.\/)*\.\./
     }))
     .pipe(gulp.dest('app'));

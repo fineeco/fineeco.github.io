@@ -414,21 +414,21 @@ $(document).ready(function() {
     });
   })();
 
-  (function() {
-    // init Isotope
-    var $container = $('#container').imagesLoaded(function() {
-      $container.fadeIn(400).isotope({
-        // options
-      });
-    });
-    // filter items on button click
-    $('#filters').on('click', 'span', function() {
-      var filterValue = $(this).attr('data-filter-value');
-      $container.isotope({
-        filter: filterValue
-      });
-    });
-  })();
+  // (function() {
+  //   // init Isotope
+  //   var $container = $('#container').imagesLoaded(function() {
+  //     $container.fadeIn(400).isotope({
+  //       // options
+  //     });
+  //   });
+  //   // filter items on button click
+  //   $('#filters').on('click', 'span', function() {
+  //     var filterValue = $(this).attr('data-filter-value');
+  //     $container.isotope({
+  //       filter: filterValue
+  //     });
+  //   });
+  // })();
 
   (function() {
     $(document).ready(function() {
