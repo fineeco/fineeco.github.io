@@ -1,0 +1,103 @@
+//colors
+$white_30: rgba(255, 255, 255, 0.3);
+$black_10: rgba(0, 0, 0, 0.1);
+$color_bon_jour_approx: #e1e1e1;
+
+//@extend-elements
+//original selectors
+//.section-background-white .header-line, .section-background-white .header-line-left, .section-background-light .header-line, .section-background-light .header-line-left
+%extend_1 {
+	width: 90px;
+	margin-top: 35px;
+	padding-bottom: 25px;
+	border-top: 1px solid $color_bon_jour_approx;
+}
+
+//original selectors
+//.section-background-white .header-line, .section-background-white .header-line-left, .section-background-light .header-line, .section-background-light .header-line-left
+%extend_2 {
+	width: 90px;
+	margin-top: 35px;
+	padding-bottom: 15px;
+	border-top: 1px solid $color_bon_jour_approx;
+}
+
+//original selectors
+//.section-background-white .header-line, .section-background-white .header-line-left, .section-background-light .header-line, .section-background-light .header-line-left
+%extend_3 {
+	width: 90px;
+	margin-top: 35px;
+	padding-bottom: 15px;
+	border-top: 1px solid $color_bon_jour_approx;
+}
+
+
+@media(max-width: 767px) {
+	.section-background-white {
+		.header-line {
+			@extend %extend_1;
+		}
+		.header-line-left {
+			@extend %extend_1;
+		}
+	}
+	.section-background-light {
+		.header-line {
+			@extend %extend_1;
+		}
+		.header-line-left {
+			@extend %extend_1;
+		}
+	}
+}
+@media(min-width: 768px) {
+	.section-background-white {
+		.header-line {
+			@extend %extend_2;
+		}
+		.header-line-left {
+			@extend %extend_2;
+		}
+	}
+	.section-background-light {
+		.header-line {
+			@extend %extend_2;
+		}
+		.header-line-left {
+			@extend %extend_2;
+		}
+	}
+}
+@media(min-width: 992px) {
+	.section-background-white {
+		.header-line {
+			@extend %extend_3;
+		}
+		.header-line-left {
+			@extend %extend_3;
+		}
+	}
+	.section-background-light {
+		.header-line {
+			@extend %extend_3;
+		}
+		.header-line-left {
+			@extend %extend_3;
+		}
+	}
+}
+.header-small {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.3;
+	margin: 0;
+	margin-bottom: 20px;
+}
+.header-line {
+	margin: 0 auto;
+}
+.po-column.po-header-small {
+	padding-top: 0;
+	padding-bottom: 0;
+	opacity: 0;
+}

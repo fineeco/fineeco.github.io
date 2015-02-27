@@ -1,0 +1,536 @@
+//colors
+$white: #fff;
+$black_95: rgba(0, 0, 0, 0.95);
+$black_90: rgba(0, 0, 0, 0.9);
+$color_storm_dust_approx: #666;
+$black: #000;
+$color_fuscous_gray_75_approx: rgba(80, 80, 80, 0.75);
+$color_viking_50_approx: rgba(80, 202, 210, 0.5);
+$color_aztec_approx: #15191b;
+$color_bon_jour_approx: #e1e1e1;
+$black_5: rgba(0, 0, 0, 0.05);
+$black_80: rgba(0, 0, 0, 0.8);
+
+//fonts
+$font_0: Arial;
+
+//urls
+$url_0: url("../images/slide-arrow-left.png");
+$url_1: url("../images/slide-arrow-right.png");
+$url_2: url("../images/slide-arrow-left-dark.png");
+$url_3: url("../images/slide-arrow-right-dark.png");
+$url_4: url("../images/controls.png");
+$url_5: url("../images/controls.png");
+$url_6: url("../images/slide-arrow-left.png");
+$url_7: url("../images/slide-arrow-right.png");
+$url_8: url("../images/slide-arrow-left.png");
+$url_9: url("../images/slide-arrow-right.png");
+$url_10: url("../images/view-open.png");
+$url_11: url("../images/view-close.png");
+
+//@extend-elements
+//original selectors
+//.po-slider ol, .po-slider ul, .po-slider li
+%extend_1 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+//original selectors
+//.po-slider .bx-wrapper .bx-pager, .po-slider .bx-wrapper .bx-controls-auto
+%extend_2 {
+	position: absolute;
+	bottom: -30px;
+	width: 100%;
+}
+
+//original selectors
+//.po-slider .bx-wrapper .bx-pager .bx-pager-item, .po-slider .bx-wrapper .bx-controls-auto .bx-controls-auto-item
+%extend_3 {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+
+//original selectors
+//.po-carouseleds .bx-directions, .po-slider .bx-wrapper .po-carouseleds .bx-prev, .po-slider .bx-wrapper .po-carouseleds .bx-next, .po-carouseleds .bx-wrapper .bx-prev, .po-carouseleds .bx-wrapper .bx-next
+%extend_4 {
+	cursor: pointer;
+	border: 1px solid $white;
+	opacity: 0;
+	//Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: all 0.2s ease-in-out;
+	//Instead of the line below you could use @includebox-sizing($bs)
+	box-sizing: content-box;
+}
+
+//original selectors
+//.no-touch .cs-style-1 figure:hover figcaption, .cs-style-1 figure.cs-hover figcaption
+%extend_5 {
+	opacity: 1;
+	z-index: 2;
+	//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+	transform: translate(20px, 0);
+}
+
+//original selectors
+//.no-touch .cs-style-2 figure:hover figcaption, .cs-style-2 figure.cs-hover figcaption
+%extend_6 {
+	opacity: 1;
+	z-index: 2;
+	//Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+	transform: translate(20px, 0);
+}
+
+
+.po-slider {
+	ol {
+		@extend %extend_1;
+		list-style: none;
+	}
+	ul {
+		@extend %extend_1;
+		list-style: none;
+	}
+	li {
+		@extend %extend_1;
+	}
+	.bx-wrapper {
+		position: relative;
+		margin: 0 auto 60px;
+		padding: 0;
+		*zoom: 1;
+		.bx-pager {
+			@extend %extend_2;
+			text-align: center;
+			font-size: .85em;
+			font-family: $font_0;
+			font-weight: bold;
+			color: $color_storm_dust_approx;
+			padding-top: 20px;
+			.bx-pager-item {
+				@extend %extend_3;
+			}
+			&.bx-default-pager a {
+				background: $color_storm_dust_approx;
+				text-indent: -9999px;
+				display: block;
+				width: 10px;
+				height: 10px;
+				margin: 0 5px;
+				outline: 0;
+				//Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+				border-radius: 5px;
+				&:hover {
+					background: $black;
+				}
+				&.active {
+					background: $black;
+				}
+			}
+		}
+		.bx-controls-auto {
+			@extend %extend_2;
+			text-align: center;
+			.bx-controls-auto-item {
+				@extend %extend_3;
+			}
+			.bx-start {
+				display: block;
+				text-indent: -9999px;
+				width: 10px;
+				height: 11px;
+				outline: 0;
+				background: $url_4 -86px -11px no-repeat;
+				margin: 0 3px;
+				&:hover {
+					background-position: -86px 0;
+				}
+				&.active {
+					background-position: -86px 0;
+				}
+			}
+			.bx-stop {
+				display: block;
+				text-indent: -9999px;
+				width: 9px;
+				height: 11px;
+				outline: 0;
+				background: $url_4 -86px -44px no-repeat;
+				margin: 0 3px;
+				&:hover {
+					background-position: -86px -33px;
+				}
+				&.active {
+					background-position: -86px -33px;
+				}
+			}
+		}
+		.bx-prev {
+			border-left: none;
+			left: -30px;
+			padding-left: 30px;
+			background: $url_0 no-repeat 40px 8px;
+			//Instead of the line below you could use @includeborder-top-right-radius($radius)
+			border-top-right-radius: 2px;
+			//Instead of the line below you could use @includeborder-bottom-right-radius($radius)
+			border-bottom-right-radius: 2px;
+			&:hover {
+				padding-left: 60px;
+				background: $url_2 no-repeat 60px 8px $white;
+				opacity: 1;
+			}
+		}
+		.bx-next {
+			border-right: none;
+			right: -30px;
+			padding-right: 30px;
+			background: $url_1 no-repeat 13px 8px;
+			//Instead of the line below you could use @includeborder-top-left-radius($radius)
+			border-top-left-radius: 2px;
+			//Instead of the line below you could use @includeborder-bottom-left-radius($radius)
+			border-bottom-left-radius: 2px;
+			&:hover {
+				padding-right: 60px;
+				background: $url_3 no-repeat 23px 8px $white;
+				opacity: 1;
+			}
+		}
+		.bx-caption {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background: $color_fuscous_gray_75_approx;
+			width: 100%;
+			span {
+				color: $white;
+				font-family: $font_0;
+				display: block;
+				font-size: .85em;
+				padding: 10px;
+			}
+		}
+		.po-carouseleds {
+			&:hover {
+				.bx-prev {
+					opacity: 0.8;
+				}
+				.bx-next {
+					opacity: 0.8;
+				}
+			}
+			.bx-prev {
+				@extend %extend_4;
+			}
+			.bx-next {
+				@extend %extend_4;
+			}
+		}
+		.bx-controls-direction a.disabled {
+			display: none;
+		}
+		.bx-controls.bx-has-controls-auto.bx-has-pager {
+			.bx-pager {
+				text-align: left;
+				width: 80%;
+			}
+			.bx-controls-auto {
+				right: 0;
+				width: 35px;
+			}
+		}
+	}
+}
+@media(max-width: 767px) {
+	.slider-btn {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: auto;
+		padding-right: 27px;
+		padding-left: 30px;
+	}
+}
+@media(min-width: 768px) {
+	.slider-btn-video-noanchor {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: auto;
+		padding-right: 27px;
+		padding-left: 30px;
+	}
+}
+@media(min-width: 992px) {
+	.slider-btn-video {
+		width: 100%;
+	}
+}
+.po-slider-header {
+	display: none;
+}
+.po-slider-text-container {
+	width: 90%;
+	left: 5%;
+	display: none;
+	position: absolute;
+}
+.po-slider-text-container-static {
+	width: 90%;
+	height: 100%;
+	left: 5%;
+	display: none;
+	position: absolute;
+}
+.po-slider-logo {
+	width: 86%;
+	left: 7%;
+	z-index: 4;
+	display: none;
+	margin-top: 50px;
+	position: absolute;
+}
+.po-slider-details {
+	width: 86%;
+	left: 7%;
+	position: absolute;
+	z-index: 2;
+	display: none;
+}
+.background-greyscale {
+	width: 100%;
+	height: 1200px;
+	position: absolute;
+	top: 0;
+	z-index: 98;
+	&.blue {
+		background-color: $color_viking_50_approx;
+	}
+	&.green {
+		opacity: 0.5;
+	}
+}
+.load-block {
+	width: 100%;
+	height: 1200px;
+	background-color: $color_aztec_approx;
+	position: absolute;
+	top: 0;
+	z-index: 99;
+}
+.po-carouseleds {
+	&:hover {
+		.bx-directions {
+			opacity: 0.8;
+		}
+		.bx-wrapper {
+			.bx-prev {
+				opacity: 0.8;
+			}
+			.bx-next {
+				opacity: 0.8;
+			}
+		}
+	}
+	.bx-directions {
+		@extend %extend_4;
+	}
+	.bx-wrapper {
+		.bx-prev {
+			@extend %extend_4;
+			border-left: none;
+			float: left;
+			padding-left: 0;
+			background: $url_0 no-repeat 10px 8px $black_5;
+			//Instead of the line below you could use @includeborder-top-right-radius($radius)
+			border-top-right-radius: 2px;
+			//Instead of the line below you could use @includeborder-bottom-right-radius($radius)
+			border-bottom-right-radius: 2px;
+			position: relative;
+			&:hover {
+				padding-left: 0;
+				background: $url_0 no-repeat 10px 8px;
+				border-left: none;
+				opacity: 1;
+			}
+		}
+		.bx-next {
+			@extend %extend_4;
+			border-right: none;
+			float: right;
+			padding-right: 0;
+			background: $url_1 no-repeat 13px 8px $black_5;
+			//Instead of the line below you could use @includeborder-top-left-radius($radius)
+			border-top-left-radius: 2px;
+			//Instead of the line below you could use @includeborder-bottom-left-radius($radius)
+			border-bottom-left-radius: 2px;
+			position: relative;
+			&:hover {
+				padding-right: 0;
+				background: $url_1 no-repeat 13px 8px;
+				border-right: none;
+				opacity: 1;
+			}
+		}
+		.bx-controls-direction {
+			width: 100%;
+			margin-top: -119px;
+			height: 119px;
+			a {
+				outline: 0;
+				width: 32px;
+				height: 32px;
+				text-indent: -9999px;
+				z-index: 110;
+				&.disabled {
+					display: none;
+				}
+			}
+		}
+	}
+}
+.po-carousel {
+	overflow: visible;
+}
+.grid {
+	figure {
+		margin: 0;
+		position: relative;
+		height: 200px;
+		img {
+			max-width: 100%;
+			display: block;
+			position: relative;
+		}
+	}
+	figcaption {
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 20px;
+		color: $white;
+		z-index: 2;
+		cursor: $url_10 35 35, default;
+		h3 {
+			margin: 0;
+			padding: 0;
+			color: $white;
+		}
+		a {
+			text-align: center;
+			padding: 5px 10px;
+			//Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+			border-radius: 2px;
+			display: inline-block;
+			color: $white;
+		}
+	}
+}
+.cs-style-1 {
+	figcaption {
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		text-align: center;
+		//Instead of the line below you could use @includebackface-visibility($visibility)
+		backface-visibility: hidden;
+		//Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: transform 0.3s, opacity 0.3s;
+		h6 {
+			display: block;
+			margin-top: 135px;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 13px;
+		}
+		.carousel-title {
+			display: block;
+			margin-top: 135px;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 13px;
+		}
+		span {
+			display: block;
+			margin-top: 140px;
+		}
+		a {
+			margin-top: 30px;
+		}
+	}
+	figure.cs-hover figcaption {
+		@extend %extend_5;
+	}
+}
+.no-touch {
+	.cs-style-1 figure:hover figcaption {
+		@extend %extend_5;
+	}
+	.cs-style-2 figure:hover figcaption {
+		@extend %extend_6;
+	}
+}
+.cs-style-2 {
+	figcaption {
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		text-align: center;
+		//Instead of the line below you could use @includebackface-visibility($visibility)
+		backface-visibility: hidden;
+		//Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: transform 0.3s, opacity 0.3s;
+		h6 {
+			display: block;
+			margin-top: 135px;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 13px;
+		}
+		span {
+			display: block;
+			margin-top: 140px;
+		}
+		a {
+			margin-top: 30px;
+		}
+	}
+	figure.cs-hover figcaption {
+		@extend %extend_6;
+	}
+}
+.viewer {
+	background-color: $black_80;
+	.close {
+		opacity: 0.8;
+		font-size: 40px;
+		font-weight: 100;
+		z-index: 9999999999;
+		//Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: all 0.2s ease-in-out;
+		width: 22px;
+		height: 22px;
+		background: $url_11 no-repeat;
+		background-size: 22px 22px;
+		right: 20px;
+		top: 15px;
+		&:hover {
+			color: $white;
+			font-weight: 300;
+			z-index: 9999999999;
+		}
+	}
+}
+.entry-content .po-carouseleds {
+	li {
+		padding: 0;
+		list-style: none;
+	}
+	img {
+		margin-top: 0;
+	}
+}

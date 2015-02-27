@@ -1,0 +1,214 @@
+//colors
+$white: #fff;
+$color_alizarin_crimson_approx: #dd3333;
+$color_mine_shaft_approx: #333;
+
+//@extend-elements
+//original selectors
+//.wpcf7 input[type="text"], .wpcf7 input[type="email"], .wpcf7 textarea
+%extend_1 {
+	font-size: 15px;
+	background-color: transparent;
+	color: $white;
+	width: 100%;
+	line-height: 1.1;
+	padding: 5px 9px;
+	margin: 0 0 5px;
+	//Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+	border-radius: 2px;
+	//Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: all 0.3s ease-in-out;
+}
+
+
+.wpcf7 {
+	input[type="text"] {
+		@extend %extend_1;
+	}
+	input[type="email"] {
+		@extend %extend_1;
+	}
+	textarea {
+		@extend %extend_1;
+	}
+	input[type="submit"] {
+		font-size: 15px;
+		letter-spacing: 1px;
+		font-weight: 600;
+		text-align: center;
+		cursor: pointer;
+		text-transform: uppercase;
+		background-color: transparent;
+		//Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+		border-radius: 2px;
+		//Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: all 0.3s ease-in-out;
+		padding: 10px 15px;
+	}
+}
+.wpcf7-not-valid-tip {
+	display: none !important;
+}
+.section-background-dark {
+	.wpcf7 {
+		input[type="text"] {
+			color: $white;
+		}
+		input[type="email"] {
+			color: $white;
+		}
+		textarea {
+			color: $white;
+		}
+	}
+	po-header {
+		.wpcf7 {
+			input[type="text"] {
+				color: $white;
+			}
+			input[type="email"] {
+				color: $white;
+			}
+			textarea {
+				color: $white;
+			}
+		}
+		.wpcf7-response-output {
+			color: $white;
+		}
+	}
+	.wpcf7-response-output {
+		color: $white;
+	}
+}
+.section-background-image {
+	.wpcf7 {
+		input[type="text"] {
+			color: $white;
+		}
+		input[type="email"] {
+			color: $white;
+		}
+		textarea {
+			color: $white;
+		}
+	}
+	.wpcf7-response-output {
+		color: $white;
+	}
+}
+.section-background-image-fixed {
+	.wpcf7 {
+		input[type="text"] {
+			color: $white;
+		}
+		input[type="email"] {
+			color: $white;
+		}
+		textarea {
+			color: $white;
+		}
+	}
+	.wpcf7-response-output {
+		color: $white;
+	}
+}
+.section-background-image-parallax {
+	.wpcf7 {
+		input[type="text"] {
+			color: $white;
+		}
+		input[type="email"] {
+			color: $white;
+		}
+		textarea {
+			color: $white;
+		}
+	}
+	.wpcf7-response-output {
+		color: $white;
+	}
+}
+.section-background-image-video {
+	.wpcf7 {
+		input[type="text"] {
+			color: $white;
+		}
+		input[type="email"] {
+			color: $white;
+		}
+		textarea {
+			color: $white;
+		}
+	}
+	.wpcf7-response-output {
+		color: $white;
+	}
+}
+.section-background-custom-white {
+	.wpcf7 {
+		input[type="text"] {
+			color: $white;
+		}
+		input[type="email"] {
+			color: $white;
+		}
+		textarea {
+			color: $white;
+		}
+	}
+	.wpcf7-response-output {
+		color: $white;
+	}
+}
+.section-background-custom-dark {
+	.wpcf7 {
+		input[type="text"] {
+			color: $white;
+		}
+		input[type="email"] {
+			color: $white;
+		}
+		textarea {
+			color: $white;
+		}
+	}
+	.wpcf7-response-output {
+		color: $white;
+	}
+}
+.section-background-white {
+	.wpcf7 {
+		input[type="text"] {
+			color: $color_mine_shaft_approx;
+		}
+		input[type="email"] {
+			color: $color_mine_shaft_approx;
+		}
+		textarea {
+			color: $color_mine_shaft_approx;
+		}
+	}
+	.wpcf7-response-output {
+		color: $color_mine_shaft_approx;
+	}
+}
+.section-background-light {
+	.wpcf7 {
+		input[type="text"] {
+			color: $color_mine_shaft_approx;
+		}
+		input[type="email"] {
+			color: $color_mine_shaft_approx;
+		}
+		textarea {
+			color: $color_mine_shaft_approx;
+		}
+	}
+	.wpcf7-response-output {
+		color: $color_mine_shaft_approx;
+	}
+}
+form.invalid input.wpcf7-not-valid {
+	border: 1px solid $color_alizarin_crimson_approx;
+}
