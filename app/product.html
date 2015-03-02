@@ -6,6 +6,7 @@
   <title>FineEco</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
   <!-- build:js scripts/vendor/html5shiv.js -->
@@ -81,43 +82,45 @@
 
   <nav class="navbar po-navbar po-navbar-slide po-nav">
 
-    <div class="to-top"></div>
-    <!-- Mobile display -->
+    <div class="container-fluid">
+      <div class="to-top"></div>
+      <!-- Mobile display -->
 
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <!-- Collect the nav links for toggling -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <!-- Collect the nav links for toggling -->
 
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
-      <ul class="nav navbar-nav" id="menu-header">
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav" id="menu-header">
 
-        <li class="home">
-          <a href="index.html">Home</a>
-        </li>
+          <li class="home">
+            <a href="index.html">Home</a>
+          </li>
 
-        <li class="business">
-          <a href="business.html">Business</a>
-        </li>
+          <li class="business">
+            <a href="business.html">Business</a>
+          </li>
 
-        <li class="product active">
-          <a href="product.html">Product</a>
-        </li>
+          <li class="product active">
+            <a href="product.html">Product</a>
+          </li>
 
-        <li class="about">
-          <a href="about.html">About</a>
-        </li>
+          <li class="about">
+            <a href="about.html">About</a>
+          </li>
 
-        <li class="contact">
-          <a href="contact.html">Contact</a>
-        </li>
+          <li class="contact">
+            <a href="contact.html">Contact</a>
+          </li>
 
-      </ul>
+        </ul>
+      </div>
     </div>
   </nav>
 
@@ -159,9 +162,11 @@
             <h3 class="text-center">Custom Variations</h3>
             <div class="header-line header-line-bottom"></div>
           </div>
+        </div>
 
-          <div class="clearfix"></div>
+        <div class="clearfix"></div>
 
+        <div class="row">
           <div class="po-column col-sm-3 col-sm-offset-0 wow fadeIn">
             <div class="po-column-mobile-ani wow fadeIn">
               <div class="hover-ani">
@@ -172,11 +177,9 @@
                   </div>
                 </div>
 
-                <div class="po-column po-header-line col-sm-6 col-sm-offset-3 wow fadeIn">
-                  <div class="circular-line"></div>
-                </div>
+                <div class="circular-line center-block wow fadeIn"></div>
 
-                <div class="po-column po-column-mobile-ani po-header-small col-sm-12 wow fadeInUp" data-wow-delay="0.9s">
+                <div class="po-column po-column-mobile-ani po-header-small wow fadeInUp" data-wow-delay="0.9s">
                   <h4 class="circular-text text-center">2~10mm.</h4>
                 </div>
               </div>
@@ -193,11 +196,9 @@
                   </div>
                 </div>
 
-                <div class="po-column po-header-line col-sm-6 col-sm-offset-3 wow fadeIn">
-                  <div class="circular-line"></div>
-                </div>
+                <div class="circular-line center-block wow fadeIn"></div>
 
-                <div class="po-column po-column-mobile-ani po-header-small col-sm-12 wow fadeInUp" data-delay="0.9s">
+                <div class="po-column po-column-mobile-ani po-header-small wow fadeInUp" data-wow-delay="0.9s">
                   <h4 class="circular-text text-center">
                     5~10mm.</h4>
                 </div>
@@ -215,11 +216,9 @@
                   </div>
                 </div>
 
-                <div class="po-column po-header-line col-sm-6 col-sm-offset-3 wow fadeIn">
-                  <div class="circular-line"></div>
-                </div>
+                <div class="circular-line center-block wow fadeIn"></div>
 
-                <div class="po-column po-column-mobile-ani po-header-small col-sm-12 wow fadeInUp" data-wow-delay="0.9s">
+                <div class="po-column po-column-mobile-ani po-header-small wow fadeInUp" data-wow-delay="0.9s">
                   <h4 class="circular-text text-center">
                     10~20mm.</h4>
                 </div>
@@ -237,11 +236,9 @@
                   </div>
                 </div>
 
-                <div class="po-column po-header-line col-sm-6 col-sm-offset-3 wow fadeIn">
-                  <div class="circular-line"></div>
-                </div>
+                                <div class="circular-line center-block wow fadeIn"></div>
 
-                <div class="po-column po-column-mobile-ani po-header-small col-sm-12 wow fadeIn">
+                                <div class="po-column po-column-mobile-ani po-header-small wow fadeInUp" data-wow-delay="0.9s">
                   <h4 class="circular-text text-center">20~30mm.</h4>
                 </div>
               </div>
@@ -249,20 +246,17 @@
           </div>
         </div>
       </div>
+
     </section>
 
     <section class="po-section section-image section-background-image-fixed section-image-bg-sizes-description">
       <div class="container">
         <div class="row">
 
-          <div class="no-padding">
-            <div class="row po-full-width">
-              <div class="po-column col-sm-12 wow fadeIn">
-                <p class="text-center box-text">
-                  폴리실리콘 잉곳, 웨이퍼 생산자등 업체 시설 및 특성에 최적화된 Poly Chip 크기를 수요와 요구에 맞추어 제공합니다.
-                </p>
-              </div>
-            </div>
+          <div class="no-padding po-full-width po-column col-sm-12 wow fadeIn">
+            <p class="text-center box-text">
+              폴리실리콘 잉곳, 웨이퍼 생산자등 업체 시설 및 특성에 최적화된 Poly Chip 크기를 수요와 요구에 맞추어 제공합니다.
+            </p>
           </div>
         </div>
 
@@ -276,14 +270,8 @@
       <div class="container">
         <div class="row">
 
-          <div class="po-column col-md-4 wow fadeIn">
-          </div>
-
-          <div class="po-column col-md-4 wow fadeIn">
-            <img alt="fineeco logo " class="img-responsive" src="images/logo-fineeco-slogan.png">
-          </div>
-
-          <div class="po-column col-md-4 wow fadeIn">
+          <div class="col-md-12 wow fadeIn" data-wow-delay="1s">
+            <img alt="fineeco logo" class="img-responsive center-block footer-logo" src="images/logo-fineeco-slogan.png">
           </div>
 
         </div>
@@ -292,37 +280,23 @@
 
     <div class="footer-container-bottom">
       <div class="container">
-        <div class="row">
+        <div class="row footer-bottom-padding wow fadeIn" data-wow-delay="1s">
 
-          <div class="po-column col-sm-12 no-vertical-padding wow fadeIn">
-            <div class="col-sm-4 footer-bottom-padding">
-              <p>
-                <span>© 2015 <a href="http://fineeco.co.kr/">FineEco</a>
-                </span>
-              </p>
-            </div>
-            <div class="col-sm-8 visible-lg footer-nav-padding">
-              <nav class="navbar po-navbar-footer">
-                <!-- Mobile display -->
-                <div class="navbar-header">
-                  <button class="navbar-toggle" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button">
-                    <span class="sr-only">Toggle navigation</span>
-                  </button>
-                </div>
-                <!-- Collect the nav links for toggling -->
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
-                  <ul class="nav navbar-nav" id="menu-footer">
-                    <li>
-                      <a href="about.html">About</a>
-                    </li>
-                    <li>
-                      <a href="contact.html">Contact</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-              <div class="clear-float"></div>
-            </div>
+          <div class="col-sm-4">
+            <p>
+              <span>© 2015 <a href="http://fineeco.co.kr/">FineEco</a>
+              </span>
+            </p>
+          </div>
+          <div class="col-sm-8 visible-lg text-right">
+            <ul class="list-inline">
+              <li>
+                <a href="about.html">About</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
           </div>
 
         </div>
