@@ -83,6 +83,10 @@
   box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.5);
 }
 
+.client-image .client-container .client-details {
+  background-color: rgba(60, 110, 169, 0.3);
+}
+
 /* Our Partner
 -----------------------------------------------------*/
 .section-image-bg-ourpartner {
@@ -151,6 +155,10 @@
 
 /* About
 -----------------------------------------------------*/
+.greetings {
+  font-size: 1.25em;
+}
+
 .sign {
   font-size: 1.1em;
   letter-spacing: 1em;
