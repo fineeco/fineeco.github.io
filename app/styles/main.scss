@@ -35,6 +35,47 @@
   }
 }
 
+/* heading line
+-----------------------------------------------------*/
+.header-line {
+  margin: 0 auto;
+  width: 90px;
+  padding: 0;
+  margin: 40px auto 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.header-line-left {
+  width: 90px;
+  margin-top: 35px;
+  padding-bottom: 15px;
+  border-top: 1px solid rgba(255,255,255,.3);
+}
+// @media (max-width: 767px) {
+//   .header-line, {
+//     width: 90px;
+//     padding: 0;
+//     margin: 40px auto 30px;
+//     border-top: 1px solid rgba(255, 255, 255, 0.3);
+//   }
+// }
+// @media (min-width: 768px) {
+//   .header-line {
+//     width: 90px;
+//     margin-top: 35px;
+//     padding-bottom: 15px;
+//     border-top: 1px solid rgba(255, 255, 255, 0.3);
+//   }
+// }
+// @media (min-width: 992px) {
+//   .header-line {
+//     width: 90px;
+//     margin-top: 35px;
+//     padding-bottom: 15px;
+//     border-top: 1px solid rgba(255, 255, 255, 0.3);
+//   }
+// }
+
 /* 상단 슬라이드
 -----------------------------------------------------*/
 @media (max-width: 767px) {
