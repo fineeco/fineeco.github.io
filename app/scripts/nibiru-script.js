@@ -430,11 +430,11 @@ $(document).ready(function() {
   //   });
   // })();
 
-  (function() {
-    $(document).ready(function() {
-      $('.btn').first().button('toggle');
-    });
-  })();
+  // (function() {
+  //   $(document).ready(function() {
+  //     $('.btn').first().button('toggle');
+  //   });
+  // })();
 
   (function() {
     $('.ssss, .client-container').tooltip();

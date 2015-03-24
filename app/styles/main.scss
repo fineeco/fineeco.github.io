@@ -35,6 +35,12 @@
   }
 }
 
+.text-center-vertical {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 /* heading line
 -----------------------------------------------------*/
 .header-line {
@@ -155,12 +161,12 @@
 
 /* Contact
 -----------------------------------------------------*/
-.section-image-contact {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background: url("../images/contact.jpg");
-  box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.4);
-}
+// .section-image-contact {
+//   padding-top: 100px;
+//   padding-bottom: 100px;
+//   background: url("../images/contact.jpg");
+//   box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.4);
+// }
 
 @media (max-width: 767px) {
   .background-image-fixed,

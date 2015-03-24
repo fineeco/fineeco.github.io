@@ -1,63 +1,55 @@
 {% extends "layouts/base.html" %}
 
-{% block content %}
+
+{% block pageStyle %}
+  <link rel="stylesheet" href="styles/contact.css">
+{% endblock %}
+
+
+{% block contents %}
 
   {% include "includes/nav.html" %}
 
-  <article class="po-nav">
+  <article>
 
     <!-- 연락처 -->
-    <section class="entry-content po-section section-image section-background-image-fixed section-image-contact">
+    <section class="background-image-fixed contact">
       <div class="container">
         <div class="row">
 
-          <div class="po-column col-sm-4 col-sm-offset-0 wow bounceIn">
-            <div class="po-icon-float icon-green hover-ani">
-              <div class="icon-float icon-float-green">
-                <i class="fa fa-phone fa-2x"></i>
+          <div class="col-sm-4 col-sm-offset-0 wow bounceIn">
+            <div class="text-center">
+              <div class="contact-icon-box">
+                <i class="fa fa-phone fa-2x text-center-vertical"></i>
               </div>
-              <div class="icon-bg">
-                <div class="float-header text-center">
-                  Call us
-                </div>
-                <div class="text-center float-text">
-                  Tel : <a href="tel:+82415519380">+82-41-551-9380</a>
-                  <br> Fax : <a href="fax:+82415519381">+82-41-551-9381</a>
-                </div>
+              <div class="contact-contents">
+                <h3 class="contact-header">Call us</h3>
+                <p>Tel : <a href="tel:+82415519380">+82-41-551-9380</a></p>
+                <p>Fax : <a href="fax:+82415519381">+82-41-551-9381</a></p>
               </div>
             </div>
           </div>
 
-          <div class="po-column col-sm-4 col-sm-offset-0 wow bounceIn" data-wow-delay="0.4s">
-            <div class="po-icon-float icon-green hover-ani">
-              <div class="icon-float icon-float-green">
-                <i class="fa fa-envelope-o fa-2x"></i>
+          <div class="col-sm-4 col-sm-offset-0 wow bounceIn" data-wow-delay="0.4s">
+            <div class="text-center">
+              <div class="contact-icon-box">
+                <i class="fa fa-envelope-o fa-2x text-center-vertical"></i>
               </div>
-              <div class="icon-bg">
-                <div class="float-header text-center">
-                  Email us
-                </div>
-                <div class="text-center float-text">
-                  <a href="mailto:contect@fineeco.co.kr">contect@fineeco.co.kr</a>
-                </div>
+              <div class="contact-contents">
+                <h3 class="contact-header">Email us</h3>
+                <p><a href="mailto:contect@fineeco.co.kr">contect@fineeco.co.kr</a></p>
               </div>
             </div>
           </div>
 
-          <div class="po-column col-sm-4 col-sm-offset-0 wow bounceIn" data-wow-delay="0.8s">
-            <div class="po-icon-float icon-green hover-ani">
-              <div class="icon-float icon-float-green">
-                <i class="fa fa-compass fa-2x"></i>
+          <div class="col-sm-4 col-sm-offset-0 wow bounceIn" data-wow-delay="0.8s">
+            <div class="text-center">
+              <div class="contact-icon-box">
+                <i class="fa fa-compass fa-2x text-center-vertical"></i>
               </div>
-              <div class="icon-bg">
-                <div class="float-header text-center">
-                  Visit us
-                </div>
-                <div class="text-center float-text">
-                  <address>
-                    충청남도 천안시 동남구 수신면 신풍2길 16-2 (주)파인에코 330-882
-                  </address>
-                </div>
+              <div class="contact-contents">
+                <h3 class="contact-header">Visit us</h3>
+                <p><address>충청남도 천안시 동남구 수신면 신풍2길 16-2 (주)파인에코 330-882</address></p>
               </div>
             </div>
           </div>
@@ -66,31 +58,25 @@
     </section>
 
     <!-- 지도 -->
-    <section class="po-section section-background-white section-padding">
+    <section class="map">
       <div class="container">
         <div class="row">
 
-          <div class="po-column po-header-top col-sm-12 no-padding wow fadeIn">
+          <div class="col-sm-12 no-padding wow fadeIn">
             <h3 class="text-center">Location</h3>
-            <div class="header-line header-line-bottom"></div>
+            <div class="header-line"></div>
           </div>
 
-          <div class="clearfix"></div>
-
-          <div class="po-column col-sm-12 col-sm-offset-0 wow fadeIn">
+          <div class="col-sm-12 col-sm-offset-0 wow fadeIn">
             <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6394.615927509617!2d127.27466950312325!3d36.739178354687326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ad5673c80f869%3A0xe1679129e89751c3!2z7Lap7LKt64Ko64-EIOyynOyViOyLnCDrj5nrgqjqtawg7IiY7Iug66m0IOyLoO2SjTLquLggMTYtMg!5e0!3m2!1sko!2skr!4v1415559222570"
             width="100%" height="500px" frameborder="0"></iframe>
           </div>
 
-          <div class="po-column col-sm-6 col-sm-offset-0 wow fadeIn">
-            <p class="textblock textblock-left">
-              <a class="btn outline-button dark btn-sm btn-block btn-icon-ani" href="http://me2.do/5Nul1UdC">네이버 지도로 열기</a>
-            </p>
+          <div class="col-sm-6 col-sm-offset-0 wow fadeIn">
+            <a class="btn btn-default btn-block" href="http://me2.do/5Nul1UdC" role="button">네이버 지도로 열기</a>
           </div>
-          <div class="po-column col-sm-6 col-sm-offset-0 wow fadeIn">
-            <p class="textblock textblock-left">
-              <a class="btn outline-button dark btn-sm btn-block btn-icon-ani" href="http://dmaps.kr/modq">다음지도로 열기</a>
-            </p>
+          <div class="col-sm-6 col-sm-offset-0 wow fadeIn">
+            <a class="btn btn-default btn-block" href="http://dmaps.kr/modq" role="button">다음지도로 열기</a>
           </div>
 
         </div>
