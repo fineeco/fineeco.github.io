@@ -108,41 +108,13 @@
   background-color: rgba(60, 110, 169, 1);
 }
 
-
-
-/* Our Business
------------------------------------------------------*/
-.section-image-bg-ourbiz {
-  padding-top: 80px;
-  padding-bottom: 100px;
-  background: url("../images/our-business.jpg");
-  box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.5);
+.entry-content iframe.googlemap {
+  margin: 0;
 }
 
-/* Our Products
------------------------------------------------------*/
-.section-image-bg-ourproducts {
-  padding-top: 80px;
-  padding-bottom: 100px;
-  background: url("../images/our-products.jpg");
-  box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.5);
-}
 
 .client-image .client-container .client-details {
   background-color: rgba(60, 110, 169, 0.3);
-}
-
-/* Our Partner
------------------------------------------------------*/
-.section-image-bg-ourpartner {
-  padding-top: 70px;
-  padding-bottom: 100px;
-  background: url("../images/our-partners.jpg");
-  box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.5);
-}
-
-.entry-content iframe.googlemap {
-  margin: 0;
 }
 
 @media (max-width: 767px) {

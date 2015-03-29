@@ -1,0 +1,233 @@
+.base-section-partial {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: white;
+}
+
+.masthead-section {
+  @media (max-width: 767px) {
+    height: 350px;
+  }
+
+  @media (min-width: 768px) {
+    height: 500px;
+  }
+
+  @media (min-width: 992px) {
+    height: 700px;
+  }
+}
+
+.company-description-section {
+  @extend .base-section-partial;
+
+  .icon-box {
+    width: 80px;
+    height: 80px;
+    display: table;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+  }
+}
+
+.best-partner-section {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background: url("../images/our-business.jpg");
+  box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.5);
+  color: white;
+
+  .title {
+    font-size: 3em;
+  }
+
+  .description {
+    font-size: 1.15em;
+  }
+}
+
+.ourbiz-section{
+  @extend .base-section-partial;
+
+  .header-line {
+    border-color: silver;
+  }
+
+  .business-item {
+    padding: 0;
+
+    .link {
+      display: block;
+      padding-bottom: 80px;
+      position: relative;
+      cursor: url(../images/cross.png) 38 38, default;
+
+      &:hover {
+        background-color: #3C6EA9;
+      }
+
+      .item-image-wrapper {
+        height: 230px;
+      }
+
+      .item-description {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition-property: background-color;
+        transition-duration: .2s;
+
+        &:hover {
+          background-color: #3C6EA9;
+
+          .outer-wrapper .inner-wrapper .title,
+          .outer-wrapper .inner-wrapper .description {
+            color: white;
+          }
+        }
+
+          .outer-wrapper {
+            position: absolute;
+            bottom: 0;
+            height: 82px;
+            display: table;
+            width: 100%;
+
+          .inner-wrapper {
+            display: table-cell;
+            vertical-align: middle;
+
+            .title {
+              text-transform: uppercase;
+              font-weight: 700;
+              color: #333;
+            }
+
+            .description {
+              font-size: 1em;
+              color: #666;
+              margin-top: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ourproducts-section {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background: url("../images/our-products.jpg");
+  box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.5);
+  color: white;
+
+  .title {
+    font-size: 3em;
+  }
+
+  .description {
+    font-size: 1.15em;
+  }
+}
+
+.chippoly-section {
+  padding-top: 50px;
+  background-color: white;
+
+  .header-line {
+    border-color: silver;
+  }
+
+  .chippoly-img-wrapper {
+    padding-top: 25px;
+    padding-bottom: 0;
+
+    .chippoly-img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .advantage-wrapper {
+    padding-top: 25px;
+    padding-bottom: 0;
+
+    .advantage {
+      padding-top: 25px;
+      padding-bottom: 0;
+
+      .icon-col-wrapper {
+        vertical-align: top;
+
+        .icon-wrapper {
+          margin-right: 25px;
+          color: #3C6EA9;
+        }
+      }
+
+      .title{
+        font-size: 1.1em;
+        margin: 0 0 20px;
+        font-weight: 600;
+      }
+
+      .description{
+        line-height: 1.7;
+      }
+    }
+  }
+}
+
+.ourpartner-section {
+  padding-top: 70px;
+  padding-bottom: 100px;
+  background: url("../images/our-partners.jpg");
+  box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.5);
+  color: white;
+
+  .client-wrapper {
+    display: block;
+    position: relative;
+
+    &:hover {
+
+      .ani-hover {
+        opacity: 0;
+      }
+    }
+
+    .ani-hover {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition-property: background-color;
+      transition-duration: .4s;
+      background-color: #3C6EA9;
+      opacity: .2;
+      transition: all .2s ease-in-out;
+    }
+
+  }
+
+  .client-logo-wrapper {
+
+    @media (max-width: 767px) {
+      height: 220px;
+    }
+
+    @media (min-width: 768px) {
+      height: 130px;
+    }
+
+    @media (min-width: 992px) {
+      height: 150px;
+    }
+  }
+}

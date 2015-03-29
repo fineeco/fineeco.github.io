@@ -15,4 +15,12 @@ $(document).ready(function() {
     new WOW().init();
   })();
 
+  (function() {
+    $('.fn-liquid').imgLiquid();
+  })();
+
+  (function() {
+    $('.client-wrapper').tooltip();
+  })();
+
 });
