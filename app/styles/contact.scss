@@ -1,49 +1,50 @@
-.map {
-  background-color: white;
-  padding-top: 50px;
-  padding-bottom: 100px;
-}
-
-.map .header-line {
-  border-color: darkgrey;
-}
-
-.map .btn:hover {
-  color: #fff;
-  border: 1px solid #3c6ea9;
-  background-color: #3c6ea9;
-}
-
-.contact {
+.contact-section {
   padding-top: 100px;
   padding-bottom: 100px;
   background: url("../images/contact.jpg");
   box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.4);
   color: black;
+
+  .icon-box {
+    color: #fff;
+    border: 2px solid #3c6ea9;
+    background-color: #3c6ea9;
+    width: 70px;
+    height: 74px;
+    overflow: hidden;
+    margin-top: -37px;
+    position: absolute;
+    z-index: 99;
+    border-radius: 3px;
+  }
+
+  .contents {
+    color: black;
+    background-color: #FFF;
+    padding: 30px;
+    margin-top: 37px;
+    border-radius: 4px;
+    min-height: 180px;
+
+    .header {
+      font-size: 1.3em;
+      font-weight: 600;
+    }
+  }
 }
 
-.contact-icon-box {
-  color: #fff;
-  border: 2px solid #3c6ea9;
-  background-color: #3c6ea9;
-  width: 70px;
-  height: 74px;
-  overflow: hidden;
-  margin-top: -37px;
-  position: absolute;
-  z-index: 99;
-  border-radius: 3px;
-}
+.map-section {
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 100px;
 
-.contact-header {
-  font-size: 1.3em;
-  font-weight: 600;
-}
+  .header-line {
+    border-color: darkgrey;
+  }
 
-.contact-contents {
-  color: black;
-  background-color: #FFF;
-  padding: 30px;
-  margin-top: 37px;
-  border-radius: 4px;
+  .btn:hover {
+    color: #fff;
+    border: 1px solid #3c6ea9;
+    background-color: #3c6ea9;
+  }
 }
