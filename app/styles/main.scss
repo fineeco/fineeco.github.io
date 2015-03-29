@@ -82,41 +82,6 @@
 //   }
 // }
 
-/* 상단 슬라이드
------------------------------------------------------*/
-@media (max-width: 767px) {
-  header {
-    height: 350px;
-  }
-}
-@media (min-width: 768px) {
-  header {
-    height: 500px;
-  }
-}
-@media (min-width: 992px) {
-  header {
-    height: 700px;
-  }
-}
-
-.po-slider-text h1 {
-  color: white;
-}
-
-.background-greyscale.white {
-  background-color: rgba(60, 110, 169, 1);
-}
-
-.entry-content iframe.googlemap {
-  margin: 0;
-}
-
-
-.client-image .client-container .client-details {
-  background-color: rgba(60, 110, 169, 0.3);
-}
-
 @media (max-width: 767px) {
   .background-image-fixed,
   .background-image-parallax {
