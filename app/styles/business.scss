@@ -1,4 +1,4 @@
-.base-section {
+.base-section-partial {
   padding-top: 130px;
   padding-bottom: 130px;
   font-size: 1.3em;
@@ -6,19 +6,19 @@
 }
 
 .massproduct-section {
-  @extend .base-section;
+  @extend .base-section-partial;
   background: url("../images/business-01.jpg");
   box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.2);
 }
 
 .recycling-section {
-  @extend .base-section;
+  @extend .base-section-partial;
   background: url("../images/business-02.jpg");
   box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.4);
 }
 
 .rnd-section {
-  @extend .base-section;
+  @extend .base-section-partial;
   background: url("../images/business-03.jpg");
   // box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.2);
   box-shadow: rgba(0, 0, 0, 0.4) 0 0 1000px 500px inset;
