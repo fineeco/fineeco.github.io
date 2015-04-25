@@ -1,8 +1,8 @@
 /* global WOW */
 
-$(document).ready(function() {
-  'use strict';
+'use strict';
 
+$(document).ready(function() {
 
   $('#nav').affix({
     offset: {
