@@ -1,3 +1,6 @@
+@import 'variables-mideaquery';
+@import 'variables-colors';
+
 .base-section-partial {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -5,15 +8,15 @@
 }
 
 .masthead-section {
-  @media (max-width: 767px) {
+  @media #{$phones} {
     height: 350px;
   }
 
-  @media (min-width: 768px) {
+  @media #{$tablets} {
     height: 500px;
   }
 
-  @media (min-width: 992px) {
+  @media #{$desktops} {
     height: 700px;
   }
 }
@@ -24,12 +27,28 @@
   .icon-box {
     width: 80px;
     height: 80px;
-    display: table;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 100px;
+    border: 1px;
+    border-style: solid;
+    border-color: $fineblue;
+    color: $fineblue;
   }
+
+  .title {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .header-line {
+    border-color: $fineblue;
+    margin: 30px auto 30px;
+  }
+
+  .description {
+    font-size: 1.1em;
+    line-height: 1.5em;
+  }
+
 }
 
 .best-partner-section {
@@ -161,13 +180,8 @@
       padding-top: 25px;
       padding-bottom: 0;
 
-      .icon-col-wrapper {
-        vertical-align: top;
-
-        .icon-wrapper {
-          margin-right: 25px;
-          color: #3C6EA9;
-        }
+      .icon {
+        color: $fineblue;
       }
 
       .title{
@@ -189,6 +203,10 @@
   background: url("../images/our-partners.jpg");
   box-shadow: inset 0 0 1000px 500px rgba(60, 110, 169, 0.5);
   color: white;
+
+  .client-image {
+    padding: 0px;
+  }
 
   .client-wrapper {
     display: block;
@@ -218,15 +236,15 @@
 
   .client-logo-wrapper {
 
-    @media (max-width: 767px) {
+    @media #{$phones} {
       height: 220px;
     }
 
-    @media (min-width: 768px) {
+    @media #{$tablets} {
       height: 130px;
     }
 
-    @media (min-width: 992px) {
+    @media #{$desktops} {
       height: 150px;
     }
   }
