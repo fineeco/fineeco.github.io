@@ -121,7 +121,7 @@ gulp.task('wiredep', function () {
 
   gulp.src('app/layouts/*.html')
     .pipe(wiredep({
-      exclude: ['bootstrap-sass-official', 'bower_components/bxslider-4/dist/jquery.bxslider.css', 'bower_components/bxslider-4/dist/jquery.bxslider.min.js'],
+      exclude: ['bootstrap-sass-official'],
       ignorePath: /^(\.\.\/)*\.\./
     }))
     .pipe(gulp.dest('app/layouts'));

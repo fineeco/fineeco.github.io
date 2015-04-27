@@ -1,3 +1,8 @@
+.base-section-partial {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .masthead-section {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -21,3 +26,18 @@
     font-weight: 900;
   }
 }
+
+.history-section {
+  @extend .base-section-partial;
+
+  .header-line {
+    border-color: silver;
+  }
+}
+
+.certification-section {
+  @extend .base-section-partial;
+  background-color: Gainsboro;
+}
+
+@import 'vendor-lightbox';

@@ -47,14 +47,15 @@ $(document).ready(function() {
         $('.po-nav-slide').removeClass('nav-fixed-padding');
       }
     }
+
     document.onscroll = scroll;
   })();
 
   (function() {
-    jQuery('.nav li.dropdown').hover(function() {
-      jQuery(this).addClass('hovered');
+    $('.nav li.dropdown').hover(function() {
+      $(this).addClass('hovered');
     }, function() {
-      jQuery(this).removeClass('hovered');
+      $(this).removeClass('hovered');
     });
 
 
@@ -63,12 +64,17 @@ $(document).ready(function() {
   (function() {
     if ($(window).width() > 992) {
       //Add Hover effect to menus
-      jQuery('.po-navbar ul.nav li.dropdown').hover(function() {
-        jQuery(this).find('.dropdown-menu').stop(true, true).fadeIn(200);
+      $('.po-navbar ul.nav li.dropdown').hover(function() {
+        $(this).find('.dropdown-menu').stop(true, true).fadeIn(200);
       }, function() {
-        jQuery(this).find('.dropdown-menu').stop(true, true).fadeOut(100);
+        $(this).find('.dropdown-menu').stop(true, true).fadeOut(100);
       });
     }
   })();
+
+  $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+  });
 
 });
