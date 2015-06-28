@@ -3,6 +3,12 @@
 $(document).ready(function() {
   'use strict';
 
+  // $('#nav').affix({
+  //   offset: {
+  //     top: $('header').height() - $('#nav').height()
+  //   }
+  // });
+
   (function() {
     $('.po-slider-loop').bxSlider({
       auto: ($('.po-slider-loop li').length > 1) ? true : false,
@@ -470,6 +476,43 @@ $(document).ready(function() {
   //       $('div.modal-body').html('&nbsp;');
   //     });
   //   });
+  // })();
+
+  // (function() {
+  //   var menu = document.querySelector('.po-nav');
+  //   var origOffsetY = menu.offsetTop;
+  //
+  //   function scroll() {
+  //     if ($(window).scrollTop() >= origOffsetY) {
+  //       $('.po-navbar-slide').addClass('navbar-fixed-top');
+  //       $('.po-nav-slide').addClass('nav-fixed-padding');
+  //     } else {
+  //       $('.po-navbar-slide').removeClass('navbar-fixed-top');
+  //       $('.po-nav-slide').removeClass('nav-fixed-padding');
+  //     }
+  //   }
+  //
+  //   document.onscroll = scroll;
+  // })();
+
+  // (function() {
+  //   $('.nav li.dropdown').hover(function() {
+  //     $(this).addClass('hovered');
+  //   },
+  //   function() {
+  //     $(this).removeClass('hovered');
+  //   };
+  // })();
+
+  // (function() {
+  //   if ($(window).width() > 992) {
+  //     //Add Hover effect to menus
+  //     $('.po-navbar ul.nav li.dropdown').hover(function() {
+  //       $(this).find('.dropdown-menu').stop(true, true).fadeIn(200);
+  //     }, function() {
+  //       $(this).find('.dropdown-menu').stop(true, true).fadeOut(100);
+  //     });
+  //   }
   // })();
 
 });

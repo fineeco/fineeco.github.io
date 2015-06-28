@@ -11,13 +11,15 @@
   h6 {
     font-family: 'Source Sans Pro', nanumgothic, sans-serif;
   }
-  body,
+
+body,
   p,
   button,
   input {
     font-family: 'Source Sans Pro', nanumgothic, sans-serif;
   }
 }
+
 
 /* 모바일 일때 나눔고딕을 로딩 하지 않음 */
 @media #{$phones} {
@@ -29,13 +31,22 @@
   h6 {
     font-family: 'Source Sans Pro', sans-serif;
   }
-  body,
+
+body,
   p,
   button,
   input {
     font-family: 'Source Sans Pro', sans-serif;
   }
 }
+
+
+/* nav bar padding
+-----------------------------------------------------*/
+body {
+  padding-top: 50px;
+}
+
 
 /* utility
 -----------------------------------------------------*/
@@ -45,21 +56,23 @@
   transform: translateY(-50%);
 }
 
+
 /* heading line
 -----------------------------------------------------*/
 .header-line {
   width: 90px;
   padding: 0;
   margin: 40px auto 30px;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, .3);
 }
 
 .header-line-left {
   width: 90px;
   margin-top: 35px;
   padding-bottom: 15px;
-  border-top: 1px solid rgba(255,255,255,.3);
+  border-top: 1px solid rgba(255,255,255, .3);
 }
+
 
 /* background images
 -----------------------------------------------------*/
@@ -68,6 +81,7 @@
   .background-image-parallax {
     background-attachment: relative !important;
     background-size: cover !important;
+    background-position: center center;
   }
 }
 
@@ -76,6 +90,7 @@
   .background-image-parallax {
     background-attachment: relative !important;
     background-size: cover !important;
+    background-position: center center;
   }
 }
 
@@ -84,9 +99,11 @@
   .background-image-parallax {
     background-attachment: fixed !important;
     background-size: cover !important;
+    background-position: center center;
   }
 }
 
 @import 'includes-nav';
-@import 'includes-contact';
+
+// @import 'includes-contact';
 @import 'includes-footer';

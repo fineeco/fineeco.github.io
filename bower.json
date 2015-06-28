@@ -2,26 +2,23 @@
   "name": "fineeco",
   "private": true,
   "dependencies": {
-    "bootstrap-sass-official": "^3.3.1",
-    "modernizr": "^2.8.1",
-    "bxslider-4": "^4.1.2",
-    "font-awesome": "^4.2.0",
-    "html5shiv": "^3.7.2",
-    "imgLiquid": "^0.9.944",
-    "bas2k-jquery-appear": "git://github.com/bas2k/jquery.appear.git",
-    "jquery-ui": "^1.11.1",
-    "respond": "^1.4.2",
-    "spin.js": "^2.0.1",
-    "stellar": "^0.6.2",
-    "wow": "^1.0.3",
-    "animate.css": "^3.2.0",
-    "ekko-lightbox": "^3.3.0"
+    "bootstrap-sass-official": "~3.3.5",
+    "modernizr": "~2.8.3",
+    "bxslider-4": "~4.2.5",
+    "font-awesome": "~4.3.0",
+    "html5shiv": "~3.7.2",
+    "imgLiquid": "~0.9.944",
+    "jquery-ui": "~1.11.4",
+    "respond": "~1.4.2",
+    "wow": "~1.1.2",
+    "animate.css": "~3.2.5",
+    "ekko-lightbox": "~3.3.0"
   },
   "overrides": {
     "ekko-lightbox": {
       "main": [
-        "./dist/ekko-lightbox.js",
-        "./dist/ekko-lightbox.css"
+        "dist/ekko-lightbox.js",
+        "dist/ekko-lightbox.css"
       ],
       "dependencies": {
         "bootstrap-sass-official": ">= 3.0.0"
