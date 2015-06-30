@@ -2,8 +2,8 @@
 @import 'variables-colors';
 
 .base-section-partial {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .masthead-section {
@@ -13,15 +13,14 @@
   height: 800px;
   box-shadow: inset 0 0 1000px 500px rgba($fineblue, 0.6);
   .greetings {
-    font-size: 1.35em;
+    font-size: 1.25em;
     color: white;
   }
   .sign {
-    font-size: 1.1em;
-    letter-spacing: 1em;
+    height: 80px;
   }
   .name {
-    font-size: 1.11em;
+    padding-left: 30px;
     letter-spacing: 0.8em;
     font-weight: 900;
   }
@@ -29,7 +28,6 @@
 
 .history-section {
   @extend .base-section-partial;
-
   .header-line {
     border-color: silver;
   }
@@ -38,6 +36,11 @@
 .certification-section {
   @extend .base-section-partial;
   background-color: gainsboro;
+  .description {
+    padding-top: 1.5em;
+    padding-bottom: 3em;
+    font-size: 1.2em;
+  }
 }
 
 .ourpartners-section {

@@ -4,7 +4,6 @@
   "dependencies": {
     "bootstrap-sass-official": "~3.3.5",
     "modernizr": "~2.8.3",
-    "bxslider-4": "~4.2.5",
     "font-awesome": "~4.3.0",
     "html5shiv": "~3.7.2",
     "imgLiquid": "~0.9.944",
@@ -12,7 +11,8 @@
     "respond": "~1.4.2",
     "wow": "~1.1.2",
     "animate.css": "~3.2.5",
-    "ekko-lightbox": "~3.3.0"
+    "ekko-lightbox": "~3.3.0",
+    "fullpage.js": "~2.6.6"
   },
   "overrides": {
     "ekko-lightbox": {
@@ -24,11 +24,10 @@
         "bootstrap-sass-official": ">= 3.0.0"
       }
     },
-    "bxslider-4": {
+    "fullpage.js": {
       "main": [
-        "dist/jquery.bxslider.js",
-        "dist/images/bx_loader.gif",
-        "dist/images/controls.png"
+        "jquery.fullPage.js",
+        "jquery.fullPage.css"
       ]
     }
   }

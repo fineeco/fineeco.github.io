@@ -1,3 +1,12 @@
+{% set items = [
+    { href:'index.html', id: 'index', content:'Home'},
+    { href:'about.html', id: 'about', content: 'About'},
+    { href:'business.html', id: 'business', content: 'Business'},
+    { href:'product.html', id: 'product', content: 'Product'},
+    { href:'contact.html', id: 'contact', content: 'Contact'}
+] %}
+{% set active_page = active_page|default('index') %}
+
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
 
@@ -17,25 +26,17 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
 
-        <li class="active">
-          <a href="index.html">Home</a>
-        </li>
+        <!-- <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="business.html">Business</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="contact.html">Contact</a></li> -->
 
-        <li>
-          <a href="about.html">About</a>
-        </li>
-
-        <li>
-          <a href="business.html">Business</a>
-        </li>
-
-        <li>
-          <a href="product.html">Product</a>
-        </li>
-
-        <li>
-          <a href="contact.html">Contact</a>
-        </li>
+        {% for item in items %}
+          <li {% if item.id == active_page %}class="active"{% endif %}>
+            <a href="{{ item.href|e }}">{{ item.content|e }}</a>
+          </li>
+        {% endfor %}
 
       </ul>
     </div>

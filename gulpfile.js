@@ -121,7 +121,7 @@ gulp.task('wiredep', function () {
 
   gulp.src('app/layouts/*.html')
     .pipe(wiredep({
-      exclude: ['bootstrap-sass-official'],
+      exclude: ['bootstrap-sass-official', 'fullpage.js'],
       ignorePath: /^(\.\.\/)*\.\./
     }))
     .pipe(gulp.dest('app/layouts'));
