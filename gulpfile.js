@@ -81,6 +81,14 @@ gulp.task('extras', function () {
   }).pipe(gulp.dest('dist'));
 });
 
+gulp.task('locales', function () {
+  return gulp.src([
+    'app/locales/**/*'
+  ], {
+    dot: true
+  }).pipe(gulp.dest('dist/locales'));
+});
+
 gulp.task('clean', require('del').bind(null, ['.tmp', 'dist']));
 
 gulp.task('serve', ['views', 'styles', 'fonts'], function () {
@@ -127,7 +135,7 @@ gulp.task('wiredep', function () {
     .pipe(gulp.dest('app/layouts'));
 });
 
-gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'extras'], function () {
+gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'extras', 'locales'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 

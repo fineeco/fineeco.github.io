@@ -1,19 +1,26 @@
-{% extends "layouts/base.html" %} {% block pageStyle %}
+{% extends "layouts/base.html" %}
+
+{% block pageStyle %}
 <!-- build:css styles/index-page.css -->
 <link rel="stylesheet" href="/bower_components/fullpage.js/jquery.fullPage.css">
 <link rel="stylesheet" href="styles/index.css">
 <!-- endbuild -->
-{% endblock %} {% block contents %} {% include "includes/nav.html" %}
+{% endblock %}
+
+{% block contents %}
+
+{% include "includes/nav.html" %}
 
 <article id="fullpage">
 
-  <section class="section section-fineeco">
+  <section class="section fineeco-section">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
           <h1 class="title text-center">
-            <span class="h2">다음세대를 위한 친환경 에너지 기업,</span>
-            <br>FineEco 입니다.
+            <span class="h2" data-i18n="fineeco.title.0"></span>
+            <br>
+            <span data-i18n="fineeco.title.1"></span>
           </h1>
         </div>
         <div class="col-sm-6 col-sm-offset-3">
@@ -23,13 +30,14 @@
     </div>
   </section>
 
-  <section class="section section-chippoly">
+  <section class="section chippoly-section">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
           <h1 class="title text-center">
-            <span class="h2">친환경 태양광 산업의 시작점,</span>
-            <br>Chip Poly 전문 기업 입니다.
+            <span class="h2" data-i18n="chippoly.title.0"></span>
+            <br>
+            <span data-i18n="chippoly.title.1"></span>
           </h1>
         </div>
         <div class="col-sm-6 col-sm-offset-3">
@@ -39,13 +47,14 @@
     </div>
   </section>
 
-  <section class="section section-valuechain">
+  <section class="section valuechain-section">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
           <h1 class="title text-center">
-            <span class="h2">태양광 산업 핵심 가치를 연결하는,</span>
-            <br>Value Chain Enabler 입니다.
+            <span class="h2" data-i18n="valuechain.title.0"></span>
+            <br>
+            <span data-i18n="valuechain.title.1"></span>
           </h1>
         </div>
         <div class="col-sm-6 col-sm-offset-3">
@@ -57,9 +66,18 @@
 
 </article>
 
-{% include "includes/footer.html" %} {% endblock %} {% block pageScript %}
-<!-- build:js styles/index-page.js -->
+{% include "includes/footer.html" %}
+
+{% endblock %}
+
+{% block pageVendorScript %}
+<!-- build:js scripts/index-vendor.js -->
 <script src="/bower_components/fullpage.js/jquery.fullPage.js"></script>
+<!-- endbuild -->
+{% endblock %}
+
+{% block pageScript %}
+<!-- build:js scripts/index.js -->
 <script src="scripts/index.js"></script>
 <!-- endbuild -->
 {% endblock %}

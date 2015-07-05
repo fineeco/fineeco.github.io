@@ -1,0 +1,12 @@
+{
+  "company": {
+    "fineeco": "As an eco-friendly company, FineEco endeavors to supply clean and reliable photovoltaic energy to the wider public. By enhancing the productivity and efficiency of the photovoltaic industry, FineEco aims to provide environmentally friendly energy to our current and future generation and to become the strong foundation of fine ecology.",
+    "chippoly": "An expert in research, development and production of chip poly, FineEco possesses key technology and production capacity for reducing polysilicon into chip poly, a starting point of the photovoltaic value chain. We thereby allow for the maximization of photovoltaic productivity.",
+    "valuechain": "From polysilicon to solar module, there are five stages in the photovoltaic value chain. By recycling various scraps and off-spec products generated from each stage of the value chain, FineEco maximizes the efficiency of photovoltaic energy production."
+  },
+  "ourbiz": {
+    "chippoly": "Production of polysilicon chips for photovoltaic ingot makers",
+    "scrap": "Production of polysilicon chips for photovoltaic ingot makers",
+    "rnd": "Research and development in chip poly production and efficiency maximization of wafer recycling"
+  }
+}

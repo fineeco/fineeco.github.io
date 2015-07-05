@@ -1,25 +1,39 @@
-/* global WOW */
+/* global WOW, i18n, doTranslate */
 
 'use strict';
+
+i18n.init({
+  ns: {
+    namespaces: ['base']
+  },
+  fallbackLng: 'ko'
+});
 
 $(document).ready(function() {
 
   // WOW.js 설정
-  (function() {
-    new WOW().init();
-  })();
+  new WOW().init();
 
-  (function() {
-    $('.fn-liquid').imgLiquid();
-  })();
+  $('.fn-liquid').imgLiquid();
 
-  (function() {
-    $('.client-wrapper').tooltip();
-  })();
+  $('.client-wrapper').tooltip();
 
-  $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+  $(document).on('*[data-toggle="lightbox"]', 'click', function(event) {
     event.preventDefault();
     $(this).ekkoLightbox();
   });
 
+  $('.fn-lang-en').on('click', function(event) {
+    event.preventDefault();
+    i18n.setLng('en-US', function() {
+      doTranslate();
+    });
+  });
+
+  $('.fn-lang-ko').on('click', function(event) {
+    event.preventDefault();
+    i18n.setLng('ko-KR', function() {
+      doTranslate();
+    });
+  });
 });

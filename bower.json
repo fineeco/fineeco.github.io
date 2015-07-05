@@ -12,7 +12,8 @@
     "wow": "~1.1.2",
     "animate.css": "~3.2.5",
     "ekko-lightbox": "~3.3.0",
-    "fullpage.js": "~2.6.6"
+    "fullpage.js": "~2.6.6",
+    "i18next": "1.10.2"
   },
   "overrides": {
     "ekko-lightbox": {

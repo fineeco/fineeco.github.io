@@ -82,10 +82,8 @@
   <script src="/bower_components/jquery-ui/jquery-ui.js"></script>
   <script src="/bower_components/wow/dist/wow.js"></script>
   <script src="/bower_components/ekko-lightbox/dist/ekko-lightbox.js"></script>
+  <script src="/bower_components/i18next/i18next.js"></script>
   <!-- endbower -->
-  <!-- endbuild -->
-
-  <!-- build:js scripts/plugins.js -->
   <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
   <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
   <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
@@ -98,6 +96,7 @@
   <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
   <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
   <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+  {% block pageVendorScript %}{% endblock %}
   <!-- endbuild -->
 
   <!-- build:js scripts/main.js -->

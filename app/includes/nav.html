@@ -5,6 +5,10 @@
     { href:'product.html', id: 'product', content: 'Product'},
     { href:'contact.html', id: 'contact', content: 'Contact'}
 ] %}
+{% set langs = [
+    { id: 'ko'},
+    { id: 'en'}
+] %}
 {% set active_page = active_page|default('index') %}
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -38,6 +42,10 @@
           </li>
         {% endfor %}
 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" class="fn-lang-en">Eng</a></li>
+        <li><a href="#" class="fn-lang-ko">Kor</a></li>
       </ul>
     </div>
   </div>

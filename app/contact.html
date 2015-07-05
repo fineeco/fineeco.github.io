@@ -7,7 +7,6 @@
   <!-- endbuild -->
 {% endblock %}
 
-
 {% block contents %}
 
   {% include "includes/nav.html" %}
@@ -52,7 +51,7 @@
               </div>
               <div class="contents">
                 <h3 class="header">Visit us</h3>
-                <p><address>충청남도 천안시 동남구 수신면 신풍2길 16-2 (주)파인에코 330-882</address></p>
+                <p><address class="address" data-i18n="address"></address></p>
               </div>
             </div>
           </div>
@@ -76,10 +75,10 @@
           </div>
 
           <div class="col-sm-6 col-sm-offset-0 wow fadeIn">
-            <a class="btn btn-default btn-block" href="http://me2.do/5Nul1UdC" role="button">네이버 지도로 열기</a>
+            <a class="btn btn-default btn-block" href="http://me2.do/5Nul1UdC" role="button" data-i18n="button.naverMap"></a>
           </div>
           <div class="col-sm-6 col-sm-offset-0 wow fadeIn">
-            <a class="btn btn-default btn-block" href="http://dmaps.kr/modq" role="button">다음지도로 열기</a>
+            <a class="btn btn-default btn-block" href="http://dmaps.kr/modq" role="button" data-i18n="button.daumMap"></a>
           </div>
 
         </div>
@@ -90,4 +89,10 @@
 
   {% include "includes/footer.html" %}
 
+{% endblock %}
+
+{% block pageScript %}
+<!-- build:js scripts/contact.js -->
+<script src="scripts/contact.js"></script>
+<!-- endbuild -->
 {% endblock %}

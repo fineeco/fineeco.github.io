@@ -1,0 +1,37 @@
+{
+  "masthead": {
+    "letter": {
+      "paragraph": [
+        "Since our establishment in 2008, we have been restlessly advancing as a leading solar company that focuses on eco-friendly recycling of photovoltaic products.",
+        "To be more specific, FineEco specializes in producing chip polysilicons, recycling polysilicons, wafers and cells, as well as trading polysilicon ingots and wafers.",
+        "Not only do we possess an unequaled chip poly cleaning technology but also are in partnerships with global corporations.",
+        "Dedicated to producing and promoting reliable green energy, we will continue to move forward to become the world-renowned company with the best technology and unquestionable trust of our customers."
+      ],
+      "thanks": "Thank you.",
+      "role": "President",
+      "name": "ST Baik"
+    }
+  },
+  "history": {
+    "tableName": "History",
+    "order": "Order",
+    "date": "Date",
+    "contents": "Content",
+    "1": "Established FineEco Inc.",
+    "2": "Been outsourcing semiconductor toll manufacturing for SK Hynix",
+    "3": "Been performing cleaning toll manufacturing for SKC Solmics",
+    "4": "Installed Thermal Crusher equipment",
+    "5": "Awarded KITA Award for Million Dollars Exportation",
+    "6": "Entered into MOU with MEMC, USA",
+    "7": "Gained certification for general waste treatment",
+    "8": "Certified for ISO140001 and ISO 9001",
+    "9": "Established FineEco research institute",
+    "10": "Been subcontracting for Samsung Electronics semiconductor plants",
+    "11": "Awarded KITA Award for Three Million Dollars Exportation"
+  },
+  "certification": {
+    "iso14001": "ISO 140001",
+    "iso9001": "ISO 9001",
+    "lab": "Certification for Corporate Laboratory"
+  }
+}
