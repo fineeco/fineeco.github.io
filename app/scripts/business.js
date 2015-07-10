@@ -7,7 +7,12 @@ var doTranslate = function() {
   $('.ourbiz-section').i18n();
 };
 
+var changeStyleByLng = function() {
+  return false;
+};
+
 i18n.loadNamespace('business', function() {
   i18n.setDefaultNamespace('business');
   doTranslate();
+  changeStyleByLng();
 });

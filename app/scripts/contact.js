@@ -7,7 +7,12 @@ var doTranslate = function() {
   $('.btn').i18n();
 };
 
+var changeStyleByLng = function() {
+  return false;
+};
+
 i18n.loadNamespace('contact', function() {
   i18n.setDefaultNamespace('contact');
   doTranslate();
+  changeStyleByLng();
 });

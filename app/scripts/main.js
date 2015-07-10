@@ -1,12 +1,12 @@
-/* global WOW, i18n, doTranslate */
+/* global WOW, i18n, doTranslate, changeStyleByLng */
 
 'use strict';
 
 i18n.init({
+  lng: 'ko-KR',
   ns: {
     namespaces: ['base']
-  },
-  fallbackLng: 'ko'
+  }
 });
 
 $(document).ready(function() {
@@ -18,15 +18,11 @@ $(document).ready(function() {
 
   $('.client-wrapper').tooltip();
 
-  $(document).on('*[data-toggle="lightbox"]', 'click', function(event) {
-    event.preventDefault();
-    $(this).ekkoLightbox();
-  });
-
   $('.fn-lang-en').on('click', function(event) {
     event.preventDefault();
     i18n.setLng('en-US', function() {
       doTranslate();
+      changeStyleByLng();
     });
   });
 
@@ -34,6 +30,7 @@ $(document).ready(function() {
     event.preventDefault();
     i18n.setLng('ko-KR', function() {
       doTranslate();
+      changeStyleByLng();
     });
   });
 });

@@ -3,6 +3,7 @@
 
 {% block pageStyle %}
   <!-- build:css styles/about.css -->
+  <link rel="stylesheet" href="/bower_components/ekko-lightbox/dist/ekko-lightbox.css" />
   <link rel="stylesheet" href="styles/about.css">
   <!-- endbuild -->
 {% endblock %}
@@ -252,6 +253,12 @@
 
   {% include "includes/footer.html" %}
 
+{% endblock %}
+
+{% block pageVendorScript %}
+<!-- build:js scripts/about-vendor.js -->
+<script src="/bower_components/ekko-lightbox/dist/ekko-lightbox.js"></script>
+<!-- endbuild -->
 {% endblock %}
 
 {% block pageScript %}
