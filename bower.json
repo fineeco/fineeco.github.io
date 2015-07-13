@@ -2,8 +2,8 @@
   "name": "fineeco",
   "private": true,
   "dependencies": {
-    "bootstrap-sass-official": "~3.3.5",
-    "modernizr": "~2.8.3",
+    "bootstrap-sass": "~3.3.5",
+    "modernizr": "~2.8.1",
     "font-awesome": "~4.3.0",
     "html5shiv": "~3.7.2",
     "imgLiquid": "~0.9.944",
@@ -16,20 +16,31 @@
     "i18next": "1.10.2"
   },
   "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    },
     "ekko-lightbox": {
       "main": [
         "dist/ekko-lightbox.js",
         "dist/ekko-lightbox.css"
       ],
       "dependencies": {
-        "bootstrap-sass-official": ">= 3.0.0"
+        "bootstrap-sass": {}
+      },
+      "fullpage.js": {
+        "main": [
+          "jquery.fullPage.js",
+          "jquery.fullPage.css"
+        ]
       }
-    },
-    "fullpage.js": {
-      "main": [
-        "jquery.fullPage.js",
-        "jquery.fullPage.css"
-      ]
     }
+  },
+  "devDependencies": {
+    "chai": "~3.0.0",
+    "mocha": "~2.2.5"
   }
 }
