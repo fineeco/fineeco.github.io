@@ -3,16 +3,15 @@
 'use strict';
 
 i18n.init({
-  lng: 'ko-KR',
   ns: {
     namespaces: ['base']
   }
 });
 
-$(document).ready(function() {
+// WOW.js 설정
+new WOW().init();
 
-  // WOW.js 설정
-  new WOW().init();
+$(document).ready(function() {
 
   $('.fn-liquid').imgLiquid();
 
