@@ -8,6 +8,24 @@
   box-shadow: inset 0 0 1000px 500px rgba($fineblue, 0.6);
 }
 
+.title-partial {
+  .title {
+    color: white;
+    .title-first {
+      font-weight: normal;
+    }
+    .title-first.lng-ko {
+      font-size: .7em;
+    }
+    .title-second {
+      font-weight: normal;
+    }
+    .title-second.lng-en {
+      font-size: .7em;
+    }
+  }
+}
+
 .logo-fixed {
   position: fixed;
 }
@@ -15,29 +33,17 @@
 .fineeco-section {
   @extend .background-partial;
   background-image: url("../images/slide-background-01.jpg");
-  .title {
-    color: white;
-  }
+  @extend .title-partial;
 }
 
 .chippoly-section {
   @extend .background-partial;
   background-image: url("../images/slide-background-02.jpg");
-  .title {
-    color: white;
-  }
-    // .title-first.lng-en {
-    //
-    // }
-    // .title-first.lng-kr {
-    //
-    // }
+  @extend .title-partial;
 }
 
 .valuechain-section {
   @extend .background-partial;
   background-image: url("../images/slide-background-03.jpg");
-  .title {
-    color: white;
-  }
+  @extend .title-partial;
 }

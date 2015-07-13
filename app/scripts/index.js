@@ -9,20 +9,16 @@ var doTranslate = function() {
 };
 
 var changeStyleByLng = function() {
-  // var currentLng = i18n.lng();
-
-  $('.title-first').toggleClass('h2');
-  $('.title-second').toggleClass('h2');
-
-  // if (currentLng === 'en-US') {
-  //   $('.title-first').attr('title-first lng-en');
-  //   $('.title-second').attr('title-second lng-en');
-  // } else if (currentLng === 'ko-KR') {
-  //   $('.title-first').attr('title-first lng-ko');
-  //   $('.title-second').attr('title-second lng-ko');
-  // } else {
-  //   return false;
-  // }
+  var currentLng = i18n.lng();
+  if (currentLng === 'en-US') {
+    $('.title-first').attr('class', 'title-first lng-en');
+    $('.title-second').attr('class', 'title-second lng-en');
+  } else if (currentLng === 'ko-KR') {
+    $('.title-first').attr('class', 'title-first lng-ko');
+    $('.title-second').attr('class', 'title-second lng-ko');
+  } else {
+    return false;
+  }
 };
 
 i18n.loadNamespace('index', function() {
