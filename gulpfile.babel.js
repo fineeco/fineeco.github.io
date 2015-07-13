@@ -41,7 +41,7 @@ const testLintOptions = {
 gulp.task('lint', lint('app/scripts/**/*.js'));
 gulp.task('lint:test', lint('test/spec/**/*.js', testLintOptions));
 
-gulp.task('html', ['views', 'styles'], ()=> {
+gulp.task('html', ['views', 'styles'], () => {
   const assets = $.useref.assets({searchPath: ['.tmp', 'app', '.']});
 
   return gulp.src(['app/*.html', '.tmp/*.html'])
@@ -54,7 +54,7 @@ gulp.task('html', ['views', 'styles'], ()=> {
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('views', function() {
+gulp.task('views', () => {
   $.nunjucksRender.nunjucks.configure(['app/']);
 
   return gulp.src('app/*.html')
@@ -95,7 +95,7 @@ gulp.task('extras', () => {
   }).pipe(gulp.dest('dist'));
 });
 
-gulp.task('locales', function() {
+gulp.task('locales', () => {
   return gulp.src([
     'app/locales/**/*'
   ], {
@@ -177,7 +177,7 @@ gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras', 'locales'], () 
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
-gulp.task('deploy', ['build'], function() {
+gulp.task('deploy', ['build'], () => {
   return gulp.src('dist')
     .pipe($.subtree())
     .pipe($.clean());

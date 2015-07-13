@@ -1,4 +1,4 @@
-/* global i18n */
+/* global $, i18n */
 
 'use strict';
 

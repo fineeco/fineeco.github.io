@@ -1,4 +1,4 @@
-/* global WOW, i18n, doTranslate, changeStyleByLng */
+/* global $, WOW, i18n, doTranslate, changeStyleByLng */
 
 'use strict';
 
