@@ -21,16 +21,16 @@
     "2": "Been outsourcing semiconductor toll manufacturing for SK Hynix",
     "3": "Been performing cleaning toll manufacturing for SKC Solmics",
     "4": "Installed Thermal Crusher equipment",
-    "5": "Awarded KITA Award for One Million Dollars Exportation",
+    "5": "Awarded KITA Award for One Million Dollar Exportation",
     "6": "Entered into MOU with MEMC, USA",
     "7": "Gained certification for general waste treatment",
-    "8": "Certified for ISO140001 and ISO 9001",
-    "9": "Established FineEco research institute",
+    "8": "Certified for ISO14001 and ISO 9001",
+    "9": "Established FineEco Research Institute",
     "10": "Been subcontracting for Samsung Electronics semiconductor plants",
     "11": "Awarded KITA Award for Three Million Dollars Exportation"
   },
   "certification": {
-    "iso14001": "ISO 140001",
+    "iso14001": "ISO 14001",
     "iso9001": "ISO 9001",
     "lab": "Certification for Corporate Laboratory"
   }
