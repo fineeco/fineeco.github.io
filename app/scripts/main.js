@@ -1,17 +1,16 @@
-/* global $, WOW, i18n, doTranslate, changeStyleByLng */
-
-'use strict';
+/* global $, document, WOW, i18n, doTranslate, changeStyleByLng */
 
 i18n.init({
   ns: {
-    namespaces: ['base']
-  }
+    namespaces: ['base'],
+  },
 });
 
 // WOW.js 설정
 new WOW().init();
 
 $(document).ready(function() {
+  'use strict';
 
   $('.fn-liquid').imgLiquid();
 

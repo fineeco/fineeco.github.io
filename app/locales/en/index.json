@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "description": "FineEco - Home"
+  },
   "fineeco": {
     "title": ["FineEco:", "Environmentally Friendly Company for the Next Generation"]
   },

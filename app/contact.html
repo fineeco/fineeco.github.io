@@ -1,6 +1,12 @@
 {% extends "layouts/base.html" %}
 {% set active_page = "contact" %}
 
+{% block meta %}
+<title>FineEco - Contact</title>
+<meta name="description" data-i18n="[content]meta.description">
+<meta name="keyword" data-i18n="[content]meta.keyword">
+{% endblock %}
+
 {% block pageStyle %}
   <!-- build:css styles/contact.css -->
   <link rel="stylesheet" href="styles/contact.css">

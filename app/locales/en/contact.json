@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "description": "FineEco - Contact"
+  },
   "address": "16-2 Sinpung 2-gil, Susin-myeon, Dongnam-gu, Cheonan-si, Chungnam, Korea (330-882)",
   "button": {
     "naverMap": "Open in Naver Map",

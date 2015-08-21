@@ -1,6 +1,12 @@
 {% extends "layouts/base.html" %}
 {% set active_page = "about" %}
 
+{% block meta %}
+<title>FineEco - About</title>
+<meta name="description" data-i18n="[content]meta.description">
+<meta name="keyword" data-i18n="[content]meta.keyword">
+{% endblock %}
+
 {% block pageStyle %}
   <!-- build:css styles/about.css -->
   <link rel="stylesheet" href="/bower_components/ekko-lightbox/dist/ekko-lightbox.css" />

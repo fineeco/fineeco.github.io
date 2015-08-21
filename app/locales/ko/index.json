@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "description": "FineEco - Home"
+  },
   "fineeco": {
     "title": ["다음 세대를 위한 친환경 에너지 기업,", "FineEco 입니다."]
   },

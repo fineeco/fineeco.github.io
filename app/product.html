@@ -1,6 +1,12 @@
 {% extends "layouts/base.html" %}
 {% set active_page = "product" %}
 
+{% block meta %}
+<title>FineEco - Product</title>
+<meta name="description" data-i18n="[content]meta.description">
+<meta name="keyword" data-i18n="[content]meta.keyword">
+{% endblock %}
+
 {% block pageStyle %}
   <!-- build:css styles/product.css -->
   <link rel="stylesheet" href="styles/product.css">

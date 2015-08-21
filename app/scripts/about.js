@@ -1,14 +1,14 @@
-/* global $, i18n */
-
-'use strict';
+/* global $, document, i18n */
 
 var doTranslate = function() {
+  'use strict';
   $('.masthead-section').i18n();
   $('.history-section').i18n();
   $('.certification-section').i18n();
 };
 
 var changeStyleByLng = function() {
+  'use strict';
   var currentLng = i18n.lng();
   if (currentLng === 'en-US') {
     $('.name').attr('class', 'name lng-en');
@@ -28,12 +28,14 @@ var changeStyleByLng = function() {
 };
 
 i18n.loadNamespace('about', function() {
+  'use strict';
   i18n.setDefaultNamespace('about');
   doTranslate();
   changeStyleByLng();
 });
 
 $(document).ready(function() {
+  'use strict';
   $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
     event.preventDefault();
     $(this).ekkoLightbox();

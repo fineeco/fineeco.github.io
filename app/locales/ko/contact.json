@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "description": "FineEco - Contact"
+  },
   "address": "충청남도 천안시 동남구 수신면 신풍2길 16-2 (주)파인에코 330-882",
   "button": {
     "naverMap": "네이버 지도로 열기",
