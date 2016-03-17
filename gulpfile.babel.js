@@ -111,7 +111,7 @@ gulp.task('locales', () => {
 
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
-gulp.task('serve', ['views', 'styles', 'fonts'], () => {
+gulp.task('serve', ['views', 'styles', 'scripts', 'fonts'], () => {
   browserSync({
     notify: false,
     port: 9000,
@@ -127,7 +127,7 @@ gulp.task('serve', ['views', 'styles', 'fonts'], () => {
     'app/*.html',
     '.tmp/*.html',
     '.tmp/styles/**/*.css',
-    'app/scripts/**/*.js',
+    '.tmp/scripts/**/*.js',
     'app/images/**/*',
     '.tmp/fonts/**/*'
   ]).on('change', reload);
