@@ -1,4 +1,4 @@
-/* global $, document, WOW, i18n, doTranslate, changeStyleByLng */
+/* global $, document, WOW, i18next, i18nextXHRBackend, i18nextBrowserLanguageDetector, jqueryI18next, doTranslate, changeStyleByLng */
 
 i18next
   .use(i18nextXHRBackend)

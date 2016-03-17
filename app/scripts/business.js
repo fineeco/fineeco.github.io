@@ -1,4 +1,4 @@
-/* global $, i18n */
+/* global $, i18next */
 
 var doTranslate = function() {
   'use strict';
