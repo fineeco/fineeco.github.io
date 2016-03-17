@@ -1,4 +1,4 @@
-{% extends "layouts/base.html" %}
+{% extends "layouts/base.njk" %}
 {% set active_page = "business" %}
 
 {% block meta %}
@@ -15,7 +15,7 @@
 
 {% block contents %}
 
-  {% include "includes/nav.html" %}
+  {% include "includes/nav.njk" %}
 
   <article>
 
@@ -149,7 +149,7 @@
 
   </article>
 
-  {% include "includes/footer.html" %}
+  {% include "includes/footer.njk" %}
 
 {% endblock %}
 

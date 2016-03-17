@@ -35,6 +35,6 @@ $(document).ready(function() {
     navigation: true,
     navigationPosition: 'right',
     fixedElements: '#nav',
-    scrollBar: true,
+    scrollBar: true
   });
 });

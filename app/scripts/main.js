@@ -2,8 +2,8 @@
 
 i18n.init({
   ns: {
-    namespaces: ['base'],
-  },
+    namespaces: ['base']
+  }
 });
 
 // WOW.js 설정
