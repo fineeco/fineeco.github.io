@@ -4,7 +4,6 @@ i18next
   .use(i18nextXHRBackend)
   .use(i18nextBrowserLanguageDetector)
   .init({
-    debug: true,
     ns: 'base'
   });
 
