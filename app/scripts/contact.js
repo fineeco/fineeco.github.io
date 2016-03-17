@@ -2,8 +2,8 @@
 
 var doTranslate = function() {
   'use strict';
-  $('.address').i18n();
-  $('.btn').i18n();
+  $('.address').localize();
+  $('.btn').localize();
 };
 
 var changeStyleByLng = function() {
@@ -11,9 +11,9 @@ var changeStyleByLng = function() {
   return false;
 };
 
-i18n.loadNamespace('contact', function() {
+i18next.loadNamespaces('contact', function() {
   'use strict';
-  i18n.setDefaultNamespace('contact');
+  i18next.setDefaultNamespace('contact');
   doTranslate();
   changeStyleByLng();
 });

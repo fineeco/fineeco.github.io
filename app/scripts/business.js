@@ -2,8 +2,8 @@
 
 var doTranslate = function() {
   'use strict';
-  $('.company-description-section').i18n();
-  $('.ourbiz-section').i18n();
+  $('.company-description-section').localize();
+  $('.ourbiz-section').localize();
 };
 
 var changeStyleByLng = function() {
@@ -11,9 +11,9 @@ var changeStyleByLng = function() {
   return false;
 };
 
-i18n.loadNamespace('business', function() {
+i18next.loadNamespaces('business', function() {
   'use strict';
-  i18n.setDefaultNamespace('business');
+  i18next.setDefaultNamespace('business');
   doTranslate();
   changeStyleByLng();
 });

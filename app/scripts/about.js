@@ -2,14 +2,14 @@
 
 var doTranslate = function() {
   'use strict';
-  $('.masthead-section').i18n();
-  $('.history-section').i18n();
-  $('.certification-section').i18n();
+  $('.masthead-section').localize();
+  $('.history-section').localize();
+  $('.certification-section').localize();
 };
 
 var changeStyleByLng = function() {
   'use strict';
-  var currentLng = i18n.lng();
+  var currentLng = i18next.language;
   if (currentLng === 'en-US') {
     $('.name').attr('class', 'name lng-en');
     $('.iso9001').attr('src', 'images/iso9001-en.jpg');
@@ -27,9 +27,9 @@ var changeStyleByLng = function() {
   }
 };
 
-i18n.loadNamespace('about', function() {
+i18next.loadNamespaces('about', function() {
   'use strict';
-  i18n.setDefaultNamespace('about');
+  i18next.setDefaultNamespace('about');
   doTranslate();
   changeStyleByLng();
 });

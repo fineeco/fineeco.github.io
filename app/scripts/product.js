@@ -2,9 +2,9 @@
 
 var doTranslate = function() {
   'use strict';
-  $('.chippoly-description-section').i18n();
-  $('.chippoly-section').i18n();
-  $('.sizes-description-section').i18n();
+  $('.chippoly-description-section').localize();
+  $('.chippoly-section').localize();
+  $('.sizes-description-section').localize();
 };
 
 var changeStyleByLng = function() {
@@ -12,9 +12,9 @@ var changeStyleByLng = function() {
   return false;
 };
 
-i18n.loadNamespace('product', function() {
+i18next.loadNamespaces('product', function() {
   'use strict';
-  i18n.setDefaultNamespace('product');
+  i18next.setDefaultNamespace('product');
   doTranslate();
   changeStyleByLng();
 });

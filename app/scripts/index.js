@@ -2,14 +2,14 @@
 
 var doTranslate = function() {
   'use strict';
-  $('.fineeco-section').i18n();
-  $('.chippoly-section').i18n();
-  $('.valuechain-section').i18n();
+  $('.fineeco-section').localize();
+  $('.chippoly-section').localize();
+  $('.valuechain-section').localize();
 };
 
 var changeStyleByLng = function() {
   'use strict';
-  var currentLng = i18n.lng();
+  var currentLng = i18next.language;
   if (currentLng === 'en-US') {
     $('.title-first').attr('class', 'title-first lng-en');
     $('.title-second').attr('class', 'title-second lng-en');
@@ -21,9 +21,9 @@ var changeStyleByLng = function() {
   }
 };
 
-i18n.loadNamespace('index', function() {
+i18next.loadNamespaces('index', function() {
   'use strict';
-  i18n.setDefaultNamespace('index');
+  i18next.setDefaultNamespace('index');
   doTranslate();
   changeStyleByLng();
 });
