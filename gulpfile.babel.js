@@ -1,4 +1,4 @@
-// generated on 2016-02-04 using generator-gulp-webapp 1.0.4
+// generated on 2016-03-17 using generator-gulp-webapp 1.1.1
 import gulp from 'gulp';
 import gulpLoadPlugins from 'gulp-load-plugins';
 import browserSync from 'browser-sync';
@@ -23,6 +23,16 @@ gulp.task('styles', () => {
     .pipe(reload({stream: true}));
 });
 
+gulp.task('scripts', () => {
+  return gulp.src('app/scripts/**/*.js')
+    .pipe($.plumber())
+    .pipe($.sourcemaps.init())
+    .pipe($.babel())
+    .pipe($.sourcemaps.write('.'))
+    .pipe(gulp.dest('.tmp/scripts'))
+    .pipe(reload({stream: true}));
+});
+
 function lint(files, options) {
   return () => {
     return gulp.src(files)
@@ -41,24 +51,21 @@ const testLintOptions = {
 gulp.task('lint', lint('app/scripts/**/*.js'));
 gulp.task('lint:test', lint('test/spec/**/*.js', testLintOptions));
 
-gulp.task('html', ['views', 'styles'], () => {
-  const assets = $.useref.assets({searchPath: ['.tmp', 'app', '.']});
-
+gulp.task('html', ['views', 'styles', 'scripts'], () => {
   return gulp.src(['app/*.html', '.tmp/*.html'])
-    .pipe(assets)
     .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
     .pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.cssnano()))
-    .pipe($.if('*.html', $.htmlmin()))
+    .pipe($.if('*.html', $.htmlmin({collapseWhitespace: true})))
     .pipe(gulp.dest('dist'));
 });
 
 gulp.task('views', () => {
-  $.nunjucksRender.nunjucks.configure(['app/']);
-
-  return gulp.src('app/*.html')
-    .pipe($.nunjucksRender())
-    .pipe(gulp.dest('.tmp'));
+  return gulp.src('app/*.njk')
+  .pipe($.nunjucksRender({
+      path: 'app'
+    }))
+    .pipe(gulp.dest('.tmp'))
 });
 
 gulp.task('images', () => {
@@ -87,7 +94,8 @@ gulp.task('fonts', () => {
 gulp.task('extras', () => {
   return gulp.src([
     'app/*.*',
-    '!app/*.html'
+    '!app/*.html',
+    '!app/*.njk'
   ], {
     dot: true
   }).pipe(gulp.dest('dist'));
@@ -116,14 +124,18 @@ gulp.task('serve', ['views', 'styles', 'fonts'], () => {
   });
 
   gulp.watch([
+    'app/*.html',
     '.tmp/*.html',
+    '.tmp/styles/**/*.css',
     'app/scripts/**/*.js',
     'app/images/**/*',
     '.tmp/fonts/**/*'
   ]).on('change', reload);
 
   gulp.watch('app/**/*.html', ['views', reload]);
+  gulp.watch('app/**/*.njk', ['views', reload]);
   gulp.watch('app/styles/**/*.scss', ['styles']);
+  gulp.watch('app/scripts/**/*.js', ['scripts']);
   gulp.watch('app/fonts/**/*', ['fonts']);
   gulp.watch('bower.json', ['wiredep', 'fonts']);
 });
@@ -138,7 +150,7 @@ gulp.task('serve:dist', () => {
   });
 });
 
-gulp.task('serve:test', () => {
+gulp.task('serve:test', ['scripts'], () => {
   browserSync({
     notify: false,
     port: 9000,
@@ -146,12 +158,13 @@ gulp.task('serve:test', () => {
     server: {
       baseDir: 'test',
       routes: {
-        '/scripts': 'app/scripts',
+        '/scripts': '.tmp/scripts',
         '/bower_components': 'bower_components'
       }
     }
   });
 
+  gulp.watch('app/scripts/**/*.js', ['scripts']);
   gulp.watch('test/spec/**/*.js').on('change', reload);
   gulp.watch('test/spec/**/*.js', ['lint:test']);
 });
@@ -164,10 +177,23 @@ gulp.task('wiredep', () => {
     }))
     .pipe(gulp.dest('app/styles'));
 
-  gulp.src('app/layouts/*.html')
+  gulp.src('app/layouts/*.njk')
     .pipe(wiredep({
       exclude: ['bootstrap-sass', 'fullpage.js', 'ekko-lightbox'],
-      ignorePath: /^(\.\.\/)*\.\./
+      ignorePath: /^(\.\.\/)*\.\./,
+      fileTypes: {
+        njk: {
+          block: /(([ \t]*)<!--\s*bower:*(\S*)\s*-->)(\n|\r|.)*?(<!--\s*endbower\s*-->)/gi,
+          detect: {
+           js: /<script.*src=['"]([^'"]+)/gi,
+           css: /<link.*href=['"]([^'"]+)/gi
+          },
+          replace: {
+           js: '<script src="{{filePath}}"></script>',
+           css: '<link rel="stylesheet" href="{{filePath}}" />'
+          }
+        }
+      }
     }))
     .pipe(gulp.dest('app/layouts'));
 });
@@ -176,12 +202,12 @@ gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras', 'locales'], () 
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
+gulp.task('default', ['clean'], () => {
+  gulp.start('build');
+});
+
 gulp.task('deploy', ['build'], () => {
   return gulp.src('dist')
     .pipe($.subtree())
     .pipe($.clean());
-});
-
-gulp.task('default', ['clean'], () => {
-  gulp.start('build');
 });
