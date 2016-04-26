@@ -11,9 +11,12 @@ var changeStyleByLng = function() {
   return false;
 };
 
-i18next.loadNamespaces('business', function() {
+$(document).ready(function() {
   'use strict';
-  i18next.setDefaultNamespace('business');
-  doTranslate();
-  changeStyleByLng();
+
+  i18next.loadNamespaces('business', function() {
+    i18next.setDefaultNamespace('business');
+    doTranslate();
+    changeStyleByLng();
+  });
 });

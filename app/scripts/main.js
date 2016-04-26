@@ -9,9 +9,6 @@ i18next
 
 jqueryI18next.init(i18next, $);
 
-// WOW.js 설정
-new WOW().init();
-
 $(document).ready(function() {
   'use strict';
 
@@ -34,4 +31,7 @@ $(document).ready(function() {
       changeStyleByLng();
     });
   });
+
+  // WOW.js 설정
+  new WOW().init();
 });

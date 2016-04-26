@@ -2,6 +2,7 @@
 
 var doTranslate = function() {
   'use strict';
+
   $('.fineeco-section').localize();
   $('.chippoly-section').localize();
   $('.valuechain-section').localize();
@@ -9,6 +10,7 @@ var doTranslate = function() {
 
 var changeStyleByLng = function() {
   'use strict';
+
   var currentLng = i18next.language;
   if (currentLng === 'en-US') {
     $('.title-first').attr('class', 'title-first lng-en');
@@ -21,20 +23,20 @@ var changeStyleByLng = function() {
   }
 };
 
-i18next.loadNamespaces('index', function() {
-  'use strict';
-  i18next.setDefaultNamespace('index');
-  doTranslate();
-  changeStyleByLng();
-});
-
 $(document).ready(function() {
   'use strict';
+
   $('#fullpage').fullpage({
     css3: true,
     navigation: true,
     navigationPosition: 'right',
     fixedElements: '#nav',
     scrollBar: true
+  });
+
+  i18next.loadNamespaces('index', function() {
+    i18next.setDefaultNamespace('index');
+    doTranslate();
+    changeStyleByLng();
   });
 });

@@ -2,18 +2,23 @@
 
 var doTranslate = function() {
   'use strict';
+
   $('.address').localize();
   $('.btn').localize();
 };
 
 var changeStyleByLng = function() {
   'use strict';
+
   return false;
 };
 
-i18next.loadNamespaces('contact', function() {
+$(document).ready(function() {
   'use strict';
-  i18next.setDefaultNamespace('contact');
-  doTranslate();
-  changeStyleByLng();
+
+  i18next.loadNamespaces('contact', function() {
+    i18next.setDefaultNamespace('contact');
+    doTranslate();
+    changeStyleByLng();
+  });
 });

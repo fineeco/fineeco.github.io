@@ -2,6 +2,7 @@
 
 var doTranslate = function() {
   'use strict';
+
   $('.chippoly-description-section').localize();
   $('.chippoly-section').localize();
   $('.sizes-description-section').localize();
@@ -9,12 +10,16 @@ var doTranslate = function() {
 
 var changeStyleByLng = function() {
   'use strict';
+
   return false;
 };
 
-i18next.loadNamespaces('product', function() {
+$(document).ready(function() {
   'use strict';
-  i18next.setDefaultNamespace('product');
-  doTranslate();
-  changeStyleByLng();
+
+  i18next.loadNamespaces('product', function() {
+    i18next.setDefaultNamespace('product');
+    doTranslate();
+    changeStyleByLng();
+  });
 });

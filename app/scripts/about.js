@@ -2,6 +2,7 @@
 
 var doTranslate = function() {
   'use strict';
+
   $('.masthead-section').localize();
   $('.history-section').localize();
   $('.certification-section').localize();
@@ -9,6 +10,7 @@ var doTranslate = function() {
 
 var changeStyleByLng = function() {
   'use strict';
+
   var currentLng = i18next.language;
   if (currentLng === 'en-US') {
     $('.name').attr('class', 'name lng-en');
@@ -27,17 +29,17 @@ var changeStyleByLng = function() {
   }
 };
 
-i18next.loadNamespaces('about', function() {
-  'use strict';
-  i18next.setDefaultNamespace('about');
-  doTranslate();
-  changeStyleByLng();
-});
-
 $(document).ready(function() {
   'use strict';
+
   $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
     event.preventDefault();
     $(this).ekkoLightbox();
+  });
+
+  i18next.loadNamespaces('about', function() {
+    i18next.setDefaultNamespace('about');
+    doTranslate();
+    changeStyleByLng();
   });
 });
