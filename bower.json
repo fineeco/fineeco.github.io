@@ -2,7 +2,7 @@
   "name": "fineeco",
   "private": true,
   "dependencies": {
-    "bootstrap-sass": "~3.3.6",
+    "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.1",
     "font-awesome": "~4.5.0",
     "html5shiv": "~3.7.3",
@@ -50,6 +50,6 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^2.4.5"
+    "mocha": "^2.5.2"
   }
 }
