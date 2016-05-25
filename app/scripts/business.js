@@ -2,12 +2,14 @@
 
 var doTranslate = function() {
   'use strict';
+
   $('.company-description-section').localize();
   $('.ourbiz-section').localize();
 };
 
 var changeStyleByLng = function() {
   'use strict';
+
   return false;
 };
 

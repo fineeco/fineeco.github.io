@@ -12,6 +12,7 @@ var changeStyleByLng = function() {
   'use strict';
 
   var currentLng = i18next.language;
+
   if (currentLng === 'en-US') {
     $('.name').attr('class', 'name lng-en');
     $('.iso9001').attr('src', 'images/iso9001-en.jpg');
