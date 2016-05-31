@@ -1,0 +1,1 @@
+"use strict";var doTranslate=function(){$(".address").localize(),$(".btn").localize()},changeStyleByLng=function(){return!1};$(document).ready(function(){i18next.loadNamespaces("contact",function(){i18next.setDefaultNamespace("contact"),doTranslate(),changeStyleByLng()})});

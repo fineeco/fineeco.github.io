@@ -1,0 +1,1 @@
+"use strict";var doTranslate=function(){$(".company-description-section").localize(),$(".ourbiz-section").localize()},changeStyleByLng=function(){return!1};$(document).ready(function(){i18next.loadNamespaces("business",function(){i18next.setDefaultNamespace("business"),doTranslate(),changeStyleByLng()})});

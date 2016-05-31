@@ -1,0 +1,1 @@
+"use strict";var doTranslate=function(){$(".chippoly-description-section").localize(),$(".chippoly-section").localize(),$(".sizes-description-section").localize()},changeStyleByLng=function(){return!1};$(document).ready(function(){i18next.loadNamespaces("product",function(){i18next.setDefaultNamespace("product"),doTranslate(),changeStyleByLng()})});
